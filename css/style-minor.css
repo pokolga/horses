@@ -1,0 +1,203 @@
+/*контент, картинка в большом окне*/
+
+figure {
+  width: 30%;
+  min-width: 300px;
+  margin-inline-start: 0;
+  margin-inline-end: 30px;
+  padding-top: 5px;  /*на одном уровне с текстом*/
+  overflow-x: hidden;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  float:left;
+}
+
+.full-screen {
+  width: 100%;
+}
+
+figcaption {
+  width: 100%;
+  padding: 7px;
+
+  color: var(--color-white);
+  font-size: 12px;
+  text-align: center;
+
+  background-color: var(--color-green);
+}
+
+.simple-text>h3 {
+  margin: 20px 10px;
+
+  color: var(--color-grey);
+  font-size: 1.2em;
+}
+
+.description {
+  position: relative;
+  top: 90%;
+  right: 10px;
+
+  font-size: 10px;
+  text-align: right;
+
+  opacity: 0.7;
+}
+
+.importance {
+  color: var(--color-blue);
+  font-weight: 700;
+}
+
+.clear {
+  clear: both;
+}
+
+/*модальное окно с фото, подложка+див с иллюстрацией на фон*/
+.overflow {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  text-align: center;
+
+  background: var(--color-green);
+  z-index: 11;
+}
+
+.modal-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullPhoto{
+  position: relative;
+ 
+  background-color: var(--color-green);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom 10px ;
+  /*border: #ddd 2px solid;
+  border-bottom: none;*/
+  border-top: var(--color-green) 10px solid;
+  
+  transition: all 0.35s ease-in-out;
+}
+
+.closePhoto {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+
+  position: absolute;
+  top: 10px;
+  
+  right: 10px;
+  z-index: 10;
+  
+  font-size: 20px;
+  text-align: center;
+  
+  opacity: 1;
+  background: var(--color-green);
+  border-radius: 50%;
+  border: #eeb533 2px solid;
+}
+
+.closePhoto:hover {
+  opacity: 0.5;
+}
+
+.modal-cross:before, .modal-cross:after {
+  content: ""; 
+  width: 16px; 
+  height: 4px; 
+
+  position: absolute;
+  top: 11px;
+  left: 5px;
+
+  background: var(--color-yellow);
+}
+
+.modal-cross:before {  transform: rotate(45deg);}
+.modal-cross:after {   transform: rotate(-45deg);}
+
+.modal-name {
+ padding: 5px;
+ margin: 0;
+ margin-top: 0;
+
+ color: var(--color-white);
+ font-size: 16px;
+ text-align: center;
+ 
+ background-color: var(--color-green);
+}
+
+.error404 {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 120px;
+  font-weight: 700;
+}
+
+.img404{
+  width:100%;
+  height: 200px;
+  background-size: 200%;
+  background-position: bottom;
+  background-image: url('./../assets/The\ Betting\ Post\ Epsom\ James\ Pollard.jpg');
+}
+/********************* media > 1400px  колонки для больших экранов*******************/
+@media  screen and  (min-width: 1400px) {
+  figure {
+    max-width: 530px;
+  }
+  .text {
+    column-width: 30vw;
+    column-gap: 2em;
+  }
+  
+  ul.float-ul {
+    padding-left: 0;
+  }
+}  
+
+/********************* media 1200px *******************/
+@media  screen and  (min-width: 1199px) {
+  figure {
+    min-width: 300px;
+  }
+}  
+/********************* media 999px  для планшетов*******************/
+@media  screen and  (max-width: 999px) {
+  .footer {
+    position: static;
+  }
+}
+/************************ < 768px  мобилки ******************/
+@media  screen and  (max-width: 767px) {
+  .description {
+    display: none;
+  }
+
+  figure {
+    width: 100%;
+    margin: auto auto 10px auto;
+
+    float: none;
+  }
+}

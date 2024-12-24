@@ -1,0 +1,689 @@
+@font-face {
+  font-family: 'Emberly';
+  src: url('./../assets/fonts/Emberly-ExtraBoldNarrow.ttf') format('truetype');
+}
+
+:root {
+    --color-blue: #273854;/*#0e2326;*/
+    --color-black:rgb(7, 10, 15);
+    --color-light-blue: #b4def2;
+    --color-green: #2D5346;/*#b4def2;*/
+    --color-yellow: #eeb533;/*#f2b300;*/
+    --color-white: #f2f2f2;
+    --color-grey: #2a2a2a;
+}
+
+* { 
+  box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+html {
+  scroll-behavior: smooth; 
+  color: var(--color-grey);
+  background: var(--color-green) ;
+}
+
+body {
+  max-width: 1920px;
+  margin: auto;
+
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.header {
+  height: 80px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 500;
+
+  background-color: var(--color-blue);
+}
+
+
+.menu {
+  padding-inline-start: 0;
+
+  display: flex;
+  column-gap: 3%;
+
+  font-size: 16px;
+  letter-spacing: 0.9px;
+  list-style: none;
+} 
+
+
+.menu-a {
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.politics .menu-a-active>a,
+.menu-a-active>a{
+   color:var(--color-light-blue);
+ }
+
+ 
+.header-location{
+  width: 50px;
+
+  position: relative;
+
+  text-align: right;
+
+  cursor: pointer;
+}
+
+.header-location::before{
+  content: url('./../assets/location_small.png');
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.header-location:hover {
+  opacity: 0.8;
+}
+
+.burger{
+  display: none;
+}
+
+.burger-menu {
+  position: absolute;
+  visibility: hidden;
+}
+
+h1,h2 {
+  color: var(--color-yellow);
+  font-family: "Emberly", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.logo {
+  letter-spacing: 2.5px;/* 1.8px;*/
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.active-logo {
+  position: relative;
+  z-index:10;
+}
+
+/*общее оформление*/
+.dictum{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  color: var(--color-yellow);
+  font-size: 1.2em;
+  font-weight: 500;
+  font-style: oblique;
+}
+
+.main-contacts {
+  padding: 40px 10px 20px 10px;
+  min-height: calc(100vh - 80px - 135px);
+
+  color: var(--color-grey);
+
+  background: var(--color-white);
+}
+
+.main-contacts-h2 {
+  margin: 30px 0 15px 0;
+  
+  color: var(--color-grey);
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  font-style: bold;
+}
+
+.main-contacts  p,
+.main-contacts ul{
+  line-height: 1.5em;
+  letter-spacing: 0.25px;
+}
+
+.main-contacts  p {
+  margin-bottom: 15px;
+
+  text-align: justify;
+}
+
+p.before-ul {
+  margin-bottom: 0;
+}
+
+.main-contacts a{
+  color: var(--color-blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-contacts a:hover{
+  text-decoration: underline;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+.text ul {
+    list-style-position: outside;
+    padding-inline-start: 0px;
+}
+
+.text ul>li {
+  padding-left: 2px; 
+}
+
+.text ul>li::before {
+  content: "•";
+  font-weight: 700;
+  color: var(--color-grey);
+  display: inline-block;
+  width: 1em;
+}
+
+ul.float-ul {
+  list-style-position: inside;
+  padding-left: 32.3%;
+}
+
+.text ul.child-ul>li {
+  padding-left: 20px; 
+}
+
+.text ul.child-ul>li::before {
+  content: "-";
+}
+
+.text ol {
+  padding-inline-start: 0px;
+  margin-left: 18px;
+  line-height: 1.5;
+  margin-top: -15px;
+}
+
+.text ol>li {
+  padding: 5px 10px 0px 5px;
+  text-align: left;
+}
+
+.footer{
+ /* height: 135px;*/
+  padding: 10px;
+
+  position: relative;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+
+  color: var(--color-white);;
+  font-size: 14px;
+  
+  background-color: var(--color-green);
+}
+
+.footer>div {
+  text-align: center;
+}
+
+.footer_copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright>span {
+  margin-right: 5px;
+}
+
+.footer-colored {
+  color:var(--color-yellow);
+}
+
+.politics {
+  max-width: 1150px;
+  margin: auto;
+  padding-inline-start: 0;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  font-size: 18px;
+  list-style: none;
+}
+
+.politics > li,
+.politics-mobile > li{
+  padding: auto 10px;
+}
+
+.politics_item a {
+  color: var(--color-white);
+}
+
+.politics-mobile {
+  display: none;
+}
+
+.info {
+  margin: 15px;
+  font-size: 12px;
+}
+
+.handshake:hover {
+  opacity: 0.8;
+}
+
+.mobile-menu_item .handshake{
+  text-align: center;
+  top: 75px;
+}
+
+/*аккордеон*/
+.languages {
+  padding: 10px;
+ 
+  background-color: var(--color-white);
+}
+
+.accordeon-outline {
+  margin-bottom: 50px;
+  border: var(--color-yellow) 1px solid;
+  display:flex;
+}
+
+.accordeon,
+.accordeon-hat {
+  text-align: left;
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+
+.accordeon-hat {
+  display: flex;
+  
+  border: var(--color-yellow) 1px solid;
+  border-bottom-color: transparent;
+}
+
+.accordeon-hat-title{
+  width: 230px;
+  padding: 10px;
+} 
+
+.accordeon-hat-title:first-of-type {
+  border-right: var(--color-yellow) 1px solid;
+}
+
+.accordeon-title {
+  padding: 10px;
+  width: 300px;
+  text-align: left;
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 500;
+  
+  background-color: var(--color-green);
+  border-bottom: var(--color-yellow)  solid 1px;
+}
+
+.accordeon-pacific-ocean {
+  border-bottom-color: transparent;
+}
+
+.accordeon-active {
+  background-color: var(--color-white);
+  color: var(--color-green);
+  border-right: transparent  solid 1px;
+}
+
+.accordeon-text {
+  display:none;
+}
+
+.accordeon-text,
+.accordeon-output  {
+  padding: 10px 10px;
+  background-color: var(--color-white);
+  color: var(--color-grey);
+}
+
+.accordeon-output  {
+  padding: 10px 10px 10px 30px;
+ 
+}
+
+.accordeon-output strong {
+  text-transform: uppercase;
+}
+
+.accordeon-output-title {
+  font-size: 20px;
+  color: var(--color-blue);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.accordeon { 
+  display: flex;
+  flex-direction: column;
+
+}
+
+.cross:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.cross {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  
+  position: absolute; 
+  top: 6px; 
+  right: 10px;
+  
+  background-color: var(--color-green);
+  border-radius: 50%;
+  border: var(--color-yellow) 2px solid;
+}
+
+.cross:before, .cross:after {
+  content: ""; 
+  width: 16px; 
+  height: 4px; 
+
+  position: absolute; 
+  top: 11px;
+  left: 5px;
+
+  background: var(--color-yellow);
+}
+.cross:before {transform: rotate(45deg);}
+.cross:after {transform: rotate(-45deg);}
+/********************* media 1200px *******************/
+@media  screen and  (min-width: 1199px) {
+  .menu {
+    column-gap: 2vw;
+    font-size: 16px;
+  }
+
+  .politics {
+    font-size: 16px;
+  }
+} 
+
+/********************* media < 1000px *******************/
+@media  screen and  (max-width: 999px) {
+  nav:has(.menu),
+  .menu {
+    display: none;
+  }
+  
+  .burger {
+    width: 25px;
+    height: 15px;
+
+    position: relative;
+    top: -3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    cursor: pointer;
+  }
+
+  .burger span {
+    width: 18px;
+    height: 2px;
+
+    position: relative;
+    background: var(--color-white);
+
+    transition: all 0.5s;
+  }
+  
+  .active-burger {
+    position: relative;
+
+    z-index: 100;
+  }
+  
+  
+  .active-burger span:nth-child(1){
+    top: 8px;
+
+    background-color: var(--color-white);
+    transform: rotate(45deg);
+  }
+  
+  .active-burger span:nth-child(2){
+    opacity: 0;
+  }
+  
+  .active-burger span:nth-child(3){
+    top: -5px;
+    
+    background-color: var(--color-white);;
+    
+    transform: rotate(135deg);
+  }  
+
+  .burger-menu {
+    width: 0;
+    height: 100vh;
+    padding: 100px 40px;
+    
+    top: 0;
+    left: 0;
+    
+    color: var(--color-white);;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 250%;
+    
+    background-color: var(--color-blue);
+
+    visibility: hidden;
+    z-index: 9;
+    transition: width 0.3s;
+  }
+
+  
+  .active-burger-menu {
+    width:100%;
+    visibility:visible;
+  } 
+
+  .mobile-menu {
+    margin-top: 20px;
+    padding-inline-start: 0;
+
+    list-style: none;
+    visibility: hidden;
+  }
+ 
+  .mobile-menu-item {
+    margin-top: 15px;
+  }
+  
+  .mobile-menu-item a{
+    text-decoration: none;
+  }
+  
+  .location {
+    z-index: 10;
+  }
+
+  .separation {
+    display: none;
+  }
+   
+  .footer {
+    height: auto;
+  }
+
+  .footer_copyright {
+    margin-bottom: 20px;
+  }
+
+  .politics {
+    display: none;
+  }
+  
+  .politics-mobile {
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .politics_item {
+    margin-bottom: 20px;
+  }
+  /*страница с контентом: dictum-изречение сверху, main-contacts-h2 - заголовок */
+  .future-choice {
+    text-align: center;
+  }
+  future-choice-contacts {
+    text-align: left;
+  }
+
+  .dictum{
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+
+    font-size: 1em;
+  }
+
+  .dictum>div{ 
+    text-align: right;
+  }
+
+  .main-contacts-h2 {
+    text-align: center;
+  }
+
+  .text ul {
+    text-align: justify;
+   
+  }
+
+  ul.float-ul {
+    padding-left: 0;
+  }
+
+  .languages {
+    width: 100%;
+    padding-top: 0;
+  }
+  
+  .accordeon {
+    width: 100%;
+
+    display: block;
+  }
+  
+  .accordeon-title {
+    width: auto;
+    text-align: center;
+    border-right-color: transparent;
+  }
+  
+  .accordeon-text h4 {
+    display: none;
+  } 
+
+  .accordeon-active + .accordeon-text {
+    display:block;
+  }
+
+  .accordeon-active {
+    border-bottom-color: transparent;
+  }
+
+  .accordeon-output {
+    display: none;
+  }
+
+  .accordeon-hat-title:first-of-type {
+    border-right-color: transparent;
+  }
+}
+
+/************************ < 768px  мобилки ******************/
+@media  screen and  (max-width: 767px) {
+
+  .burger-menu {
+    padding-left: 40px;
+  }
+
+  .active-burger-menu {
+    width: 100vw;
+    visibility:visible;
+  } 
+
+  .footer_copyright {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .politics {
+    display: none;
+  }
+  
+  .politics-mobile {
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .main-contacts {
+    padding: 5px 10px;
+
+    font-size: 14px;
+  }
+
+  .text p {
+    text-align: left;
+  }
+}

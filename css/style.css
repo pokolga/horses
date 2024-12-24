@@ -1,0 +1,155 @@
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+
+    background: url('./../assets/main-img.jpg') no-repeat;
+    background-size: cover;
+    background-position: top 70% center;
+}
+
+.picture-description {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  
+  color: var(--color-white);
+  font-size: 10px;
+  text-align: right;
+  
+  opacity: 0.8;
+}
+
+/*    cookie */
+.cookie {
+  width: 100%;
+  max-width: 2560px;
+  height: 120px;
+  margin: 0;
+  padding: 10px;
+
+  display: none;
+
+  position: fixed;
+  bottom: 0;
+
+  align-items: center;
+  justify-content: space-between;
+  
+  color: var(--color-white);
+  
+  border-top: var(--color-yellow) 2px solid;
+  background: var(--color-green);
+}
+
+.cookie p {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.cookie a {
+  color: var(--color-light-blue);
+}
+
+.cookie-button{
+  text-align: center;
+}
+ 
+.cookie-button button {
+  margin: 0 auto;
+  padding: 10px 20px;
+
+  color: var(--color-green);
+  font-size: 16px;
+  font-weight: 500;
+  
+  border-radius: 5px;
+  background: var(--color-yellow);
+  border: var(--color-yellow) 2px solid; 
+}
+
+
+.cookie-button button {
+  display: inline;
+}
+
+.cookie-button button:focus {
+  background: var(--color-green);
+}
+
+.cookie-button button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.cookie-cross {
+  position: relative;
+  top: -35px;
+  right: 5px;
+}
+/********************* media 1200px *******************/
+@media  screen and  (max-width: 1199px) {
+  body {
+    background-position: top 70% center;
+  }
+
+  .cookie {
+    justify-content: space-between;
+  }
+
+  /*для крестіка делаем отступ сверху*/
+  .cookie p {
+    margin-top: 10px;
+    padding-right: 20px;
+  }
+}  
+/********************* media 999px *******************/
+@media  screen and  (max-width: 999px) {
+  body {
+    height: auto;
+
+    background: url('./../assets/main-img.jpg') top center no-repeat;
+    background-size: contain;
+  }
+ 
+  main {
+    height: 340px;
+  }
+}
+
+/********************* media 767px *******************/
+@media  screen and  (max-width: 767px) {
+  body {
+      background: url('./../assets/main-img.jpg') center -200px no-repeat;
+      background-size: cover;
+  }
+
+  .picture-description {
+    display: none;
+  }
+
+  
+  .politics_item {
+    margin-bottom: 20px;
+  }
+  
+  .cookie {
+    height: auto;
+
+    flex-direction: column;
+
+    font-size: 14px;
+  }
+
+  .cookie > p{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .cookie-cross {
+    position: absolute;
+    top: 6px; 
+    right: 10px;
+  }
+}
