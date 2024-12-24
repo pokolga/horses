@@ -242,7 +242,7 @@ ul.float-ul {
 
 .footer{
  /* height: 135px;*/
-  padding: 10px;
+  padding: 10px 10px 40px;
 
   position: relative;
   bottom: 0;
