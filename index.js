@@ -183,14 +183,19 @@ function ajaxLanguage(currentLanguage){
     }
   }
   console.log(`${currentLanguage}.txt`);
-  xhr.open("get", `./../languages/${currentLanguage}.txt`);
+  if (/index/.test(location.pathname)) {
+    xhr.open("get", `./languages/${currentLanguage}.txt`);
+  } else {
+    xhr.open("get", `./../languages/${currentLanguage}.txt`);
+  }
+  
   xhr.send(null);
 }
 
 function changeLanguageGlobal(responseText, abbr) {
   localStorage.setItem("language",abbr);
   const renderObj = JSON.parse(responseText);
-  console.log(renderObj);
+  
   const global = renderObj.global;
   if (global) {
     for (const property in global) {
