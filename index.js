@@ -137,14 +137,17 @@ function openPhotoInModalWindow() {
 }
 
 /*аккордеон*/
-
-if (document.querySelector(".accordeon")){
-  document.querySelectorAll(".accordeon-title").forEach((item) => {item.addEventListener("click", clickForAccordeonTitles)})
- /*начальное заполнение*/
-  document.querySelector(".accordeon-output").innerHTML = document.querySelector(".accordeon-active").nextElementSibling.innerHTML;
-  document.querySelectorAll(".accordeon-output a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
-  document.querySelectorAll(".accordeon-text a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
+function initAccordeon(){
+  if (document.querySelector(".accordeon")){
+    document.querySelectorAll(".accordeon-title").forEach((item) => {item.addEventListener("click", clickForAccordeonTitles)})
+   /*начальное заполнение*/
+    document.querySelector(".accordeon-output").innerHTML = document.querySelector(".accordeon-active").nextElementSibling.innerHTML;
+    document.querySelectorAll(".accordeon-output a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
+    document.querySelectorAll(".accordeon-text a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
+  }
 }
+initAccordeon();
+
 
 function clickForAccordeonTitles(){
   document.querySelectorAll(".accordeon-title").forEach((item) => {item.classList.remove("accordeon-active")});
@@ -155,16 +158,14 @@ function clickForAccordeonTitles(){
 }
 
 function clickForAccordeonLink(ev){
+  /*в гиперссылке должна стоять аббревиатура языка в атрибуте data-lang, 
+  в папке  languages должен быть файл %аббревиатура%.txt по шаблону
+  Если атрибут не указан, то переходим на русский*/
   ev.preventDefault();
-//  alert(`Переходим на ${this.textContent}`);
 
-  switch (this.dataset.lang){
-    case "pl": ajaxLanguage("pl"); break; 
-    case "by": ajaxLanguage("by"); break; 
-    case "en": ajaxLanguage("en"); break; 
-    default: ajaxLanguage("ru")  
-  }
-
+  if (!this.dataset.lang || this.dataset.lang === '') ajaxLanguage("ru");
+  ajaxLanguage(this.dataset.lang);
+ 
   //closeLanguageMenu();
 }
 
@@ -173,9 +174,11 @@ function ajaxLanguage(currentLanguage){
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4) {
       if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
-        changeLanguage(xhr.responseText, currentLanguage);
+        changeLanguageGlobal(xhr.responseText, currentLanguage);
+        changeLanguageCurrentPage(xhr.responseText);
       } else {
         console.log("Oops, sorry");
+        ajaxLanguage("ru");
       }
     }
   }
@@ -184,23 +187,43 @@ function ajaxLanguage(currentLanguage){
   xhr.send(null);
 }
 
-function changeLanguage(responseText, abbr) {
+function changeLanguageGlobal(responseText, abbr) {
   const renderObj = JSON.parse(responseText);
   console.log(renderObj);
-  for (const property in renderObj) {
-    
-    if (renderObj.hasOwnProperty(property)) {
-      
-    Array.from(document.querySelectorAll(`.${property}`)).forEach((elem) => {
-        if (elem.querySelector("img")) {
-          elem.title = renderObj[property];
-        } else {
-          elem.innerHTML = renderObj[property];
-        }
-      })
-    } 
+  const global = renderObj.global;
+  if (global) {
+    for (const property in global) {
+      Array.from(document.querySelectorAll(`.${property}`)).forEach((elem) => {
+          if (elem.querySelector("img")) {
+            elem.title = global[property];
+          } else {
+            elem.innerHTML = global[property];
+          }
+        })
+    }
+  } else {
+    console.log("Wrong data for this language");
+    ajaxLanguage("ru");
   }
 }
+
+function changeLanguageCurrentPage(responseText) {
+  const renderObj = JSON.parse(responseText);
+  
+  const currentPage = renderObj["languages"];
+  console.log("currentPage");
+  console.log(currentPage);
+  console.log(document.querySelector(".main-contacts"));
+  if (currentPage && document.querySelector(".main-contacts")) {
+    document.querySelector(".main-contacts").innerHTML = currentPage;
+  } else {
+    console.log("Wrong data for this language");
+   // ajaxLanguage("ru");
+  }
+  initAccordeon();
+}
+
+
 
 /* меню языков*/
 /* для выплывающего модального окна*/
