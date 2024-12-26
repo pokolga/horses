@@ -26,5 +26,5 @@
   "confidentially": "",
   "conditions": "",
   "cookies": "",
-  "location":{}
+  "languages":""
 }

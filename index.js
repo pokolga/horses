@@ -209,7 +209,7 @@ function changeLanguageGlobal(responseText, abbr) {
 
 function changeLanguageCurrentPage(responseText) {
   const renderObj = JSON.parse(responseText);
-  
+  const page = location.pathname.match(/\/(\w+)\.html/)[1];
   const currentPage = renderObj["languages"];
   console.log("currentPage");
   console.log(currentPage);
