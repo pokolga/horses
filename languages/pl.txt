@@ -1,0 +1,32 @@
+{
+  "global" : {
+    "index": "home",
+    "name": "nazwa",
+    "breed": "rasa",
+    "relationship": "relacje",
+    "development": "rozwój",
+    "participation": "uczestnictwo",
+    "vacancies": "wakaty",
+    "contacts": "informacje kontaktowe",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "confidentially": "Polityka prywatności",
+    "conditions": "Regulamin",
+    "cookies": "Polityka dotycząca cookies",
+    "location": "Kraje i języki",
+    "cookie-text": "Korzystając z serwisu internetowego kincsem.club, użytkownik akceptuje  <a href=\"./html/confidentially.html\"  target=\"_blank\">Politykę prywatności</a>, <a href=\"./html/conditions.html\"  target=\"_blank\">Regulamin</a> i <a href=\"./html/cookie.html\"  target=\"_blank\">Politykę dotycząca cookies</a>, zamieszczone wniniejszym Serwisie.",
+    "cookie-agreement": "AKCEPTUJĘ" 
+  },
+  "404":"",
+  "index": "",
+  "name": "",
+  "breed": "",
+  "relationship": "",
+  "development": "",
+  "participation": "",
+  "vacancies": "",
+  "contacts": "",
+  "confidentially": "",
+  "conditions": "",
+  "cookies": "",
+  "languages":"<article class=\"languages\"><div class=\"dictum\"><div>Sol lucet omnibus.</div>  <div>Dla wszystkich świeci słońce.</div></div><div class=\"future-choice\"> <h2 class=\"main-contacts-h2\">KRAJE I JĘZYKI</h2>  <figure>  <img class=\"full-screen\" src=\"./../assets/Epsom Races The Race Over_James.jpg\"  alt=\"Epsom Races: The Race Over, James Pollard (1835)'\" /> <figcaption>&#171;Epsom Races: The Race Over&#187;<br>James Pollard (1834-1835)</figcaption></figure> <div class=\"text\"><p>Informacje będą dostępne w zależności od wybranego kraju i języka urzędowego tego kraju.</p></div><div class=\"accordeon-outline\"><div class=\"accordeon\"><h3 class=\"accordeon-title\">AZJA</h3><div class=\"accordeon-text\">        <h4 class=\"accordeon-output-title\">AZJA</h4><p>W fazie rozwoju</p></div><h3 class=\"accordeon-title\">AMERYKA</h3><div class=\"accordeon-text\"><h4  class=\"accordeon-output-title\">AMERYKA</h4><p>W fazie rozwoju</p></div><h3 class=\"accordeon-title\">AFRYKA</h3><div class=\"accordeon-text\"><h4  class= \"accordeon-output-title\">AFRYKA</h4><p>W fazie rozwoju</p></div><h3 class=\"accordeon-title accordeon-active\">EUROPA</h3><div class=\"accordeon-text\"><h4  class=\"accordeon-output-title\">EUROPA</h4><p><strong>Białoruś: </strong><a href=\"#\" data-lang=\"ru\">русский</a>, <a href=\"#\" data-lang=\"be\">беларуская</a></p><p data-lang=\"pl\"><strong>Polska: </strong><a href=\"#\" data-lang=\"pl\">polski</a></p><p><strong>Zjednoczone Królestwo: </strong><a href=\"#\" data-lang=\"en\">english</a></p><p>          <strong>Rosja: </strong><a href=\"#\" data-lang=\"ru\">русский</a></p></div><h3 class=\"accordeon-title accordeon-pacific-ocean\">REGION PACYFIKU</h3>      <div class=\"accordeon-text\">        <h4  class=\"accordeon-output-title\">REGION PACYFIKU</h4>        <p>W fazie rozwoju</p>      </div></div>    <div class=\"accordeon-output\"></div></div></div></article>"
+}

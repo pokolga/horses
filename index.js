@@ -137,14 +137,17 @@ function openPhotoInModalWindow() {
 }
 
 /*аккордеон*/
-
-if (document.querySelector(".accordeon")){
-  document.querySelectorAll(".accordeon-title").forEach((item) => {item.addEventListener("click", clickForAccordeonTitles)})
- /*начальное заполнение*/
-  document.querySelector(".accordeon-output").innerHTML = document.querySelector(".accordeon-active").nextElementSibling.innerHTML;
-  document.querySelectorAll(".accordeon-output a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
-  document.querySelectorAll(".accordeon-text a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
+function initAccordeon(){
+  if (document.querySelector(".accordeon")){
+    document.querySelectorAll(".accordeon-title").forEach((item) => {item.addEventListener("click", clickForAccordeonTitles)})
+   /*начальное заполнение*/
+    document.querySelector(".accordeon-output").innerHTML = document.querySelector(".accordeon-active").nextElementSibling.innerHTML;
+    document.querySelectorAll(".accordeon-output a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
+    document.querySelectorAll(".accordeon-text a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
+  }
 }
+initAccordeon();
+
 
 function clickForAccordeonTitles(){
   document.querySelectorAll(".accordeon-title").forEach((item) => {item.classList.remove("accordeon-active")});
@@ -155,16 +158,83 @@ function clickForAccordeonTitles(){
 }
 
 function clickForAccordeonLink(ev){
+  /*в гиперссылке должна стоять аббревиатура языка в атрибуте data-lang, 
+  в папке  languages должен быть файл %аббревиатура%.txt по шаблону
+  Если атрибут не указан, то переходим на русский*/
   ev.preventDefault();
-  alert(`Переходим на ${this.textContent}`);
+
+  if (!this.dataset.lang || this.dataset.lang === '') ajaxLanguage("ru");
+  ajaxLanguage(this.dataset.lang);
+ 
   //closeLanguageMenu();
 }
+
+function ajaxLanguage(currentLanguage){
+  const xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
+        changeLanguageGlobal(xhr.responseText, currentLanguage);
+        changeLanguageCurrentPage(xhr.responseText);
+      } else {
+        console.log("Oops, sorry");
+        ajaxLanguage("ru");
+      }
+    }
+  }
+  console.log(`${currentLanguage}.txt`);
+  xhr.open("get", `./../languages/${currentLanguage}.txt`);
+  xhr.send(null);
+}
+
+function changeLanguageGlobal(responseText, abbr) {
+  localStorage.setItem("language",abbr);
+  const renderObj = JSON.parse(responseText);
+  console.log(renderObj);
+  const global = renderObj.global;
+  if (global) {
+    for (const property in global) {
+      Array.from(document.querySelectorAll(`.${property}`)).forEach((elem) => {
+          if (elem.querySelector("img")) {
+            elem.title = global[property];
+          } else {
+            elem.innerHTML = global[property];
+          }
+        })
+    }
+  } else {
+    console.log("Wrong data for this language");
+    ajaxLanguage("ru");
+  }
+}
+
+function changeLanguageCurrentPage(responseText) {
+  const renderObj = JSON.parse(responseText);
+  const page = location.pathname.match(/\/(\w+)\.html/)[1];
+  const currentPage = renderObj[page];
+  console.log("currentPage");
+  console.log(currentPage);
+  console.log(document.querySelector(".main-contacts"));
+  if (currentPage && document.querySelector(".main-contacts")) {
+    document.querySelector(".main-contacts").innerHTML = currentPage;
+  } else {
+    console.log("Wrong data for this language");
+   // ajaxLanguage("ru");
+  }
+  initAccordeon();
+}
+document.addEventListener("DOMContentLoaded",function(){
+  //если выбран язык, то показать на нужном языке
+  const currentLanguage = localStorage.getItem('language');
+  if (!currentLanguage) return;
+  ajaxLanguage(currentLanguage);
+})  
 
 /* меню языков*/
 /* для выплывающего модального окна*/
 /*document.querySelector(".header-location").addEventListener("click",openLanguageMenu);
 document.querySelector(".languages .cross").addEventListener("click",closeLanguageMenu);
-document.querySelector(".accordeon-text a").addEventListener("click",closeLanguageMenu);*/
+document.querySelector(".accordeon-text a").addEventListener("click",closeLanguageMenu);
 
 function openLanguageMenu(ev){
   const langBlock = document.querySelector(".languages");
@@ -177,4 +247,4 @@ function openLanguageMenu(ev){
 function closeLanguageMenu(){
   document.querySelector(".languages").style.top = "-1000px";
   document.querySelector(".languages").style.opacity = "0";
-}
+}*/

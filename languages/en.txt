@@ -1,0 +1,32 @@
+{
+  "global" : {
+    "index": "home",
+    "name": "name",
+    "breed": "breed",
+    "relationship": "relationship",
+    "development": "development",
+    "participation": "participation",
+    "vacancies": "vacancies",
+    "contacts": "contacts",
+    "rights": "All rights reserved.",
+    "confidentially": "Privacy Policy",
+    "conditions": "Terms of Use",
+    "cookies": "Cookie Policy",
+    "location": "Countries and languages",
+    "cookie-text": "By using the site kincsem.club, you agree to <a href=\"./html/confidentially.html\" target=\"_blank\">Privacy Policy</a>, <a href=\"./html/conditions.html\" target=\"_blank\">Terms of Use</a> and <a href=\"./html/cookie.html\" target=\"_blank\">Cookie Policy</a> of this website.",
+    "cookie-agreement": "AGREE" 
+  }, 
+  "404":"<div class=\"dictum\"><div>Si quaesiveris, invenies.</div><div>If you ask, you will find.</div></div><div class=\"future-choice\"> <h2 class=\"main-contacts-h2\">404 NOT FOUND.</h2> <figure> <div class=\"full-screen img404\"></div><figcaption>&#171;The Betting Post&#187;<br> Epsom James Pollard (1830)</figcaption></figure> <div class=\"text\"><p class=\"importance\"> Alas, you bet on the wrong horse...</p><p>Check the page address or you can always go to the Home page<a href=\"./../index.html\">HOME</a>.</p></div><div class=\"clear\"></div></div>",
+  "index": "",
+  "name": "",
+  "breed": "",
+  "relationship": "",
+  "development": "",
+  "participation": "",
+  "vacancies": "",
+  "contacts": "",
+  "confidentially": "",
+  "conditions": "",
+  "cookies": "",
+  "languages": "<article class=\"languages\"><div class=\"dictum\">          <div>Sol lucet omnibus.</div>          <div>The sun is shining for everyone.</div>        </div>                <div class=\"future-choice\">         <h2 class=\"main-contacts-h2\">Countries and languages</h2>          <figure>          <img class=\"full-screen\" src=\"./../assets/Epsom Races The Race Over_James.jpg\"          alt=\"Epsom Races: The Race Over, James Pollard (1835)'\" />         <figcaption>&#171;Epsom Races: The Race Over&#187;<br>James Pollard (1834-1835)</figcaption>        </figure>         <div class=\"text\">            <p>              Information will be available according to the selected country and the official language of that country.          </p>          </div>            <div class=\"accordeon-outline\">            <div class=\"accordeon\">              <h3 class=\"accordeon-title\">ASIA</h3>              <div class=\"accordeon-text\">                <h4 class=\"accordeon-output-title\">ASIA</h4>                <p>Under development</p></div><h3 class=\"accordeon-title\">AMERICA</h3>              <div class=\"accordeon-text\">                <h4  class=\"accordeon-output-title\">AMERICA</h4>                <p>Under development</p>              </div>                  <h3 class=\"accordeon-title\">AFRICA</h3>              <div class=\"accordeon-text\">                <h4  class=\"accordeon-output-title\">AFRICA</h4>                <p>Under development</p>              </div>                  <h3 class=\"accordeon-title accordeon-active\">EUROPE</h3>              <div class=\"accordeon-text\">                <h4  class=\"accordeon-output-title\">EUROPE</h4>                               <p>                  <strong>Belarus: </strong><a href=\"#\" data-lang=\"ru\">русский</a>, <a href=\"#\" data-lang=\"be\">беларуская</a>                  </p>                <p data-lang=\"pl\">                  <strong>Poland: </strong><a href=\"#\" data-lang=\"pl\">polski</a>                 </p>                <p>                  <strong>United Kingdom: </strong><a href=\"#\" data-lang=\"en\">english</a>                 </p>                <p>                  <strong>Russia: </strong><a href=\"#\" data-lang=\"ru\">русский</a>                </p>                              </div>                  <h3 class=\"accordeon-title accordeon-pacific-ocean\">PACIFIC REGION</h3>              <div class=\"accordeon-text\">                <h4  class=\"accordeon-output-title\">PACIFIC REGION</h4>                <p>Under development</p>              </div>                </div>            <div class=\"accordeon-output\"></div>          </div>        </div>        </article>"
+}
