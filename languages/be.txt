@@ -1,0 +1,32 @@
+{
+  "global" : {
+    "index": "галоўная",
+    "name": "назва",
+    "breed": "парода",
+    "relationship": "адносіны",
+    "development": "развіццё",
+    "participation": "удзельнічаць",
+    "vacancies": "вакансіі",
+    "contacts": "кантакты",
+    "rights": "Усе правы абаронены.",
+    "confidentially": "Палітыка прыватнасці",
+    "conditions": "Умовы ўжывання",
+    "cookies": "Палітыка ў дачыненні да апрацоўкі cookies",
+    "location": "Краіны і мовы",
+    "cookie-text": "Выкарыстоўваючы сайт kincsem.club, Вы згаджаецеся з  <a href=\"./html/confidentially.html\"  target=\"_blank\">Палітыкай прыватнасці</a>, <a href=\"./html/conditions.html\"  target=\"_blank\">Умовамі ўжывання</a> ды <a href=\"./html/cookie.html\"  target=\"_blank\">Палітыкай ў дачыненні да апрацоўкі cookies</a>, размешчанымі на гэтым сайце.",
+    "cookie-agreement": "ЗГОДЗЕН"   
+  },
+  "404":"",
+  "index": "",
+  "name": "",
+  "breed": "",
+  "relationship": "",
+  "development": "",
+  "participation": "",
+  "vacancies": "",
+  "contacts": "",
+  "confidentially": "",
+  "conditions": "",
+  "cookies": "",
+  "languages":"<article class=\"languages\"><div class=\"dictum\"><div>Sol lucet omnibus.</div>  <div>Сонца ззяе для ўсіх.</div></div><div class=\"future-choice\"> <h2 class=\"main-contacts-h2\">СТРАНЫ І МОВЫ</h2>  <figure>  <img class=\"full-screen\" src=\"./../assets/Epsom Races The Race Over_James.jpg\"  alt=\"Epsom Races: The Race Over, James Pollard (1835)'\" /> <figcaption>&#171;Epsom Races: The Race Over&#187;<br>James Pollard (1834-1835)</figcaption></figure> <div class=\"text\">    <p>Інфармацыя будзе даступна ў адпаведнасці з абранай краінай і дзяржаўнай мовай гэтай краіны.</p></div><div class=\"accordeon-outline\"><div class=\"accordeon\"><h3 class=\"accordeon-title\">АЗІЯ</h3><div class=\"accordeon-text\">        <h4 class=\"accordeon-output-title\">АЗІЯ</h4><p>На стадыі распрацоўкі</p></div><h3 class=\"accordeon-title\">АМЕРЫКА</h3><div class=\"accordeon-text\"><h4  class=\"accordeon-output-title\">АМЕРЫКА</h4>  <p>На стадыі распрацоўкі</p></div><h3 class=\"accordeon-title\">АФРЫКА</h3><div class=\"accordeon-text\"><h4  class=\"accordeon-output-title\">АФРЫКА</h4><p>На стадыі распрацоўкі</p></div><h3 class=\"accordeon-title accordeon-active\">ЕЎРОПА</h3>      <div class=\"accordeon-text\"><h4  class=\"accordeon-output-title\"> ЕЎРОПА</h4><p><strong>Беларусь: </strong><a href=\"#\" data-lang=\"ru\">русский</a>, <a href=\"#\" data-lang=\"be\">беларуская</a></p><p data-lang=\"pl\"><strong>Польшча: </strong><a href=\"#\" data-lang=\"pl\">polski</a></p><p><strong>Вялікабрытанія: </strong><a href=\"#\" data-lang=\"en\">english</a></p><p><strong>Расія: </strong><a href=\"#\" data-lang=\"ru\">русский</a></p></div><h3 class=\"accordeon-title accordeon-pacific-ocean\">ЦІХААКІЯНСКІ РЭГІЁН</h3><div class=\"accordeon-text\"><h4  class=\"accordeon-output-title\">ЦІХААКІЯНСКІ РЭГІЁН</h4><p>На стадыі распрацоўкі</p>      </div></div>    <div class=\"accordeon-output\"></div></div></div></article>"
+}

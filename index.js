@@ -188,6 +188,7 @@ function ajaxLanguage(currentLanguage){
 }
 
 function changeLanguageGlobal(responseText, abbr) {
+  localStorage.setItem("language",abbr);
   const renderObj = JSON.parse(responseText);
   console.log(renderObj);
   const global = renderObj.global;
@@ -222,8 +223,12 @@ function changeLanguageCurrentPage(responseText) {
   }
   initAccordeon();
 }
-
-
+document.addEventListener("DOMContentLoaded",function(){
+  //если выбран язык, то показать на нужном языке
+  const currentLanguage = localStorage.getItem('language');
+  if (!currentLanguage) return;
+  ajaxLanguage(currentLanguage);
+})  
 
 /* меню языков*/
 /* для выплывающего модального окна*/
