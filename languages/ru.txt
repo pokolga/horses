@@ -1,0 +1,15 @@
+{
+  "index": "главная",
+  "name": "название",
+  "breed": "порода",
+  "relationship": "отношения",
+  "development": "развитие",
+  "participation": "участие",
+  "vacancies": "вакансии",
+  "contacts": "контакты",
+  "rights": "Все права защищены.",
+  "confidentially": "Политика конфеденциальности",
+  "conditions": "Условия использования",
+  "cookies": "Политика в отношении обработки cookies",
+  "location": "Страны и языки"  
+}

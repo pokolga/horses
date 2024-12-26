@@ -156,15 +156,57 @@ function clickForAccordeonTitles(){
 
 function clickForAccordeonLink(ev){
   ev.preventDefault();
-  alert(`Переходим на ${this.textContent}`);
+//  alert(`Переходим на ${this.textContent}`);
+
+  switch (this.dataset.lang){
+    case "pl": ajaxLanguage("pl"); break; 
+    case "by": ajaxLanguage("by"); break; 
+    case "en": ajaxLanguage("en"); break; 
+    default: ajaxLanguage("ru")  
+  }
+
   //closeLanguageMenu();
+}
+
+function ajaxLanguage(currentLanguage){
+  const xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
+        changeLanguage(xhr.responseText, currentLanguage);
+      } else {
+        console.log("Oops, sorry");
+      }
+    }
+  }
+  console.log(`${currentLanguage}.txt`);
+  xhr.open("get", `./../languages/${currentLanguage}.txt`);
+  xhr.send(null);
+}
+
+function changeLanguage(responseText, abbr) {
+  const renderObj = JSON.parse(responseText);
+  console.log(renderObj);
+  for (const property in renderObj) {
+    
+    if (renderObj.hasOwnProperty(property)) {
+      
+    Array.from(document.querySelectorAll(`.${property}`)).forEach((elem) => {
+        if (elem.querySelector("img")) {
+          elem.title = renderObj[property];
+        } else {
+          elem.innerHTML = renderObj[property];
+        }
+      })
+    } 
+  }
 }
 
 /* меню языков*/
 /* для выплывающего модального окна*/
 /*document.querySelector(".header-location").addEventListener("click",openLanguageMenu);
 document.querySelector(".languages .cross").addEventListener("click",closeLanguageMenu);
-document.querySelector(".accordeon-text a").addEventListener("click",closeLanguageMenu);*/
+document.querySelector(".accordeon-text a").addEventListener("click",closeLanguageMenu);
 
 function openLanguageMenu(ev){
   const langBlock = document.querySelector(".languages");
@@ -177,4 +219,4 @@ function openLanguageMenu(ev){
 function closeLanguageMenu(){
   document.querySelector(".languages").style.top = "-1000px";
   document.querySelector(".languages").style.opacity = "0";
-}
+}*/

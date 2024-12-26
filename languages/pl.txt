@@ -1,0 +1,15 @@
+{
+  "index": "home",
+  "name": "nazwa",
+  "breed": "rasa",
+  "relationship": "relacje",
+  "development": "rozwój",
+  "participation": "uczestnictwo",
+  "vacancies": "wakaty",
+  "contacts": "informacje kontaktowe",
+  "rights": "Wszelkie prawa zastrzeżone.",
+  "confidentially": "Polityka prywatności",
+  "conditions": "Regulamin",
+  "cookies": "Polityka dotycząca cookies",
+  "location": "Kraje i języki"  
+}
