@@ -231,13 +231,15 @@ function changeLanguageCurrentPage(responseText) {
       const self = currentPage.text.accordeon;
       console.log(self)
       const titleList = document.querySelectorAll(".accordeon .accordeon-title");
-      const outputTitleList = document.querySelectorAll(".accordeon .accordeon-output-title");
+      const outputTitleList = document.querySelectorAll(".accordeon-output-title");
+    console.log(outputTitleList);
       const tmpStageList = document.querySelectorAll(".accordeon .tmp-stage");
 
       for (let i = 0; i < self.title.length; i++) {
         titleList[i].textContent = self.title[i];
         outputTitleList[i].textContent = self.title[i];
       }
+      document.querySelector(".accordeon-output .accordeon-output-title").textContent = document.querySelector(".accordeon-active").textContent;
       tmpStageList.forEach((lnk) => lnk.textContent = self["tmp-stage"]);
 
     } else {
@@ -246,21 +248,16 @@ function changeLanguageCurrentPage(responseText) {
   }
 } 
 
-
- /* console.log(document.querySelector(".main-contacts"));
-  if (currentPage) {
-    document.querySelector(".main-contacts").innerHTML = currentPage;
-  } else {
-    console.log("Wrong data for this language");
-  }
-  initAccordeon();*/
-
-
 document.addEventListener("DOMContentLoaded", selectLanguage);
-
 window.addEventListener('focus', selectLanguage);
 
 function selectLanguage(){
+  /*Переключение языков: в папке languages лежат файлы с контентом для страниц сайта. Название файла - двухбуквенная аббревиатура языка.txt
+  Активный язык записывается в локалСторидж. В меню отмечен активный язык. 
+  При загрузке страницы и при фокусе определяется активный язык и через ajax подгружается контент страницы.
+  ВАЖНО! на странице languages элементы выбора языка помечены tmp-stage для пунктов в разработке. Как только добавляем в регион язык, этот класс надо убрать.
+  Кроме того, на странице автоматически меняются линки для пдф.
+  */
   const currentLanguage = localStorage.getItem('language');
   if (!currentLanguage) return;
   document.querySelector(".active-language").textContent = currentLanguage; 
@@ -269,7 +266,7 @@ function selectLanguage(){
 }
 
 function changeLinkForPdf(currentLanguage){
-//названия пдф по схеме: ru-название.pdf
+//названия пдф по схеме: pdf/ru/название.pdf
   const array = Array.from(document.querySelectorAll("a")).filter((elem) => (/pdf$/).test(elem.href) );
   for (let i = 0; i < array.length; i++) {
         let elem = array[i];
