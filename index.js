@@ -48,15 +48,17 @@ if (document.querySelector(".cookie")) {
     document.querySelector(".cross").addEventListener("click",closeCookieBlockWithoutSave);
     document.querySelector(".cookie-button>button").addEventListener("touch",closeCookieBlock);
     document.querySelector(".cross").addEventListener("touch",closeCookieBlockWithoutSave);
-
-    function closeCookieBlock(){
-      document.querySelector(".cookie").style.display = "none";
-      localStorage.setItem('cookie', "true");//однократное открытие куки-сообщения, открыть после проверки
-    }
-    function closeCookieBlockWithoutSave(){
-      document.querySelector(".cookie").style.display = "none";
-    }
 }
+
+function closeCookieBlock(){
+  document.querySelector(".cookie").style.display = "none";
+  localStorage.setItem('cookie', "true");//однократное открытие куки-сообщения, открыть после проверки
+}
+
+function closeCookieBlockWithoutSave(){
+  document.querySelector(".cookie").style.display = "none";
+}
+
 /*открываем в модальном окне картинку*/
 if (document.querySelector(".full-screen")){
   document.querySelectorAll(".full-screen").forEach((item) => {item.addEventListener("click", openPhotoInModalWindow)});
