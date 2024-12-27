@@ -256,10 +256,13 @@ function changeLanguageCurrentPage(responseText) {
   initAccordeon();*/
 
 
-document.addEventListener("DOMContentLoaded",function(){
-  //если выбран язык, то показать на нужном языке
+document.addEventListener("DOMContentLoaded", selectLanguage);
+
+window.addEventListener('focus', selectLanguage);
+
+function selectLanguage(){
   const currentLanguage = localStorage.getItem('language');
   if (!currentLanguage) return;
   document.querySelector(".active-language").textContent = currentLanguage; 
   ajaxLanguage(currentLanguage);
-})
+}
