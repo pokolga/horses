@@ -264,5 +264,19 @@ function selectLanguage(){
   const currentLanguage = localStorage.getItem('language');
   if (!currentLanguage) return;
   document.querySelector(".active-language").textContent = currentLanguage; 
+  changeLinkForPdf(currentLanguage);
   ajaxLanguage(currentLanguage);
+}
+
+function changeLinkForPdf(currentLanguage){
+//названия пдф по схеме: ru-название.pdf
+  const array = Array.from(document.querySelectorAll("a")).filter((elem) => (/pdf$/).test(elem.href) );
+  for (let i = 0; i < array.length; i++) {
+        let elem = array[i];
+        elem.href = elem.href.replace(/pdf\/../,"pdf/" + currentLanguage);
+        console.log(elem.href);
+  }
+  if (document.querySelector("iframe")) {
+    document.querySelector("iframe").src = document.querySelector("iframe").src.replace(/pdf\/../,"pdf/" + currentLanguage);
+  }
 }
