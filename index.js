@@ -118,7 +118,7 @@ function openPhotoInModalWindow() {
   setTimeout(function () {
      
       document.querySelector(".fullPhoto").style.opacity = "1";
-  }, 0);//*/
+  }, 0);
 
   document.querySelector('.closePhoto').addEventListener("click", function (ev) {
       this.parentElement.remove();
@@ -216,42 +216,41 @@ function changeLanguageGlobal(responseText, abbr) {
 }
 
 function changeLanguageCurrentPage(responseText) {
+
+  if (!document.querySelector(".main-contacts")) return; //для некоторых страниц не надо рендерить
   const renderObj = JSON.parse(responseText);
   const page = location.pathname.match(/\/(\w+)\.html/)[1];
-  const currentPage = renderObj[page];
+  const currentPage = renderObj[page];//объект контента страницы
+  document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
+  document.querySelector(".title").textContent = currentPage.title;
+  if (page==="languages"){
+
+  } else {
+    for (elem in currentPage.text){
+      console.log(`.text>${elem}`);
+      document.querySelector(`.text>.${elem}`).innerHTML = currentPage.text[elem];
+    }
+  }
+
+
+
+
+
+ 
   console.log("currentPage");
   console.log(currentPage);
-  console.log(document.querySelector(".main-contacts"));
-  if (currentPage && document.querySelector(".main-contacts")) {
+ /* console.log(document.querySelector(".main-contacts"));
+  if (currentPage) {
     document.querySelector(".main-contacts").innerHTML = currentPage;
   } else {
     console.log("Wrong data for this language");
-   // ajaxLanguage("ru");
   }
-  initAccordeon();
+  initAccordeon();*/
 }
+
 document.addEventListener("DOMContentLoaded",function(){
   //если выбран язык, то показать на нужном языке
   const currentLanguage = localStorage.getItem('language');
   if (!currentLanguage) return;
   ajaxLanguage(currentLanguage);
-})  
-
-/* меню языков*/
-/* для выплывающего модального окна*/
-/*document.querySelector(".header-location").addEventListener("click",openLanguageMenu);
-document.querySelector(".languages .cross").addEventListener("click",closeLanguageMenu);
-document.querySelector(".accordeon-text a").addEventListener("click",closeLanguageMenu);
-
-function openLanguageMenu(ev){
-  const langBlock = document.querySelector(".languages");
-  let topPosition = document.querySelector(".header-location").getBoundingClientRect();
-  document.querySelector(".languages").style.top = "0px";
-  document.querySelector(".languages").style.right = "0px";
-  document.querySelector(".languages").style.opacity = "1";
-}
-
-function closeLanguageMenu(){
-  document.querySelector(".languages").style.top = "-1000px";
-  document.querySelector(".languages").style.opacity = "0";
-}*/
+})

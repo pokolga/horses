@@ -22,7 +22,7 @@
     "text": {
       "p1": "Niestety, postawiłeś na niewłaściwego konia...",
       "p2": "Prawdopodobnie błąd w adresie lub ta strona nigdy nie istniała. Ale zawsze możesz przejść do strony <a href=\"./../index.html\">HOME</a>."
-    },   
+    }},   
   "index": "",
   "name": {
     "dictum": "Mylić się jest rzeczą ludzką.",
@@ -34,7 +34,7 @@
       "p4": "Istnieje historia o tym, jak pierwszy właściciel Kincsem wystawił na sprzedaż dużą liczbę koni. Nabywca kupił je wszystkie, z wyjątkiem Kincsem i jeszcze jednego konia. Kincsem i drugi koń zostały odrzucone przez kupującego jako „zbyt przeciętne”. Inna historia opowiada o kradzieży Kincsem ze stajni. Wszyscy byli zszokowani odkryciem, że Kincsem została skradziona, ponieważ był to jedyny skradziony koń spośród wszystkich koni w stajni. Policja złapała złodziei i znalazła Kincsem. Kiedy złodzieje zostali zapytani, dlaczego ukradli tak niczym nie wyróżniającego się konia, odpowiedzieli: «Ten koń może nie być tak piękny jak inne, ale będzie najwspanialszym koniem ze wszystkich koni».",
       "p5": "Jako dwulatka Kincsem wzięła udział w 10 wyścigach w Niemczech i Austro-Węgrzech. W dzisiejszych czasach trudno sobie wyobrazić, by dwuletni koń tak często brał udział w wyścigach wysokiej rangi. W następnych latach obciążenie pozostało stosunkowo wysokie, z 17 wyścigami dla konit rzyletnich, 15 wyścigami dla koni czteroletnich i 12 wyścigami dla koni pięcioletnich. Należy wziąć pod uwagę, że warunki transport koni w tamtych czasach były znacznie gorsze niż obecnie. Należy również wziąć pod uwagę obciążenia, które musiała wytrzymywać Kincsem podczas długich i uciążliwych transportów. Czynniki te stanowią podstawę do oceny wyników, osiągniętych przez Kincsem w wyścigach jeszcze wyżej, co tylko dodatkowo podkreśla jej wyjątkowość.",
       "p6": "Kincsem zakończyła karierę z nieosiągalną dla innych koni liczbą zwycięstw bez żadnego przegranego wyścigu. Wynik: 54 zwycięstwa w 54 wyścigach. Rekord ten nie został pobity do dziś i jest wpisany do Księgi Rekordów Guinnessa."
-    },
+    }},
   "breed": {
     "dictum": "To co oczywiste nie wymaga dowodu.",
     "title": "RASA KONIA",
@@ -44,7 +44,7 @@
       "p3": "Konie pełnej krwi angielskiej to cenna rasa koni wierzchowych, wykazująca doskonałe właściwości zewnętrzne i harmonijną budowę ciała, niezwykłą sprawność fizyczną i wysoką wydajność, energiczność i wyjątkową zwinność. Należy zwrócić również uwagę na wczesną przydatność tej rasy do wyścigów, czyli możliwość udziału koni w wyścigach już od drugiego roku życia. Konie pełnej krwi angielskiej biorą udział nie tylko w wyścigach płaskich, ale także w wyścigach z przeszkodami – steeplechase. Rasa ta stała się szczytem działalności hodowlanej koni. W Wielkiej Brytanii nazywa się go koniem „wyhodowany do perfekcji” («thoroughbred»).",
       "p4": "Udział koni innych ras w wyścigach z końmi tej rasy nie jest dozwolony, ponieważ koń pełnej krwi angielskiej jest znacznie silniejszy i szybszy niż jakikolwiek inny koń. Galop z prędkością 1 km/min (60 km/h) jest uważany za normę dla koni pełnej krwi angielskiej. Kluczową zaletą tej rasy jest wysoka prędkość podczas wyścigów. Rekordy świata ustanowione przez konie tej rasy: 1000 m w 53 s, 2400 m w 2 min 22 s. W 2008 roku dwuletni koń Winning Brew w Stanach Zjednoczonych osiągnęła prędkość 70,76 km/h na 1/4 mili.",
       "p5": "Wszystkie te czynniki łącznie spowodowały zaporowo wysoki koszt przedstawicieli cennych linii hodowlanych tej rasy."
-    },
+    }},
   "relationship": {
     "dictum": "Najpierw się uczyć, potem nauczać.",
     "title": "RELACJA Z KONIEM",
@@ -53,7 +53,7 @@
       "p2": "Szacunek i zaufanie konia jest trudne do zdobycia i łatwe do stracenia. Staraj się zdobyć szacunek i zaufanie konia poprzez swoje działania, będąc blisko niego na ziemi, a nie poprzez słowa, siedząc na nim w siodle. Koń nie powinien się ciebie bać, powinien cię szanować i ci ufać, powinien widzieć w tobie przywódcę. Nie okazuj złości i okrucieństwa. Podstawą waszej relacji jest to, aby wasze wspólne działania były odpowiednie do miejsca i czasu. Szacunek i zaufanie konia, oparte na chęci współpracy, bez leżącego u podstaw strachu, jest jedną z jego najcenniejszych cech.",
       "p3": "Bądź pewny siebie i precyzyjny w swoich działaniach, uprzejmy i delikatny dla konia tak bardzo, jak to możliwe i wytrwały tak bardzo, jak to konieczne. Motywuj jego bez rozpieszczania, pozwalaj jemu, ale nie pobłażaj i prowadź jego. Spójrz w głębię jego oczu i dotknij jego serca całym swoim sercem. Pozwól jemu wyczuć twoje dobre intencje, i koń odpowie tym samym.",
       "p4": "Koń uczy człowieka, a człowiek uczy konia. Koń może nauczyć cię niezależności od zewnętrznych wpływów i osądów, samodzielnie regulować swoje zachowanie i brać za nie odpowiedzialność, i wtedy możesz być nauczycielem dla konia. Pracuj nad sobą, doskonal się, nie trać panowania nad sobą, a koń na pewno spełni twoje oczekiwania. Koń  czuje wszystko. Najpierw się ucz, potem nauczaj."
-    },
+    }},
   "development": {
     "dictum": "Wszyscy ludzie są świadomi swoich korzyści.",
     "title": "ROZWÓJ PROJEKTU",
@@ -65,8 +65,8 @@
       "p5": "Udział w projekcie KINCSEM.CLUB to gwarantowana możliwość uzyskiwać dochód z branży jeździeckiej, odgrywając kluczową rolę w przekształcaniu swojej dziedziny zawodowej na skalę międzynarodową, jednocześnie realizując swoje cele.",
       "p6": "Twoje pomysły i doświadczenie zawodowe będą ważnym wkładem w realizację projektu KINCSEM.CLUB. Czekamy na tych, którzy są gotowi poświęcić czas i połączyć siły, aby uczestnicząc w rozwoju projektu, zrealizować wszystkie swoje cele.",
       "p7": "<strong>W trakcie realizacji projektu KINCSEM.CLUB zostaną stworzone:</strong>",
-      "p8": "<div><ul><li>międzynarodowy klub współwłaścicieli koni pełnej krwi angielskiej;</li><li>agencja informacyjno - reklamowa;</li><li>stadnina koni pełnej krwi angielskiej;</li><li>specjalizowane hipodromy;</li><li>centra treningowe koni pełnej krwi angielskiej;</li><li>centra szkoleniowe dla specjalistów z branży jeździeckiej;</li><li>centra jazdy konnej;</li><li>przedsiębiorstwa produkujące i sprzedające towary dla branży jeździeckiej;</li><li>apteki i kliniki weterynaryjne;</li><li>domy aukcyjne i aukcje internetowe;</li><li>giełdy zakładów, totalizatory i biura bukmacherskie;</li><li>organizacje działające w sferze:    <ul class="child-ul"> <li>finansów;</li> <li>konsultingu;</li> <li>IT;</li> <li>handlu;</li> <li>przemysłu;</li> <li>rolnictwa;</li> <li>gospodarki leśnej;</li> <li>transportu i logistyki;</li> <li>turystyki;</li> <li>gastronomii;</li> <li>hotelarstwa;</li> <li>edukacji;</li> <li>ochrony zdrowia;</li> <li>pomocy społecznej;</li> <li>sportu i rozwoju fizycznego;</li> <li>kultury;</li> <li>sztuki.</li></ul></li></ul></div>"
-    },
+      "p8": "<div><ul><li>międzynarodowy klub współwłaścicieli koni pełnej krwi angielskiej;</li><li>agencja informacyjno - reklamowa;</li><li>stadnina koni pełnej krwi angielskiej;</li><li>specjalizowane hipodromy;</li><li>centra treningowe koni pełnej krwi angielskiej;</li><li>centra szkoleniowe dla specjalistów z branży jeździeckiej;</li><li>centra jazdy konnej;</li><li>przedsiębiorstwa produkujące i sprzedające towary dla branży jeździeckiej;</li><li>apteki i kliniki weterynaryjne;</li><li>domy aukcyjne i aukcje internetowe;</li><li>giełdy zakładów, totalizatory i biura bukmacherskie;</li><li>organizacje działające w sferze:    <ul class=\"child-ul\"> <li>finansów;</li> <li>konsultingu;</li> <li>IT;</li> <li>handlu;</li> <li>przemysłu;</li> <li>rolnictwa;</li> <li>gospodarki leśnej;</li> <li>transportu i logistyki;</li> <li>turystyki;</li> <li>gastronomii;</li> <li>hotelarstwa;</li> <li>edukacji;</li> <li>ochrony zdrowia;</li> <li>pomocy społecznej;</li> <li>sportu i rozwoju fizycznego;</li> <li>kultury;</li> <li>sztuki.</li></ul></li></ul></div>"
+    }},
   "participation": {
     "dictum": "Mało się ceni to, co jest łatwo dostępne.",
     "title": "UDZIAŁ W PROJEKCIE",
@@ -74,7 +74,7 @@
       "p1": "Projekt KINCSEM.CLUB nie jest masowo dostępny. Dla każdego kraju ustalono kwoty dla liczby uczestników projektu i terminy udzielenia odpowiedzi na zgłoszenia do udziału w projekcie.",
       "p2": "Udział w projekcie KINCSEM.CLUB jest bezpłatny i nie wiąże się z żadnymi kosztami.",
       "p3": "Należy pamiętać o możliwości rezygnacji z udziału w projekcie KINCSEM.CLUB na każdym etapie jego realizacji."
-    },
+    }},
   "vacancies": {
     "dictum": "Zaczyna się nowe życie.",
     "title": "WAKATY PROJEKTU",
@@ -84,15 +84,15 @@
       "p3": "Wzrost statusu społecznego, dostęp do elitarnej kultury i edukacji – uczestnicy projektu KINCSEM.CLUB mają możliwość to wszystko zrealizować.",
       "p4": "Wakaty są dostępne tylko dla uczestników projektu KINCSEM.CLUB. Przewidziano możliwość udostępnienia wolnych stanowisk pracy członkom rodzin uczestników projektu KINCSEM.CLUB.",
       "p5": "<strong>Dostępne wakaty:</strong>", 
-      "p6": "<ol><li>Kierownicy regionalnych przedstawicielstw klubu.</li><li>Kierownicy oddziałów i pracownicy biur regionalnych klubu w następujących obszarach:  <ul><li>środki masowego przekazu (mass media);</li><li>reklama;</li><li>działalność niekomercyjna;</li><li>hodowla koni;</li><li>specjalizowane hipodromy;</li><li>centra treningowe koni pełnej krwi angielskiej;</li>;<li>centra szkoleniowe dla specjalistów z branży jeździeckiej;</li><li>centra jazdy konnej;</li><li>przedsiębiorstwa produkujące i sprzedające towary dla branży jeździeckiej;</li><li>apteki i kliniki weterynaryjne;</li><li>aukcje;</li><li>giełdy zakładów, totalizatory i biura bukmacherskie;</li><li>organizacje działające w sferze:<ul class="child-ul"> <li>finansów;</li> <li>konsultingu;</li> <li>IT;</li> <li>handlu;</li> <li>przemysłu;</li> <li>rolnictwa;</li> <li>gospodarki leśnej;</li> <li>transportu i logistyki;</li> <li>turystyki;</li> <li>gastronomii;</li> <li>hotelarstwa;</li> <li>edukacji;</li> <li>ochrony zdrowia;</li> <li>pomocy społecznej;</li> <li>sportu i rozwoju fizycznego;</li> <li>kultury;</li> <li>sztuki.</li></ul></li>  </ul></li>  </ol>"
-    },
+      "p6": "<ol><li>Kierownicy regionalnych przedstawicielstw klubu.</li><li>Kierownicy oddziałów i pracownicy biur regionalnych klubu w następujących obszarach:  <ul><li>środki masowego przekazu (mass media);</li><li>reklama;</li><li>działalność niekomercyjna;</li><li>hodowla koni;</li><li>specjalizowane hipodromy;</li><li>centra treningowe koni pełnej krwi angielskiej;</li><li>centra szkoleniowe dla specjalistów z branży jeździeckiej;</li><li>centra jazdy konnej;</li><li>przedsiębiorstwa produkujące i sprzedające towary dla branży jeździeckiej;</li><li>apteki i kliniki weterynaryjne;</li><li>aukcje;</li><li>giełdy zakładów, totalizatory i biura bukmacherskie;</li><li>organizacje działające w sferze:<ul class=\"child-ul\"> <li>finansów;</li> <li>konsultingu;</li> <li>IT;</li> <li>handlu;</li> <li>przemysłu;</li> <li>rolnictwa;</li> <li>gospodarki leśnej;</li> <li>transportu i logistyki;</li> <li>turystyki;</li> <li>gastronomii;</li> <li>hotelarstwa;</li> <li>edukacji;</li> <li>ochrony zdrowia;</li> <li>pomocy społecznej;</li> <li>sportu i rozwoju fizycznego;</li> <li>kultury;</li> <li>sztuki.</li></ul></li>  </ul></li>  </ol>"
+    }},
   "contacts": {
     "dictum": "Szczęście każdego jest w jego własnych rękach.",
     "title": "INFORMACJE KONTAKTOWE",
     "text": {
-      "p1": "Kandydaci do udziału w projekcie KINCSEM.CLUB powinni przesyłać prośby o dołączenie do grupy <a href="https://t.me/+tGbaVE1QQ3k2ZTg0" target="_blank" rel="noopener noreferrer">kincsem.club</a> w komunikatorze Telegram, po wcześniejszym zapoznaniu się z informacjami zamieszczonymi pod adresem  <a href="./../html/participation.html">UCZESTNICTWO</a>.",
-      "p2": "Wszelkie sugestie i pytania należy przesyłać na następujący adres e-mail: <a href="mailto:kincsem.club@gmail.com" target="_blank">kincsem.club@gmail.com</a>."
-    },
+      "p1": "Kandydaci do udziału w projekcie KINCSEM.CLUB powinni przesyłać prośby o dołączenie do grupy <a href=\"https://t.me/+tGbaVE1QQ3k2ZTg0\" target=\"_blank\" rel=\"noopener noreferrer\">kincsem.club</a> w komunikatorze Telegram, po wcześniejszym zapoznaniu się z informacjami zamieszczonymi pod adresem  <a href=\"./../html/participation.html\">UCZESTNICTWO</a>.",
+      "p2": "Wszelkie sugestie i pytania należy przesyłać na następujący adres e-mail: <a href=\"mailto:kincsem.club@gmail.com\" target=\"_blank\">kincsem.club@gmail.com</a>."
+    }},
   "confidentially": "",
   "conditions": "",
   "cookies": "",
@@ -107,5 +107,5 @@
       "AFRYKA": "Strona internetowa jest w fazie rozwoju",
       "EUROPA": "",
       "REGION PACYFIKU": "Strona internetowa jest w fazie rozwoju"
-  }
-} 
+  }}}
+}
