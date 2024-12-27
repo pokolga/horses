@@ -102,10 +102,7 @@
     "text": {
       "p1": "Informacje będą dostępne w zależności od wybranego kraju i języka urzędowego tego kraju.",
       "accordeon": {
-      "AZJA": "Strona internetowa jest w fazie rozwoju",
-      "AMERYKA": "Strona internetowa jest w fazie rozwoju",
-      "AFRYKA": "Strona internetowa jest w fazie rozwoju",
-      "EUROPA": "",
-      "REGION PACYFIKU": "Strona internetowa jest w fazie rozwoju"
+        "title": ["AZJA","AMERYKA","AFRYKA","EUROPA","REGION PACYFIKU"],
+        "tmp-stage": "Strona internetowa jest w fazie rozwoju"
   }}}
 }

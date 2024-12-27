@@ -195,7 +195,8 @@ function ajaxLanguage(currentLanguage){
 }
 
 function changeLanguageGlobal(responseText, abbr) {
-  localStorage.setItem("language",abbr);
+  localStorage.setItem("language", abbr);
+  document.querySelector(".active-language").textContent = abbr; //активный язык вверху
   const renderObj = JSON.parse(responseText);
   
   const global = renderObj.global;
@@ -216,29 +217,36 @@ function changeLanguageGlobal(responseText, abbr) {
 }
 
 function changeLanguageCurrentPage(responseText) {
-
+/***********   абзацы с "на стадии разработки" помечаем классом tmp-stage! */
   if (!document.querySelector(".main-contacts")) return; //для некоторых страниц не надо рендерить
+  
   const renderObj = JSON.parse(responseText);
   const page = location.pathname.match(/\/(\w+)\.html/)[1];
   const currentPage = renderObj[page];//объект контента страницы
-  document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
-  document.querySelector(".title").textContent = currentPage.title;
-  if (page==="languages"){
+  if (currentPage.dictum) document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
+  if (currentPage.title) document.querySelector(".title").textContent = currentPage.title;
+  
+  for (elem in currentPage.text){
+    if (elem === "accordeon") {
+      const self = currentPage.text.accordeon;
+      console.log(self)
+      const titleList = document.querySelectorAll(".accordeon .accordeon-title");
+      const outputTitleList = document.querySelectorAll(".accordeon .accordeon-output-title");
+      const tmpStageList = document.querySelectorAll(".accordeon .tmp-stage");
 
-  } else {
-    for (elem in currentPage.text){
-      console.log(`.text>${elem}`);
+      for (let i = 0; i < self.title.length; i++) {
+        titleList[i].textContent = self.title[i];
+        outputTitleList[i].textContent = self.title[i];
+      }
+      tmpStageList.forEach((lnk) => lnk.textContent = self["tmp-stage"]);
+
+    } else {
       document.querySelector(`.text>.${elem}`).innerHTML = currentPage.text[elem];
     }
   }
+} 
 
 
-
-
-
- 
-  console.log("currentPage");
-  console.log(currentPage);
  /* console.log(document.querySelector(".main-contacts"));
   if (currentPage) {
     document.querySelector(".main-contacts").innerHTML = currentPage;
@@ -246,11 +254,12 @@ function changeLanguageCurrentPage(responseText) {
     console.log("Wrong data for this language");
   }
   initAccordeon();*/
-}
+
 
 document.addEventListener("DOMContentLoaded",function(){
   //если выбран язык, то показать на нужном языке
   const currentLanguage = localStorage.getItem('language');
   if (!currentLanguage) return;
+  document.querySelector(".active-language").textContent = currentLanguage; 
   ajaxLanguage(currentLanguage);
 })
