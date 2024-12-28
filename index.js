@@ -226,7 +226,7 @@ function changeLanguageCurrentPage(responseText,currentLanguage) {
   if (currentPage.dictum) document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
   if (currentPage.title) document.querySelector(".title").textContent = currentPage.title;
   
-  for (elem in currentPage.text){
+  for (let elem in currentPage.text){
     if (elem === "accordeon") {
       const self = currentPage.text.accordeon;
       console.log(self)
