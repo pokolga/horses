@@ -177,7 +177,7 @@ function ajaxLanguage(currentLanguage){
     if (xhr.readyState === 4) {
       if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
         changeLanguageGlobal(xhr.responseText, currentLanguage);
-        changeLanguageCurrentPage(xhr.responseText);
+        changeLanguageCurrentPage(xhr.responseText, currentLanguage);
       } else {
         console.log("Oops, sorry");
         ajaxLanguage("ru");
@@ -216,7 +216,7 @@ function changeLanguageGlobal(responseText, abbr) {
   }
 }
 
-function changeLanguageCurrentPage(responseText) {
+function changeLanguageCurrentPage(responseText,currentLanguage) {
 /***********   абзацы с "на стадии разработки" помечаем классом tmp-stage! */
   if (!document.querySelector(".main-contacts")) return; //для некоторых страниц не надо рендерить
   
@@ -246,6 +246,8 @@ function changeLanguageCurrentPage(responseText) {
       document.querySelector(`.text>.${elem}`).innerHTML = currentPage.text[elem];
     }
   }
+
+  changeLinkForPdf(currentLanguage);
 } 
 
 document.addEventListener("DOMContentLoaded", selectLanguage);
