@@ -376,6 +376,12 @@ ul.float-ul {
   border-bottom-color: transparent;
 }
 
+.accordeon-text p {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
 .accordeon-active {
   background-color: white;
   color: var(--color-green);
