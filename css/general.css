@@ -48,6 +48,11 @@ ul{
   list-style-type: none;
 }
 
+figure,
+.accordeon-title {
+  cursor: pointer;
+}
+
 .header {
   height: 80px;
   padding: 10px;

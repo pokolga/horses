@@ -1,0 +1,6 @@
+Options -Indexes
+
+ErrorDocument 404 https://kincsem.club/html/404.html
+
+#RewriteEngine On
+#    RewriteRule ^https://kincsem.club/([^.]*)$ https://kincsem.club/html/$1.html [L,QSA]
