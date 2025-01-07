@@ -74,7 +74,17 @@
   <div style="border: 1px solid rebeccapurple; padding: 10px; width: 40%; min-width: 500px; ">
     <form id="dataPage">
       <h2>Данные страницы: (name of page)</h2>
-      <input type="text" name="page">
+      <select name="page">
+        <option value="404">404</option>
+        <option value="breed">breed</option>
+        <option value="contacts">contacts</option>
+        <option value="development">development</option>
+        <option value="languages">languages</option>
+        <option value="name">name</option>
+        <option value="participation">participation</option>
+        <option value="relationship">relationship</option>
+        <option value="vacancies">vacancies</option>
+      </select>
       <p>
         <label for="dictum">dictum:</label>
         <input type="text" id="dictum" name="dictum">
@@ -132,7 +142,9 @@
   formData.forEach((value, key) => {
     obj[key] = value;
   });
+  console.log(obj);
   let result  = `"${obj.page}": \n{`;
+    console.log(result);
   result += `"dictum": "${obj.dictum}",\n`;
   result += `"title": "${obj.title}",\n`;
   result += `"text": {`;
