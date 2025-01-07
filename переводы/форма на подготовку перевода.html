@@ -4,64 +4,150 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Форма ввода данных</title>
+  <style>
+  input {width: 80%;}
+  </style>
 </head>
 <body>
-  <form id="dataForm">
-    <h2>Введите данные</h2>
-    <p>
-      <label for="index">Главная:</label>
-      <input type="text" id="index" name="index">
-    </p><p>
-      <label for="name">Название:</label>
-      <input type="text" id="name" name="name">
-    </p><p>
-      <label for="breed">Порода:</label>
-      <input type="text" id="breed" name="breed">
-    </p><p>
-      <label for="relationship">Отношения:</label>
-      <input type="text" id="relationship" name="relationship">
-    </p><p>
-      <label for="development">Развитие:</label>
-      <input type="text" id="development" name="development">
-    </p><p>
-      <label for="participation">Участие:</label>
-      <input type="text" id="participation" name="participation">
-    </p><p>
-      <label for="vacancies">Вакансии:</label>
-      <input type="text" id="vacancies" name="vacancies">
-  </p><p>
-      <label for="contacts">Контакты:</label>
-      <input type="text" id="contacts" name="contacts">
-    </p><p>
-      <label for="rights">Все права защищены:</label>
-      <input type="text" id="rights" name="rights">
-    </p><p>
-      <label for="confidentially">Политика конфиденциальности:</label>
-      <input type="text" id="confidentially" name="confidentially">
-    </p><p>
-      <label for="conditions">Условия использования:</label>
-      <input type="text" id="conditions" name="conditions">
-    </p><p>
-      <label for="cookies">Политика в отношении обработки cookies:</label>
-      <input type="text" id="cookies" name="cookies">
-    </p><p>
-      <label for="location">Страны и языки:</label>
-      <input type="text" id="location" name="location">
-    </p><p>
-      <label for="cookie-text">Текст cookies:</label>
-      <input type="text" id="cookie-text" name="cookie-text">
-    </p><p>
-      <label for="cookie-agreement">Согласен:</label>
-      <input type="text" id="cookie-agreement" name="cookie-agreement">
-    </p><p>
-      <button type="button" onclick="getObject(); return false;">Получить объект</button>
-  </form>
+  <div style="display: flex; justify-content: space-around;flex-wrap: wrap;">
+    <div style="width: 40%; min-width: 500px;  border: 1px solid rebeccapurple; padding: 10px;">  
+      <form id="dataForm">
+        <h2>Общие данные</h2>
+        <fieldset>
+          <legend>Меню: </legend>
+          <p>
+            <label for="index">index:</label>
+            <input type="text" id="index" name="index">
+          </p><p>
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name">
+          </p><p>
+            <label for="breed">breed:</label>
+            <input type="text" id="breed" name="breed">
+          </p><p>
+            <label for="relationship">relationship:</label>
+            <input type="text" id="relationship" name="relationship">
+          </p><p>
+            <label for="development">development:</label>
+            <input type="text" id="development" name="development">
+          </p><p>
+            <label for="participation">participation:</label>
+            <input type="text" id="participation" name="participation">
+          </p><p>
+            <label for="vacancies">vacancies:</label>
+            <input type="text" id="vacancies" name="vacancies">
+          </p><p>
+            <label for="contacts">contacts:</label>
+            <input type="text" id="contacts" name="contacts">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Футер: </legend>
+            <p>
+              <label for="rights">rights:</label>
+              <input type="text" id="rights" name="rights">
+            </p><p>
+              <label for="confidentially">Politic of confidentially:</label>
+              <input type="text" id="confidentially" name="confidentially">
+            </p><p>
+              <label for="conditions">Using conditions:</label>
+              <input type="text" id="conditions" name="conditions">
+            </p><p>
+              <label for="cookies">Politic cookies:</label>
+              <input type="text" id="cookies" name="cookies">
+            </p><p>
+              <label for="location">States & languages:</label>
+              <input type="text" id="location" name="location">
+            </p>
+        </fieldset> 
+        <p>
+          <label for="cookie-text">About cookies:</label>
+          <input type="text" id="cookie-text" name="cookie-text">
+        </p><p>
+          <label for="cookie-agreement">Agree:</label>
+          <input type="text" id="cookie-agreement" name="cookie-agreement">
+        </p><p>
+          <button type="button" onclick="getObjectMain(); return false;">Получить объект</button>
+      </form>
+    <pre id="result"></pre>
+  </div>
+  <div style="border: 1px solid rebeccapurple; padding: 10px; width: 40%; min-width: 500px; ">
+    <form id="dataPage">
+      <h2>Данные страницы: (name of page)</h2>
+      <input type="text" name="page">
+      <p>
+        <label for="dictum">dictum:</label>
+        <input type="text" id="dictum" name="dictum">
+      </p><p>
+        <label for="title">title:</label>
+        <input type="text" id="title" name="title">
+      </p>
+      <fieldset>
+        <legend>text: </legend>
+        <p>
+          <label for="p1">p1:</label>
+          <input type="text" id="p1" name="1">
+        </p><p>
+          <label for="p2">p2:</label>
+          <input type="text" id="p2" name="2">
+        </p><p>
+          <label for="p3">p3:</label>
+          <input type="text" id="p3" name="3">
+        </p><p>
+          <label for="p4">p4:</label>
+          <input type="text" id="p4" name="4">
+        </p><p>
+          <label for="p5">p5:</label>
+          <input type="text" id="p5" name="5">
+        </p><p>
+          <label for="p6">p6:</label>
+          <input type="text" id="p6" name="6">
+        </p><p>
+          <label for="p7">p7:</label>
+          <input type="text" id="p7" name="7">
+        </p><p>
+          <label for="p8">p8:</label>
+          <input type="text" id="p8" name="8">
+        </p><p>
+          <label for="p9">p9:</label>
+          <input type="text" id="p9" name="9">
+        </p><p>
+          <label for="p10">p10:</label>
+          <input type="text" id="p10" name="10">
+        </p>
+      </fieldset>
+        <button type="button" onclick="getObjectPage(); return false;">Получить объект</button>
+    </form>
+    <pre id="page"></pre>
+  </div>
+</div>
 
-<pre id="result"></pre>
 
 <script>
-function getObject() {
-  alert(1);
+  
+  function getObjectPage() {
+  const form = document.getElementById('dataPage');
+  const formData = new FormData(form); 
+  const obj = {};
+  formData.forEach((value, key) => {
+    obj[key] = value;
+  });
+  let result  = `"${obj.page}": \n{`;
+  result += `"dictum": "${obj.dictum}",\n`;
+  result += `"title": "${obj.title}",\n`;
+  result += `"text": {`;
+  for (let i = 1; i <= 10; i++) {
+    if (obj[i].trim().length === 0) break;
+    obj[i] = obj[i].replace(/'/g,`\'`);
+    obj[i] = obj[i].replace(/"/g,`\"`);
+    obj[i] = obj[i].replace(/\r?\n/g,' ');
+    result += `"p${i}": "${obj[i]}",\n`;
+  } 
+  result = result.slice(0,-1);
+  result += `}},`;
+  document.getElementById('page').textContent = result;
+}
+function getObjectMain() {
   const form = document.getElementById('dataForm');
   const formData = new FormData(form); 
   console.log(formData);
@@ -69,9 +155,38 @@ function getObject() {
   formData.forEach((value, key) => {
     obj[key] = value;
   });
-  document.getElementById('result').textContent = JSON.stringify(obj, null, 2);
-   
+  document.getElementById('result').textContent = `{"global" :`+JSON.stringify(obj, null, 2);
 }
+
+
+/*
+хорошо, а если мы пытаемся перейти по гиперссылке на одну страницу, а ее не существует, тогда переходим на другую
+
+
+function checkAndRedirect(primaryUrl, fallbackUrl) {
+fetch(primaryUrl, { method: 'HEAD' })
+.then(response => {
+if (response.ok) {
+window.location.href = primaryUrl;
+} else {
+throw new Error('Primary page not found');
+}
+})
+.catch(error => {
+console.error('Error:', error);
+window.location.href = fallbackUrl;
+});
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+const primaryUrl = 'https://example.com/primary-page.html';
+const fallbackUrl = 'https://example.com/fallback-page.html';
+checkAndRedirect(primaryUrl, fallbackUrl);
+});
+
+
+Этот код сначала пытается выполнить запрос HEAD к основной странице. Если страница существует, происходит перенаправление на нее. Если страница не найдена, происходит перенаправление на резервную страницу.
+*/
 </script>
 </body>
 </html>

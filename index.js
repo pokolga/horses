@@ -85,7 +85,7 @@ function openPhotoInModalWindow() {
   } else {
     div.style.backgroundImage = getComputedStyle(this).backgroundImage;
   } 
-  //подпись
+  //подпись под картинками
   let modalName = null;
   if(this.parentNode.nodeName.toUpperCase() === "FIGURE"){
       if (this.parentNode.querySelector("figcaption")){
@@ -165,8 +165,11 @@ function clickForAccordeonLink(ev){
   Если атрибут не указан, то переходим на русский*/
   ev.preventDefault();
 
-  if (!this.dataset.lang || this.dataset.lang === '') ajaxLanguage("ru");
-  ajaxLanguage(this.dataset.lang);
+  if (!this.dataset.lang || this.dataset.lang === '') {
+    ajaxLanguage("rus");
+  } else {
+    ajaxLanguage(this.dataset.lang);
+  }
  
   //closeLanguageMenu();
 }
@@ -180,11 +183,11 @@ function ajaxLanguage(currentLanguage){
         changeLanguageCurrentPage(xhr.responseText, currentLanguage);
       } else {
         console.log("Oops, sorry");
-        ajaxLanguage("ru");
+        ajaxLanguage("rus");
       }
     }
   }
-  console.log(`${currentLanguage}.txt`);
+ 
   if (/index/.test(location.pathname)) {
     xhr.open("get", `./languages/${currentLanguage}.txt`);
   } else {
@@ -212,7 +215,7 @@ function changeLanguageGlobal(responseText, abbr) {
     }
   } else {
     console.log("Wrong data for this language");
-    ajaxLanguage("ru");
+    ajaxLanguage("rus");
   }
 }
 
@@ -229,10 +232,10 @@ function changeLanguageCurrentPage(responseText,currentLanguage) {
   for (let elem in currentPage.text){
     if (elem === "accordeon") {
       const self = currentPage.text.accordeon;
-      console.log(self)
+      
       const titleList = document.querySelectorAll(".accordeon .accordeon-title");
       const outputTitleList = document.querySelectorAll(".accordeon-output-title");
-    console.log(outputTitleList);
+    
       const tmpStageList = document.querySelectorAll(".accordeon .tmp-stage");
 
       for (let i = 0; i < self.title.length; i++) {
@@ -268,14 +271,14 @@ function selectLanguage(){
 }
 
 function changeLinkForPdf(currentLanguage){
-//названия пдф по схеме: pdf/ru/название.pdf
+//названия пдф по схеме: pdf/rus/название.pdf
   const array = Array.from(document.querySelectorAll("a")).filter((elem) => (/pdf$/).test(elem.href) );
   for (let i = 0; i < array.length; i++) {
         let elem = array[i];
-        elem.href = elem.href.replace(/pdf\/../,"pdf/" + currentLanguage);
+        elem.href = elem.href.replace(/pdf\/.../,"pdf/" + currentLanguage + "/");
         console.log(elem.href);
   }
   if (document.querySelector("iframe")) {
-    document.querySelector("iframe").src = document.querySelector("iframe").src.replace(/pdf\/../,"pdf/" + currentLanguage);
+    document.querySelector("iframe").src = document.querySelector("iframe").src.replace(/pdf\/.../,"pdf/" + currentLanguage + "/");
   }
 }
