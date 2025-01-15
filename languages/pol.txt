@@ -12,7 +12,7 @@
     "confidentially": "Polityka prywatności",
     "conditions": "Regulamin",
     "cookies": "Polityka dotycząca cookies",
-    "location": "Kraje i języki",
+    "location": "REGIONY I JĘZYKI",
     "cookie-text": "Korzystając z serwisu internetowego kincsem.club, użytkownik akceptuje  <a href=\"./html/confidentially.html\"  target=\"_blank\">Politykę prywatności</a>, <a href=\"./html/conditions.html\"  target=\"_blank\">Regulamin</a> i <a href=\"./html/cookie.html\"  target=\"_blank\">Politykę dotycząca cookies</a>, zamieszczone wniniejszym Serwisie.",
     "cookie-agreement": "AKCEPTUJĘ" 
   },
@@ -100,9 +100,9 @@
   "cookies": "",
   "languages": {
     "dictum": "Słońce świeci dla wszystkich.",
-    "title": "KRAJE I JĘZYKI",
+    "title": "REGIONY I JĘZYKI",
     "text": {
-      "p1": "Informacje będą dostępne w zależności od wybranego kraju i języka urzędowego tego kraju.",
+      "p1": "Informacje będą dostępne zgodnie z wybranym regionem i językami  tego regionu.",
       "accordeon": {
         "title": ["AZJA","AMERYKA","AFRYKA","EUROPA","REGION PACYFIKU"],
         "tmp-stage": "Strona internetowa jest w fazie rozwoju"

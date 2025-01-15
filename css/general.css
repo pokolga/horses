@@ -93,7 +93,7 @@ figure,
  
 .header-location{
   width: 50px;
-  margin-right: 10px;
+  margin-right: 11px;
   position: relative;
   display: flex;
 
@@ -104,13 +104,13 @@ figure,
 
 .active-language{
   color: var(--color-yellow);
-  margin-right: 3px;
+ /*margin-right: 3px;*/
 }
 .header-location::before{
   content: url('./../assets/location_small.png');
   position: absolute;
   top: 20px;
-  left: 15px;
+  left: 25px;
 }
 
 .header-location:hover {
@@ -325,7 +325,7 @@ ul.float-ul {
 
 /*аккордеон*/
 .languages {
-  padding: 10px;
+  /*padding: 10px;*/
  
   background-color: var(--color-white);
 }
@@ -413,9 +413,21 @@ ul.float-ul {
   gap: 5px;
 }
 
+.accordeon-output ul{
+  padding-left: 0;
+}
+
+.accordeon-output .accordeon-a{
+  font-weight: normal;
+}
+
+.accordeon-output .accordeon-a-active{
+  font-weight: 700;
+}
+
 .accordeon-output-title {
   font-size: 20px;
-  color: var(--color-blue);
+  color: var(--color-green);
   font-weight: 700;
   margin-bottom: 20px;
 }

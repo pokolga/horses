@@ -139,16 +139,20 @@ function openPhotoInModalWindow() {
 }
 
 /*аккордеон*/
-function initAccordeon(){
+(function initAccordeon(){
   if (document.querySelector(".accordeon")){
     document.querySelectorAll(".accordeon-title").forEach((item) => {item.addEventListener("click", clickForAccordeonTitles)})
    /*начальное заполнение*/
     document.querySelector(".accordeon-output").innerHTML = document.querySelector(".accordeon-active").nextElementSibling.innerHTML;
     document.querySelectorAll(".accordeon-output a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
     document.querySelectorAll(".accordeon-text a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
+    if (localStorage.getItem("language")) {
+      document.querySelector(`.accordeon-output [data-lang='${localStorage.getItem("language")}']`).classList.add("accordeon-a-active");
+    } else {
+      document.querySelector(".accordeon-output [data-lang='rus']").classList.add("accordeon-a-active");
+    }
   }
-}
-initAccordeon();
+})();
 
 
 function clickForAccordeonTitles(){
@@ -164,6 +168,10 @@ function clickForAccordeonLink(ev){
   в папке  languages должен быть файл %аббревиатура%.txt по шаблону
   Если атрибут не указан, то переходим на русский*/
   ev.preventDefault();
+  console.log(this)
+  document.querySelectorAll(".accordeon-a").forEach((elem) => elem.classList.remove("accordeon-a-active"));
+
+  this.classList.add("accordeon-a-active");
 
   if (!this.dataset.lang || this.dataset.lang === '') {
     ajaxLanguage("rus");
@@ -276,7 +284,7 @@ function changeLinkForPdf(currentLanguage){
   for (let i = 0; i < array.length; i++) {
         let elem = array[i];
         elem.href = elem.href.replace(/pdf\/.../,"pdf/" + currentLanguage + "/");
-        console.log(elem.href);
+        
   }
   if (document.querySelector("iframe")) {
     document.querySelector("iframe").src = document.querySelector("iframe").src.replace(/pdf\/.../,"pdf/" + currentLanguage + "/");
