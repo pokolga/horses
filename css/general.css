@@ -73,7 +73,7 @@ figure,
   display: flex;
   column-gap: 3%;
 
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.9px;
   list-style: none;
 } 
@@ -90,14 +90,12 @@ figure,
    color:var(--color-light-blue);
  }
 
- 
+
 .header-location{
   width: 50px;
-  margin-right: 11px;
+  margin-right: 15px;
   position: relative;
   display: flex;
-
-  text-align: right;
 
   cursor: pointer;
 }
@@ -679,6 +677,13 @@ ul.float-ul {
 
   .accordeon-hat-title:first-of-type {
     border-right-color: transparent;
+  }
+
+  .accordeon-text ul>li{
+   margin-bottom: 20px;
+  }
+  .accordeon-text .accordeon-a-active{
+    text-decoration: underline;
   }
 }
 
