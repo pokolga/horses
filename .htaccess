@@ -2,5 +2,15 @@ Options -Indexes
 
 ErrorDocument 404 https://kincsem.club/html/404.html
 
+Header set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self';"
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
 #RewriteEngine On
 #    RewriteRule ^https://kincsem.club/([^.]*)$ https://kincsem.club/html/$1.html [L,QSA]
