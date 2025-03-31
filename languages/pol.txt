@@ -47,7 +47,7 @@
     }},
   "relationship": {
     "dictum": "Najpierw się uczyć, potem nauczać.",
-    "title": "RELACJA Z KONIEM",
+    "title": "CZŁOWIEK I KOŃ",
     "text": {
       "p1": "Związek człowieka i konia to szacunek i zaufanie, energia i pewność siebie. Równowaga czasu i doświadczenia oparta na wzajemnym zrozumieniu. Koń jest osobowością, a nie tylko twoją własnością, i każdy koń jest wyjątkowy na swój sposób. Sposób myślenia konia jest twoim sposobem myślenia, a dla ciebie sposób myślenia konia powinien być zawsze na pierwszym miejscu. Pamiętaj, że najważniejszą rzeczą dla konia jest postawa człowieka. Naucz się być dla konia nie tylko jeźdźcem, ale także partnerem.",
       "p2": "Szacunek i zaufanie konia jest trudne do zdobycia i łatwe do stracenia. Staraj się zdobyć szacunek i zaufanie konia poprzez swoje działania, będąc blisko niego na ziemi, a nie poprzez słowa, siedząc na nim w siodle. Koń nie powinien się ciebie bać, powinien cię szanować i ci ufać, powinien widzieć w tobie przywódcę. Nie okazuj złości i okrucieństwa. Podstawą waszej relacji jest to, aby wasze wspólne działania były odpowiednie do miejsca i czasu. Szacunek i zaufanie konia, oparte na chęci współpracy, bez leżącego u podstaw strachu, jest jedną z jego najcenniejszych cech.",
@@ -58,54 +58,54 @@
     "dictum": "Wszyscy ludzie są świadomi swoich korzyści.",
     "title": "ROZWÓJ PROJEKTU",
     "text": {
-      "p1": "Wyścigi konne to międzynarodowe zawody o wielowiekowej historii. Jest to wysoce dochodowa i prestiżowa działalność na skalę międzynarodową. To wzrost status społecznego uczestników projektu, zmiana jakości życia, dostęp do elitarnej kultury i edukacji. Projekt KINCSEM.CLUB zapewnia możliwości niedostępne dla wielu.",
-      "p2": "Wyścigi konne to zjawisko kulturowe na poziomie międzynarodowym. To jedne z najbardziej dochodowych, cieszących się wyjątkową oglądalnością zawodów międzynarodowych, zajmujące równorzędną pozycję z regatami żeglarskimi i wyścigami Formuły 1. Dla widzów jest to fascynujące widowisko. Uprawianie jazdy konnej, obecność na wyścigach, zwiedzanie hipodromów i hodowla koni wyścigowych to wszystko hobby elity.",
-      "p3": "Branża jeździecka obejmująca konie pełnej krwi angielskiej to wszechświat bez granic, z rocznym obrotem przekraczającym 124 miliardy dolarów. Każdego roku na całym świecie odbywa się ponad 100 000 zawodów. Łączna pula nagród w wyścigach wynosi ponad 3 miliardy dolarów.",
-      "p4": "Koszt konia pełnej krwi angielskiej jest porównywalny z kosztem luksusowego jachtu lub limitowanej edycji samochodu wyścigowego. I ona rośnie z roku na rok. Najdroższym koniem na świecie został uznany przedstawiciel rasy pełnej krwi angielskiej – ogier o imieniu Frankel: 200 milionów dolarów.",
-      "p5": "Celem projektu KINCSEM.CLUB jest stworzenie społeczności ludzi o podobnych poglądach, których łączą wspólne interesy.",
-      "p6": "Cel ten realizowany jest poprzez tworzenie możliwości komunikacji i rozwoju kontaktów biznesowych pomiędzy uczestnikami projektu, a także poprzez ułatwianie nawiązywania kontaktów osobistych pomiędzy uczestnikami projektu na całym świecie.",
-      "p7": "Projekt KINCSEM.CLUB stwarza możliwość promowania interesów osób prawnych biorących udział w projekcie poprzez organizację i przeprowadzanie spotkań z przedstawicielami międzynarodowych środowisk biznesowych i społeczności.",
-      "p8": "Projekt KINCSEM.CLUB gwarantuje ekskluzywne przywileje – wzajemną wymianę usług pomiędzy uczestnikami projektu na wyjątkowo korzystnych warunkach, oferty specjalne, dostęp do aktualnych informacji, pomysłów i technologii",
-      "p9": "Interesy osób fizycznych biorących udział w projekcie KINCSEM.CLUB promowane są poprzez rozszerzenie ich międzynarodowej sieci kontaktów w sferze zawodowej oraz zapewnienie możliwości udziału w programie lojalnościowym, dzięki któremu mają oni dostęp do rabatów na produkty i usługi, udziału w wydarzeniach promocyjnych, a także innych bonusów i przywilejów zapewnianych przez osoby prawne biorące udział w projekcie KINCSEM.CLUB.",
-      "p10": "Udział w projekcie KINCSEM.CLUB to gwarantowana możliwość uzyskiwać dochód z branży jeździeckiej, odgrywając kluczową rolę w przekształcaniu swojej dziedziny zawodowej na skalę międzynarodową, jednocześnie realizując swoje cele.",
-      "p11": "Twoje pomysły i doświadczenie zawodowe będą ważnym wkładem w realizację projektu KINCSEM.CLUB. Czekamy na tych, którzy są gotowi poświęcić czas i połączyć siły, aby uczestnicząc w rozwoju projektu, zrealizować wszystkie swoje cele.",
-      "p12": "Dzięki udziałowi w projekcie KINCSEM.CLUB uzyskasz maksimum korzyści!"
+      "p1": "Wyścigi konne to nie tylko rozrywka hazardowa, ale także ważna część globalnej gospodarki, generująca miliardy dolarów.",
+      "p2": "Wyścigi konne cieszą się ogromną popularnością na całym świecie i zajmują czołowe miejsca w rankingach w większości krajów anglojęzycznych, obok piłki nożnej, tenisa i innych topowych dyscyplin.",
+      "p3": "Są tam specjalistyczne stacje radiowe i kanały telewizyjne, ukazują się książki, czasopisma i gazety poświęcone zawodom konnym.",
+      "p4": "Portale tematyczne dostarczają szczegółowe statystyki, analizy i prognozy, dotyczące wyścigów konnych.",
+      "p5": "Zakłady na wyścigi konne, obok zakładów sportowych, stanowią ważną część światowego rynku zakładów bukmacherskich i są głównym źródłem dochodów organizatorów zawodów.",
+      "p6": "Najbardziej prestiżowe na świecie wyścigi konne z pulą nagród przekraczającą 10 milionów dolarów odbywają się z udziałem elity świata koni – rasy koni pełnej krwi angielskiej. Konie mogą być dochodowym aktywem, cenionym nie tylko ze względu na swoją konkurencyjność, ale także ze względu na wartość hodowlaną i odsprzedażową",
+      "p7": "Dlatego właśnie koń pełnej krwi angielskiej to zyskowna inwestycja, której opłacalność rośnie. Wartość światowych liderów wyścigów konnych o wybitnym rodowodzie z każdym rokiem wzrasta. Obecnie najdroższym na świecie koniem pełnej krwi angielskiej jest Frankel, którego wartość szacuje się na 200 milionów dolarów.",
+      "p8": "Projekt KINCSEM.CLUB oferuje uczestnikom możliwość zarabiania na wyścigach konnych i daje szansę na budowanie udanej międzynarodowej kariery.",
+      "p9": "Celem projektu KINCSEM.CLUB jest tworzenie silnej i zaangażowanej społeczności utalentowanych osób o podobnych poglądach, których łączą wspólne zainteresowania, a także zapewnienie dostępu do nowych pomysłów i aktualnych informacji.",
+      "p10": "Twoje pomysły i doświadczenie zawodowe mogą wnieść istotny wkład w realizację celów projektu KINCSEM.CLUB. Czekamy na tych, którzy są gotowi poświęcić czas, połączyć siły i odegrać kluczową rolę w tworzeniu możliwości rozwoju kontaktów biznesowych pomiędzy uczestnikami projektu na całym świecie.",
+      "p11": "Dzięki udziałowi w projekcie KINCSEM.CLUB uzyskasz maksimum korzyści!"
       }},
   "participation": {
     "dictum": "Mało się ceni to, co jest łatwo dostępne.",
-    "title": "UCZESTNICTWO W PROJEKCIE",
+    "title": "SUKCES ŻYCIOWY",
     "text": {
-      "p1": "Projekt KINCSEM.CLUB nie jest masowo dostępny. Dla każdego kraju ustalono kwoty dla liczby uczestników projektu i terminy udzielenia odpowiedzi na zgłoszenia do udziału w projekcie.",
-      "p2": "Należy pamiętać o możliwości rezygnacji z udziału w projekcie KINCSEM.CLUB na każdym etapie jego realizacji.",
-      "p3": "W projekcie mogą wziąć udział osoby prawne oraz osoby fizyczne.",
-      "p4": "Osoby prawne mogą zamieszczać informacje w sekcjach PARTNERSTWO, PROMOCJE, WAKATY.",
-      "p5": "Sekcja PARTNERSTWO stwarza warunki do znalezienia partnerów biznesowych. Sekcja PROMOCJE umożliwia osobom prawnym publikowanie informacji o swoich programach lojalnościowych dostępnych dla stałych klientów. W sekcji WAKATY osoby prawne mogą zamieszczać swoje wakaty, gwarantując godne warunki pracy.",
-      "p6": "Osoby fizyczne uzyskują dostęp do aktualnych informacji w sekcjach PARTNERSTWO, PROMOCJE, WAKATY.",
-      "p7": "Sekcja PARTNERSTWO dla osób fizycznych stanowi doskonałą platformę do nawiązywania długoterminowej współpracy ze znanymi firmami. Dzięki sekcji PROMOCJE możesz skorzystać ze świetnych ofert znanych marek i firm. Sekcja WAKATY pomaga osobom fizycznym w budowaniu międzynarodowej kariery zawodowej.",
-      "p8": "Należy pamiętać, że osoby prawne i osoby fizyczne mogą korzystać z możliwości oferowanych w sekcjach PARTNERSTWO, PROMOCJE, WAKATY wyłącznie jeśli są uczestnikami projektu KINCSEM.CLUB.",
-      "p9": "<strong>Uczestnicy projektu</strong>",
-      "p10": "",
+      "p1": "Chcesz zostać gwiazdą? Marzenia stają się rzeczywistością dla tych, którzy wierzą w siebie.",
+      "p2": "Światowa sława, ogromne honoraria i miłość milionów fanów ‒ wszystko to stanie się Twoje bardzo szybko. Najważniejsze to wykorzystać swoją szansę na sukces życiowy.",
+      "p3": "Zapraszamy osoby utalentowane, wytrwałe i zdeterminowane!",
+      "p4": "Haute couture, wielki sport, kariera trenerska, międzynarodowe trasy koncertowe, programy telewizyjne, arcydzieła przemysłu filmowego, słynne teatry świata, kontrakty reklamowe, wywiady dla kolorowych magazynów, sesje zdjęciowe i bogate życie towarzyskie celebryty – to jest Twoja przyszłość!",
+      "p5": "Szczegółowe informacje na temat wybranego przez Ciebie kierunku znajdziesz na stronach MODELING FITNESS TANIEC SPORT MUZYKA",
+      "p6": "Zapraszamy Cię do świata sukcesu!",
+      "p7": "Zapraszamy Cię do wzięcia udziału w projekcie KINCSEM.CLUB!"
+    }},
+  "vacancies": {
+    "dictum": "Pełna swoboda wyboru.",
+    "title": "KARIERA BEZ GRANIC",
+    "text": {
+      "p1": "Twoje możliwości kariery są nieograniczone!",
+      "p2": "Zapraszamy Cię w fascynującą podróż, która dostarczy Ci niezapomnianych wrażeń i da to, o czym od dawna marzysz.",
+      "p3": "Dla nas KARIERA to coś więcej niż tylko wysoki poziom dochodów.",
+      "p4": "Wszystko o czym marzysz! Wszystko czego chcesz od życia! Oferujemy nieograniczone możliwości!",
+      "p5": "Kluczem do międzynarodowej kariery zawodowej jest udział w projekcie KINCSEM.CLUB.",
+      "p6": "Opowiedz nam o swoich talentach, doświadczeniu zawodowym i celach życiowych. A my opowiemy o Tobie całemu światu. Podkreślimy Twoją indywidualność i talenty! I spełnimy Twoje marzenia!",
+      "p7": "Udział w projekcie KINCSEM.CLUB to Twoja szansa na skorzystanie z unikalnych ofert znanych międzynarodowych firm i marek.",
+      "p8": "Nie jesteśmy agencją!",
+      "p9": "Nie pobieramy prowizji!",
+      "p10": "Informacje na stronie KARIERA będą dostępne zgodnie z wybranym regionem i krajem tego regionu.",
       "accordeon": {
         "title": ["AZJA","AMERYKA","AFRYKA","EUROPA","REGION PACYFIKU"],
         "tmp-stage": "Strona internetowa jest w fazie rozwoju"
       }
     }},
-  "vacancies": {
-    "dictum": "Zaczyna się nowe życie.",
-    "title": "WAKATY PROJEKTU",
-    "text": {
-      "p1": "Projekt KINCSEM.CLUB zapewnia wyjątkową okazję do zdobycia unikalnego doświadczenia zawodowego i przeniesienia swojej kariery na nowy, międzynarodowy poziom.",
-      "p2": "Twoje pomysły i doświadczenie zawodowe będą ważnym wkładem w realizację projektu KINCSEM.CLUB. Czekamy na tych, którzy są gotowi poświęcić czas i połączyć siły, aby uczestnicząc w rozwoju projektu, zrealizować wszystkie swoje cele.",
-      "p3": "Wzrost statusu społecznego, dostęp do elitarnej kultury i edukacji – uczestnicy projektu KINCSEM.CLUB mają możliwość to wszystko zrealizować.",
-      "p4": "Wakaty są dostępne tylko dla uczestników projektu KINCSEM.CLUB. Przewidziano możliwość udostępnienia wolnych stanowisk pracy członkom rodzin uczestników projektu KINCSEM.CLUB.",
-      "p5": "<strong>Dostępne wakaty:</strong>", 
-      "p6": "<ol><li>Kierownicy regionalnych przedstawicielstw klubu.</li><li>Kierownicy oddziałów i pracownicy biur regionalnych klubu w następujących obszarach:  <ul><li>środki masowego przekazu (mass media);</li><li>reklama;</li><li>działalność niekomercyjna;</li><li>hodowla koni;</li><li>specjalizowane hipodromy;</li><li>centra treningowe koni pełnej krwi angielskiej;</li><li>centra szkoleniowe dla specjalistów z branży jeździeckiej;</li><li>centra jazdy konnej;</li><li>przedsiębiorstwa produkujące i sprzedające towary dla branży jeździeckiej;</li><li>apteki i kliniki weterynaryjne;</li><li>aukcje;</li><li>giełdy zakładów, totalizatory i biura bukmacherskie;</li><li>organizacje działające w sferze:<ul class=\"child-ul\"> <li>finansów;</li> <li>konsultingu;</li> <li>IT;</li> <li>handlu;</li> <li>przemysłu;</li> <li>rolnictwa;</li> <li>gospodarki leśnej;</li> <li>transportu i logistyki;</li> <li>turystyki;</li> <li>gastronomii;</li> <li>hotelarstwa;</li> <li>edukacji;</li> <li>ochrony zdrowia;</li> <li>pomocy społecznej;</li> <li>sportu i rozwoju fizycznego;</li> <li>kultury;</li> <li>sztuki.</li></ul></li>  </ul></li>  </ol>"
-    }},
   "contacts": {
     "dictum": "Szczęście każdego jest w jego własnych rękach.",
     "title": "INFORMACJE KONTAKTOWE",
     "text": {
-      "p1": "Kandydaci do udziału w projekcie KINCSEM.CLUB powinni przesyłać prośby o dołączenie do grupy <a href=\"https://t.me/+tGbaVE1QQ3k2ZTg0\" target=\"_blank\" rel=\"noopener noreferrer\">kincsem.club</a> w komunikatorze Telegram, po wcześniejszym zapoznaniu się z informacjami zamieszczonymi pod adresem  <a href=\"./../html/participation.html\">UCZESTNICTWO</a>.",
+      "p1": "Kandydaci do udziału w projekcie KINCSEM.CLUB powinni przesyłać prośby o dołączenie do grupy <a href=\"https://t.me/+tGbaVE1QQ3k2ZTg0\" target=\"_blank\" rel=\"noopener noreferrer\">kincsem.club</a> w komunikatorze Telegram, po wcześniejszym zapoznaniu się z informacjami zamieszczonymi pod adresem  <a href=\"./../html/participation.html\">SUKCES</a>.",
       "p2": "Wszelkie sugestie i pytania należy przesyłać na następujący adres e-mail: <a href=\"mailto:kincsem.club@gmail.com\" target=\"_blank\">kincsem.club@gmail.com</a>."
     }},
   "confidentially": "",
