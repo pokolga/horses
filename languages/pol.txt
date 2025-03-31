@@ -5,8 +5,8 @@
     "breed": "rasa",
     "relationship": "relacje",
     "development": "rozwój",
-    "participation": "uczestnictwo",
-    "vacancies": "wakaty",
+    "participation": "sukces",
+    "vacancies": "kariera",
     "contacts": "informacje kontaktowe",
     "rights": "Wszelkie prawa zastrzeżone.",
     "confidentially": "Polityka prywatności",
@@ -73,13 +73,22 @@
       }},
   "participation": {
     "dictum": "Mało się ceni to, co jest łatwo dostępne.",
-    "title": "UDZIAŁ W PROJEKCIE",
+    "title": "UCZESTNICTWO W PROJEKCIE",
     "text": {
       "p1": "Projekt KINCSEM.CLUB nie jest masowo dostępny. Dla każdego kraju ustalono kwoty dla liczby uczestników projektu i terminy udzielenia odpowiedzi na zgłoszenia do udziału w projekcie.",
-      "p2": "Udział w projekcie KINCSEM.CLUB jest bezpłatny i nie wiąże się z żadnymi kosztami.",
-      "p3": "Należy pamiętać o możliwości rezygnacji z udziału w projekcie KINCSEM.CLUB na każdym etapie jego realizacji.",
-      "p4": "W projekcie mogą wziąć udział osoby prawne oraz osoby fizyczne działające w następujących obszarach: Sport Фитнес Muzyka Taniec Modeling",
-      "p5": "Osoby prawne mają prawo do przesyłania wniosków o udział w projekcie także w innych obszarach, nieujętych w niniejszym wykazie, zgodnie z prowadzoną przez nie działalnością. W przypadku pozytywnego rozpatrzenia wniosku, obszar, na którym działa wnioskująca osoba prawna, zostanie uwzględniony w tym wykazie."
+      "p2": "Należy pamiętać o możliwości rezygnacji z udziału w projekcie KINCSEM.CLUB na każdym etapie jego realizacji.",
+      "p3": "W projekcie mogą wziąć udział osoby prawne oraz osoby fizyczne.",
+      "p4": "Osoby prawne mogą zamieszczać informacje w sekcjach PARTNERSTWO, PROMOCJE, WAKATY.",
+      "p5": "Sekcja PARTNERSTWO stwarza warunki do znalezienia partnerów biznesowych. Sekcja PROMOCJE umożliwia osobom prawnym publikowanie informacji o swoich programach lojalnościowych dostępnych dla stałych klientów. W sekcji WAKATY osoby prawne mogą zamieszczać swoje wakaty, gwarantując godne warunki pracy.",
+      "p6": "Osoby fizyczne uzyskują dostęp do aktualnych informacji w sekcjach PARTNERSTWO, PROMOCJE, WAKATY.",
+      "p7": "Sekcja PARTNERSTWO dla osób fizycznych stanowi doskonałą platformę do nawiązywania długoterminowej współpracy ze znanymi firmami. Dzięki sekcji PROMOCJE możesz skorzystać ze świetnych ofert znanych marek i firm. Sekcja WAKATY pomaga osobom fizycznym w budowaniu międzynarodowej kariery zawodowej.",
+      "p8": "Należy pamiętać, że osoby prawne i osoby fizyczne mogą korzystać z możliwości oferowanych w sekcjach PARTNERSTWO, PROMOCJE, WAKATY wyłącznie jeśli są uczestnikami projektu KINCSEM.CLUB.",
+      "p9": "<strong>Uczestnicy projektu</strong>",
+      "p10": "",
+      "accordeon": {
+        "title": ["AZJA","AMERYKA","AFRYKA","EUROPA","REGION PACYFIKU"],
+        "tmp-stage": "Strona internetowa jest w fazie rozwoju"
+      }
     }},
   "vacancies": {
     "dictum": "Zaczyna się nowe życie.",

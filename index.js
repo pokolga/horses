@@ -147,7 +147,9 @@ function openPhotoInModalWindow() {
     document.querySelectorAll(".accordeon-output a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
     document.querySelectorAll(".accordeon-text a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
     if (localStorage.getItem("language")) {
-      document.querySelector(`.accordeon-output [data-lang='${localStorage.getItem("language")}']`).classList.add("accordeon-a-active");
+      if (document.querySelector(`.accordeon-output [data-lang='${localStorage.getItem("language")}']`)){
+        document.querySelector(`.accordeon-output [data-lang='${localStorage.getItem("language")}']`).classList.add("accordeon-a-active");
+      } 
     } else {
       document.querySelector(".accordeon-output [data-lang='rus']").classList.add("accordeon-a-active");
     }
@@ -168,18 +170,18 @@ function clickForAccordeonLink(ev){
   в папке  languages должен быть файл %аббревиатура%.txt по шаблону
   Если атрибут не указан, то переходим на русский*/
   ev.preventDefault();
-  console.log(this)
-  document.querySelectorAll(".accordeon-a").forEach((elem) => elem.classList.remove("accordeon-a-active"));
+  if (/languages/.test(location.href)){
+    document.querySelectorAll(".accordeon-a").forEach((elem) => elem.classList.remove("accordeon-a-active"));
 
-  this.classList.add("accordeon-a-active");
+    this.classList.add("accordeon-a-active");
 
-  if (!this.dataset.lang || this.dataset.lang === '') {
-    ajaxLanguage("rus");
-  } else {
-    ajaxLanguage(this.dataset.lang);
+    if (!this.dataset.lang || this.dataset.lang === '') {
+      ajaxLanguage("rus");
+    } else {
+      ajaxLanguage(this.dataset.lang);
+    }
+
   }
- 
-  //closeLanguageMenu();
 }
 
 function ajaxLanguage(currentLanguage){
@@ -252,9 +254,10 @@ function changeLanguageCurrentPage(responseText,currentLanguage) {
       }
       document.querySelector(".accordeon-output .accordeon-output-title").textContent = document.querySelector(".accordeon-active").textContent;
       tmpStageList.forEach((lnk) => lnk.textContent = self["tmp-stage"]);
-
     } else {
-      document.querySelector(`.text>.${elem}`).innerHTML = currentPage.text[elem];
+      if (document.querySelector(`.text>.${elem}`)){
+        document.querySelector(`.text>.${elem}`).innerHTML = currentPage.text[elem];
+      }
     }
   }
 
