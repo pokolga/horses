@@ -433,7 +433,11 @@ ul.float-ul {
 .accordeon { 
   display: flex;
   flex-direction: column;
+}
 
+.accordeon-vacancies ul{
+  display: flex;
+  gap: 10px;
 }
 
 .cross:hover {
@@ -681,7 +685,9 @@ ul.float-ul {
 
   .accordeon-text ul>li{
    margin-bottom: 20px;
+   margin-right: 20px;
   }
+
   .accordeon-text .accordeon-a-active{
     text-decoration: underline;
   }
