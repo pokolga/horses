@@ -234,10 +234,21 @@ function changeLanguageCurrentPage(responseText,currentLanguage) {
   if (!document.querySelector(".main-contacts")) return; //для некоторых страниц не надо рендерить
   
   const renderObj = JSON.parse(responseText);
+
   const page = location.pathname.match(/\/(\w+)\.html/)[1];
   const currentPage = renderObj[page];//объект контента страницы
   if (currentPage.dictum) document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
   if (currentPage.title) document.querySelector(".title").textContent = currentPage.title;
+  if (currentPage["participate-button"]) document.querySelector(".participate-button").textContent = currentPage["participate-button"];
+/*for activity page*/
+  if (document.querySelector(".title1")) {
+    console.log(currentPage);
+    for (let i = 1; i <= 5; i++){
+      if (document.querySelector(`.title${i}`)){
+        document.querySelectorAll(`.title${i}`).forEach((elem) => elem.textContent = currentPage[`title${i}`]);
+      }
+    }
+  }
   
   for (let elem in currentPage.text){
     if (elem === "accordeon") {

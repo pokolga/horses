@@ -78,7 +78,7 @@
       "p2": "Światowa sława, ogromne honoraria i miłość milionów fanów ‒ wszystko to stanie się Twoje bardzo szybko. Najważniejsze to wykorzystać swoją szansę na sukces życiowy.",
       "p3": "Zapraszamy osoby utalentowane, wytrwałe i zdeterminowane!",
       "p4": "Haute couture, wielki sport, kariera trenerska, międzynarodowe trasy koncertowe, programy telewizyjne, arcydzieła przemysłu filmowego, słynne teatry świata, kontrakty reklamowe, wywiady dla kolorowych magazynów, sesje zdjęciowe i bogate życie towarzyskie celebryty – to jest Twoja przyszłość!",
-      "p5": "Szczegółowe informacje na temat wybranego przez Ciebie kierunku znajdziesz na stronach MODELING FITNESS TANIEC SPORT MUZYKA",
+      "p5": "Szczegółowe informacje na temat wybranego przez Ciebie kierunku znajdziesz na stronach <a href='./activity.html#title1'>MODELING</a> <a href='./activity.html#title2'>FITNESS</a> <a href='./activity.html#title3'>TANIEC</a> <a href='./activity.html#title4'>SPORT</a> <a href='./activity.html#title5'>MUZYKA</a>",
       "p6": "Zapraszamy Cię do świata sukcesu!",
       "p7": "Zapraszamy Cię do wzięcia udziału w projekcie KINCSEM.CLUB!"
     }},
@@ -121,10 +121,11 @@
         "tmp-stage": "Strona internetowa jest w fazie rozwoju"
   }}},
   "activity": {
-    "title1": "",
-    "title2": "",
-    "title3": "",
-    "title4": "",
+    "title1": "MODELING",
+    "title2": "FITNESS",
+    "title3": "TANIEC",
+    "title4": "SPORT",
+    "title5": "MUZYKA",
     "text": {
       "p1": "Modeling to ogromny świat, który rządzi się swoimi prawami. Droga, którą przemierzysz ten świat, określi twoje miejsce w jego hierarchii.",
       "p2": "Są dwie główne drogi do świata modelingu: High-Fashion Modeling i Commercial Modeling. Każda droga wymaga innych umiejętności i oferuje różne możliwości rozwoju kariery.",
@@ -168,7 +169,8 @@
       "p40": "Pomożemy Ci zbudować udaną międzynarodową karierę muzyczną i zostać gwiazdą show-biznesu!",
       "p41": "Nie jesteśmy agencją!",
       "p42": "Nie pobieramy prowizji!"
-    }
+    },
+    "participate-button": "BIORĘ UDZIAŁ"
   },
   "other": {"p10":"<div><ul><li>międzynarodowy klub współwłaścicieli koni pełnej krwi angielskiej;</li><li>agencja informacyjno - reklamowa;</li><li>stadnina koni pełnej krwi angielskiej;</li><li>specjalizowane hipodromy;</li><li>centra treningowe koni pełnej krwi angielskiej;</li><li>centra szkoleniowe dla specjalistów z branży jeździeckiej;</li><li>centra jazdy konnej;</li><li>przedsiębiorstwa produkujące i sprzedające towary dla branży jeździeckiej;</li><li>apteki i kliniki weterynaryjne;</li><li>domy aukcyjne i aukcje internetowe;</li><li>giełdy zakładów, totalizatory i biura bukmacherskie;</li><li>organizacje działające w sferze:    <ul class=\"child-ul\"> <li>finansów;</li> <li>konsultingu;</li> <li>IT;</li> <li>handlu;</li> <li>przemysłu;</li> <li>rolnictwa;</li> <li>gospodarki leśnej;</li> <li>transportu i logistyki;</li> <li>turystyki;</li> <li>gastronomii;</li> <li>hotelarstwa;</li> <li>edukacji;</li> <li>ochrony zdrowia;</li> <li>pomocy społecznej;</li> <li>sportu i rozwoju fizycznego;</li> <li>kultury;</li> <li>sztuki.</li></ul></li></ul></div>"}
 }

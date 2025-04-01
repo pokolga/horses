@@ -153,10 +153,13 @@ h1,h2 {
 }
 
 .small-menu-item {
-  padding: 5px 20px;
+  padding: 10px auto;
   border: solid 2px var(--color-blue);
   cursor: pointer;
 }  
+.small-menu-item a {
+  padding: 0 20px;
+}
 
 .small-menu-item:hover {
   background-color: var(--color-blue);
@@ -782,5 +785,8 @@ ul.float-ul {
 
   .text p {
     text-align: left;
+  }
+  .small-menu {
+    flex-wrap: wrap;
   }
 }
