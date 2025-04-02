@@ -146,6 +146,16 @@ h1,h2 {
 }
 
 /*общее оформление*/
+.small-menu-nav {
+  position: sticky;
+  top: 0;
+  margin-left: 430px;
+}
+
+.small-menu-nav:hover {
+  opacity: 1;
+}
+
 .small-menu {
   display: flex;
   gap: 10px;
@@ -153,12 +163,13 @@ h1,h2 {
 }
 
 .small-menu-item {
-  padding: 10px auto;
+  padding: 5px 0;
   border: solid 2px var(--color-blue);
   cursor: pointer;
 }  
+
 .small-menu-item a {
-  padding: 0 20px;
+  padding: 5px 20px;
 }
 
 .small-menu-item:hover {
@@ -788,5 +799,6 @@ ul.float-ul {
   }
   .small-menu {
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }

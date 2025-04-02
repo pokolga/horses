@@ -71,16 +71,24 @@
       "p11": "Dzięki udziałowi w projekcie KINCSEM.CLUB uzyskasz maksimum korzyści!"
       }},
   "participation": {
-    "dictum": "Mało się ceni to, co jest łatwo dostępne.",
-    "title": "SUKCES ŻYCIOWY",
+    "dictum": "Pełna swoboda wyboru.",
+    "title": "SUKCES I KARIERA",
     "text": {
-      "p1": "Chcesz zostać gwiazdą? Marzenia stają się rzeczywistością dla tych, którzy wierzą w siebie.",
-      "p2": "Światowa sława, ogromne honoraria i miłość milionów fanów ‒ wszystko to stanie się Twoje bardzo szybko. Najważniejsze to wykorzystać swoją szansę na sukces życiowy.",
-      "p3": "Zapraszamy osoby utalentowane, wytrwałe i zdeterminowane!",
+      "p1": "Sukces życiowy i bez granic!",
+      "p2": "Twoje możliwości kariery są nieograniczone! Marzenia stają się rzeczywistością dla tych, którzy wierzą w siebie.",
+      "p3": "Chcesz zostać gwiazdą? Światowa sława, ogromne honoraria i miłość milionów fanów ‒ wszystko to stanie się Twoje bardzo szybko. Najważniejsze to wykorzystać swoją szansę na sukces życiowy.",
       "p4": "Haute couture, wielki sport, kariera trenerska, międzynarodowe trasy koncertowe, programy telewizyjne, arcydzieła przemysłu filmowego, słynne teatry świata, kontrakty reklamowe, wywiady dla kolorowych magazynów, sesje zdjęciowe i bogate życie towarzyskie celebryty – to jest Twoja przyszłość!",
-      "p5": "Szczegółowe informacje na temat wybranego przez Ciebie kierunku znajdziesz na stronach <a href='./activity.html#title1'>MODELING</a> <a href='./activity.html#title2'>FITNESS</a> <a href='./activity.html#title3'>TANIEC</a> <a href='./activity.html#title4'>SPORT</a> <a href='./activity.html#title5'>MUZYKA</a>",
-      "p6": "Zapraszamy Cię do świata sukcesu!",
-      "p7": "Zapraszamy Cię do wzięcia udziału w projekcie KINCSEM.CLUB!"
+      "p5": "Zapraszamy Cię w fascynującą podróż, która dostarczy Ci niezapomnianych wrażeń i da to, o czym od dawna marzysz.",
+      "p6": "Dla nas KARIERA to coś więcej niż tylko wysoki poziom dochodów.",
+      "p7": "Wszystko o czym marzysz! Wszystko czego chcesz od życia!",
+      "p8": "Oferujemy nieograniczone możliwości!",
+      "p9": "Kluczem do międzynarodowej kariery zawodowej jest udział w projekcie KINCSEM.CLUB.",
+      "p10": "Opowiedz nam o swoich talentach, doświadczeniu zawodowym i celach życiowych.",
+      "p11": "A my opowiemy o Tobie całemu światu. Podkreślimy Twoją indywidualność i talenty! I spełnimy Twoje marzenia!",
+      "p12": "Udział w projekcie KINCSEM.CLUB to Twoja szansa na skorzystanie z unikalnych ofert znanych międzynarodowych firm i marek.",
+      "p13": "Szczegółowe informacje na temat wybranego przez Ciebie kierunku znajdziesz na stronach <a href='./activity.html#title1'>MODELING</a> <a href='./activity.html#title2'>FITNESS</a> <a href='./activity.html#title3'>TANIEC</a> <a href='./activity.html#title4'>SPORT</a> <a href='./activity.html#title5'>MUZYKA</a>",
+      "p14": "Zapraszamy osoby utalentowane, wytrwałe i zdeterminowane!",
+      "p15": "Zapraszamy Cię do świata sukcesu! Zapraszamy Cię do wzięcia udziału w projekcie!"
     }},
   "vacancies": {
     "dictum": "Pełna swoboda wyboru.",
