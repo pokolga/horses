@@ -304,20 +304,26 @@ function changeLinkForPdf(currentLanguage){
   }
 }
 
-/*полупрозрачность меню при скролле */
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    document.body.classList.add('scrolled'); // Добавляем класс при скролле вниз
+//console.log(window.location)
+if (/activ/.test(window.location.href)){
+   ///activ/.test(window.location.href)
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        document.body.classList.add('scrolled'); // Добавляем класс при скролле вниз
 
-  } else {
-    document.body.classList.remove('scrolled'); // Убираем класс, если скролл вверх
-  }
-});
+      } else {
+        document.body.classList.remove('scrolled'); // Убираем класс, если скролл вверх
+      }
+    });
 
-document.querySelector(".small-menu .burger").addEventListener("click", function() {
-  document.querySelector(".small-menu").classList.toggle("open-small-menu");
-});
-document.querySelectorAll(".small-menu-item").forEach((elem) => elem.addEventListener("click", function() {
-  document.querySelector(".small-menu").classList.remove("open-small-menu");
-  })
-)
+ /*   document.querySelector(".small-menu .burger").addEventListener("touchstart", function() {
+      document.querySelector(".small-menu").classList.toggle("open-small-menu");
+    });
+    /*document.querySelector(".small-menu .burger").addEventListener("click", function() {
+      document.querySelector(".small-menu").classList.toggle("open-small-menu");
+    });*/
+/*    document.querySelectorAll(".small-menu-item").forEach((elem) => elem.addEventListener("click", function() {
+      document.querySelector(".small-menu").classList.remove("open-small-menu");
+      })
+    )*/
+}

@@ -35,13 +35,6 @@ body {
   font-variation-settings: "wdth" 100;
 }
 
-body.scrolled .small-menu-item {
-  opacity:  0.2;
-}
-body.scrolled .small-menu-nav:hover .small-menu-item{
-  opacity:  1;
-}
-
 a {
   color: var(--color-blue);
   text-decoration: none;
@@ -152,7 +145,14 @@ h1,h2 {
   z-index:10;
 }
 
-/*общее оформление*/
+/*доп.меню для activity*/
+body.scrolled .small-menu-item {
+  opacity:  0.2;
+}
+body.scrolled .small-menu-nav:hover .small-menu-item{
+  opacity:  1;
+} 
+
 .small-menu-nav {
   position: sticky;
   top: 0;
@@ -171,28 +171,21 @@ h1,h2 {
   padding-left: 0;
 }
 
-.small-menu> .burger {
-  display: none;
-}
-
 .small-menu-item {
   padding: 5px 0;
   border: solid 2px var(--color-blue);
   cursor: pointer;
 }  
 
-.small-menu-item a {
+.small-menu .small-menu-item a {
+  font-weight: 400;
   padding: 5px 10px;
+  line-height: 1.7;
 }
 
 .small-menu-item:hover {
   background-color: var(--color-blue);
 } 
- 
-.small-menu-item:hover a{
-  color: var(--color-white);
-  text-decoration: none;
-}
 
 .main-contacts .small-menu-item a:hover{
   color: var(--color-white);
@@ -209,6 +202,20 @@ h1,h2 {
   border-radius: 5px;
   background: var(--color-yellow);
   border: var(--color-yellow) 2px solid; 
+
+  /*animation: pulse 2s infinite ease-in-out;*/
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .participate-button:focus {
@@ -220,6 +227,11 @@ h1,h2 {
   opacity: 0.8;
   cursor: pointer;
 }
+/*
+.small-menu>.burger {
+  display: none;
+}
+*/
 
 .dictum{
   display: flex;
@@ -772,6 +784,8 @@ ul.float-ul {
 
   .small-menu-nav {
     margin-left: 10px;
+    margin-top: 0;
+    top: 10px;
   }
 
   .small-menu {
@@ -793,6 +807,8 @@ ul.float-ul {
 
   .small-menu .burger {
     display: block;
+    margin-left: 10px;
+    margin-right: 10px;
     color: var(--color-yellow);
     font-size: 20px;
     font-weight: 700;
@@ -811,8 +827,6 @@ ul.float-ul {
     background-color: var(--color-light-blue);
   }
 
-
-  
 }
 
 /************************ < 768px  мобилки ******************/
@@ -853,8 +867,10 @@ ul.float-ul {
   .text p {
     text-align: left;
   }
-
+/*
   .small-menu-nav {
+    display: none;
     margin-top: 0;
-  }
+  }*/
+
 }
