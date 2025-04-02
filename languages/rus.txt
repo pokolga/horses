@@ -5,7 +5,7 @@
     "breed": "порода",
     "relationship": "отношение",
     "development": "развитие",
-    "participation": "успех",
+    "participation": "участники",
     "vacancies": "карьера",
     "contacts": "контакты",
     "rights": "Все права защищены.",
@@ -113,7 +113,7 @@
     "dictum": "Собственное счастье у каждого в руках.",
     "title": "КОНТАКТНАЯ ИНФОРМАЦИЯ",
     "text": {
-      "p1": "Претендентам на участие в проекте KINCSEM.CLUB следует направлять заявки на вступление в группу <a href=\"https://t.me/+tGbaVE1QQ3k2ZTg0\" target=\"_blank\" rel=\"noopener noreferrer\">kincsem.club</a> в мессенджер Telegram, предварительно ознакомившись с информацией, размещенной в разделе <a href=\"./../html/participation.html\">УСПЕХ</a>.",
+      "p1": "Претендентам на участие в проекте KINCSEM.CLUB следует направлять заявки на вступление в группу <a href=\"https://t.me/+tGbaVE1QQ3k2ZTg0\" target=\"_blank\" rel=\"noopener noreferrer\">kincsem.club</a> в мессенджер Telegram, предварительно ознакомившись с информацией, размещенной в разделе <a href=\"./../html/participation.html\">УЧАСТНИКИ</a>.",
       "p2": "Все предложения и вопросы следует направлять на адрес электронной почты: <a href=\"mailto:kincsem.club@gmail.com\" target=\"_blank\">kincsem.club@gmail.com</a>."
     }},
   "confidentially": "",

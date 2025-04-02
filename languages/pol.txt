@@ -5,7 +5,7 @@
     "breed": "rasa",
     "relationship": "relacje",
     "development": "rozwój",
-    "participation": "sukces",
+    "participation": "uczestnicy",
     "vacancies": "kariera",
     "contacts": "informacje kontaktowe",
     "rights": "Wszelkie prawa zastrzeżone.",
@@ -113,7 +113,7 @@
     "dictum": "Szczęście każdego jest w jego własnych rękach.",
     "title": "INFORMACJE KONTAKTOWE",
     "text": {
-      "p1": "Kandydaci do udziału w projekcie KINCSEM.CLUB powinni przesyłać prośby o dołączenie do grupy <a href=\"https://t.me/+tGbaVE1QQ3k2ZTg0\" target=\"_blank\" rel=\"noopener noreferrer\">kincsem.club</a> w komunikatorze Telegram, po wcześniejszym zapoznaniu się z informacjami zamieszczonymi pod adresem  <a href=\"./../html/participation.html\">SUKCES</a>.",
+      "p1": "Kandydaci do udziału w projekcie KINCSEM.CLUB powinni przesyłać prośby o dołączenie do grupy <a href=\"https://t.me/+tGbaVE1QQ3k2ZTg0\" target=\"_blank\" rel=\"noopener noreferrer\">kincsem.club</a> w komunikatorze Telegram, po wcześniejszym zapoznaniu się z informacjami zamieszczonymi pod adresem  <a href=\"./../html/participation.html\">UCZESTNICY</a>.",
       "p2": "Wszelkie sugestie i pytania należy przesyłać na następujący adres e-mail: <a href=\"mailto:kincsem.club@gmail.com\" target=\"_blank\">kincsem.club@gmail.com</a>."
     }},
   "confidentially": "",
