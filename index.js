@@ -242,7 +242,6 @@ function changeLanguageCurrentPage(responseText,currentLanguage) {
   if (currentPage["participate-button"]) document.querySelector(".participate-button").textContent = currentPage["participate-button"];
 /*for activity page*/
   if (document.querySelector(".title1")) {
-    console.log(currentPage);
     for (let i = 1; i <= 5; i++){
       if (document.querySelector(`.title${i}`)){
         document.querySelectorAll(`.title${i}`).forEach((elem) => elem.textContent = currentPage[`title${i}`]);
@@ -309,7 +308,16 @@ function changeLinkForPdf(currentLanguage){
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     document.body.classList.add('scrolled'); // Добавляем класс при скролле вниз
+
   } else {
     document.body.classList.remove('scrolled'); // Убираем класс, если скролл вверх
   }
 });
+
+document.querySelector(".small-menu .burger").addEventListener("click", function() {
+  document.querySelector(".small-menu").classList.toggle("open-small-menu");
+});
+document.querySelectorAll(".small-menu-item").forEach((elem) => elem.addEventListener("click", function() {
+  document.querySelector(".small-menu").classList.remove("open-small-menu");
+  })
+)

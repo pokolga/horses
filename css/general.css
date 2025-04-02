@@ -37,7 +37,6 @@ body {
 
 body.scrolled .small-menu-item {
   opacity:  0.2;
-  /*filter: blur(2px); */
 }
 body.scrolled .small-menu-nav:hover .small-menu-item{
   opacity:  1;
@@ -170,6 +169,10 @@ h1,h2 {
   justify-content: flex-end;
   gap: 10px;
   padding-left: 0;
+}
+
+.small-menu> .burger {
+  display: none;
 }
 
 .small-menu-item {
@@ -457,7 +460,7 @@ ul.float-ul {
 }
 
 .accordeon-active {
-  background-color: white;
+  background-color: var(--color-white);
   color: var(--color-green);
   border-right: transparent  solid 1px;
 }
@@ -469,7 +472,7 @@ ul.float-ul {
 .accordeon-text,
 .accordeon-output  {
   padding: 10px 10px;
-  background-color: white;
+  background-color: var(--color-white);
   color: var(--color-grey);
 }
 
@@ -606,7 +609,7 @@ ul.float-ul {
   .active-burger span:nth-child(3){
     top: -5px;
     
-    background-color: var(--color-white);;
+    background-color: var(--color-white);
     
     transform: rotate(135deg);
   }  
@@ -619,7 +622,7 @@ ul.float-ul {
     top: 0;
     left: 0;
     
-    color: var(--color-white);;
+    color: var(--color-white);
     font-weight: 400;
     font-size: 16px;
     line-height: 250%;
@@ -708,6 +711,10 @@ ul.float-ul {
     text-align: center;
   }
 
+  .main-contacts-h2.activity-title {
+    text-align: left;
+  }
+
   .text ul {
     text-align: justify;
    
@@ -762,6 +769,50 @@ ul.float-ul {
   .accordeon-text .accordeon-a-active{
     text-decoration: underline;
   }
+
+  .small-menu-nav {
+    margin-left: 10px;
+  }
+
+  .small-menu {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    font-size: 12px;
+  }
+  .small-menu > li{
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .small-menu > li:nth-child(n+2):nth-child(-n+5)::after {
+    content: "·"; 
+    color: var(--color-blue);
+    font-size: 20px;
+  }
+
+  .small-menu .burger {
+    display: block;
+    color: var(--color-yellow);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .small-menu-item {
+    border:none;
+    display: none;
+  }
+  
+ .open-small-menu .small-menu-item {
+    display: flex;
+    opacity: 1;
+  }
+  .open-small-menu {
+    background-color: var(--color-light-blue);
+  }
+
+
+  
 }
 
 /************************ < 768px  мобилки ******************/
@@ -802,11 +853,8 @@ ul.float-ul {
   .text p {
     text-align: left;
   }
-  .small-menu {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
+
   .small-menu-nav {
-    margin-left: 10px;
+    margin-top: 0;
   }
 }
