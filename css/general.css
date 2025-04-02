@@ -35,6 +35,14 @@ body {
   font-variation-settings: "wdth" 100;
 }
 
+body.scrolled .small-menu-item {
+  opacity:  0.2;
+  /*filter: blur(2px); */
+}
+body.scrolled .small-menu-nav:hover .small-menu-item{
+  opacity:  1;
+}
+
 a {
   color: var(--color-blue);
   text-decoration: none;
@@ -149,7 +157,8 @@ h1,h2 {
 .small-menu-nav {
   position: sticky;
   top: 0;
-  margin-left: 430px;
+  margin-top: -30px;
+  margin-left: 250px;
 }
 
 .small-menu-nav:hover {
@@ -158,6 +167,7 @@ h1,h2 {
 
 .small-menu {
   display: flex;
+  justify-content: flex-end;
   gap: 10px;
   padding-left: 0;
 }
@@ -169,7 +179,7 @@ h1,h2 {
 }  
 
 .small-menu-item a {
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 
 .small-menu-item:hover {
@@ -501,11 +511,6 @@ ul.float-ul {
   flex-direction: column;
 }
 
-.accordeon-vacancies ul{
-  display: flex;
-  gap: 10px;
-}
-
 .cross:hover {
   opacity: 0.8;
   cursor: pointer;
@@ -800,5 +805,8 @@ ul.float-ul {
   .small-menu {
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+  .small-menu-nav {
+    margin-left: 10px;
   }
 }

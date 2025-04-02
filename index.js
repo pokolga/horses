@@ -304,3 +304,12 @@ function changeLinkForPdf(currentLanguage){
     document.querySelector("iframe").src = document.querySelector("iframe").src.replace(/pdf\/.../,"pdf/" + currentLanguage + "/");
   }
 }
+
+/*полупрозрачность меню при скролле */
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    document.body.classList.add('scrolled'); // Добавляем класс при скролле вниз
+  } else {
+    document.body.classList.remove('scrolled'); // Убираем класс, если скролл вверх
+  }
+});
