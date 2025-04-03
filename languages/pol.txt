@@ -73,22 +73,20 @@
   "participation": {
     "dictum": "Pełna swoboda wyboru.",
     "title": "SUKCES I KARIERA",
+    "title1": "MODELING",
+    "title2": "FITNESS",
+    "title3": "TANIEC",
+    "title4": "SPORT",
+    "title5": "MUZYKA",
     "text": {
-      "p1": "Sukces życiowy i bez granic!",
-      "p2": "Twoje możliwości kariery są nieograniczone! Marzenia stają się rzeczywistością dla tych, którzy wierzą w siebie.",
-      "p3": "Chcesz zostać gwiazdą? Światowa sława, ogromne honoraria i miłość milionów fanów ‒ wszystko to stanie się Twoje bardzo szybko. Najważniejsze to wykorzystać swoją szansę na sukces życiowy.",
-      "p4": "Haute couture, wielki sport, kariera trenerska, międzynarodowe trasy koncertowe, programy telewizyjne, arcydzieła przemysłu filmowego, słynne teatry świata, kontrakty reklamowe, wywiady dla kolorowych magazynów, sesje zdjęciowe i bogate życie towarzyskie celebryty – to jest Twoja przyszłość!",
-      "p5": "Zapraszamy Cię w fascynującą podróż, która dostarczy Ci niezapomnianych wrażeń i da to, o czym od dawna marzysz.",
-      "p6": "Dla nas KARIERA to coś więcej niż tylko wysoki poziom dochodów.",
-      "p7": "Wszystko o czym marzysz! Wszystko czego chcesz od życia!",
-      "p8": "Oferujemy nieograniczone możliwości!",
-      "p9": "Kluczem do międzynarodowej kariery zawodowej jest udział w projekcie KINCSEM.CLUB.",
-      "p10": "Opowiedz nam o swoich talentach, doświadczeniu zawodowym i celach życiowych.",
-      "p11": "A my opowiemy o Tobie całemu światu. Podkreślimy Twoją indywidualność i talenty! I spełnimy Twoje marzenia!",
-      "p12": "Udział w projekcie KINCSEM.CLUB to Twoja szansa na skorzystanie z unikalnych ofert znanych międzynarodowych firm i marek.",
-      "p13": "Szczegółowe informacje na temat wybranego przez Ciebie kierunku znajdziesz na stronach <a href='./activity.html#title1'>MODELING</a> <a href='./activity.html#title2'>FITNESS</a> <a href='./activity.html#title3'>TANIEC</a> <a href='./activity.html#title4'>SPORT</a> <a href='./activity.html#title5'>MUZYKA</a>",
-      "p14": "Zapraszamy osoby utalentowane, wytrwałe i zdeterminowane!",
-      "p15": "Zapraszamy Cię do świata sukcesu! Zapraszamy Cię do wzięcia udziału w projekcie!"
+      "p1": "Sukces życiowy i kariera bez granic! Twoje możliwości kariery są nieograniczone! Marzenia stają się rzeczywistością dla tych, którzy wierzą w siebie.",
+      "p2": "Chcesz zostać gwiazdą? Światowa sława, ogromne honoraria i miłość milionów fanów ‒ wszystko to stanie się Twoje bardzo szybko. Najważniejsze to wykorzystać swoją szansę na sukces życiowy. Haute couture, wielki sport, kariera trenerska, międzynarodowe trasy koncertowe, programy telewizyjne, arcydzieła przemysłu filmowego, słynne teatry świata, kontrakty reklamowe, wywiady dla kolorowych magazynów, sesje zdjęciowe i bogate życie towarzyskie celebryty – to jest Twoja przyszłość!",
+      "p3": "Dla nas KARIERA to coś więcej niż tylko wysoki poziom dochodów.",
+      "p4": "Wszystko o czym marzysz! Wszystko czego chcesz od życia! Oferujemy nieograniczone możliwości!",
+      "p5": "Kluczem do międzynarodowej kariery zawodowej jest udział w projekcie KINCSEM.CLUB.",
+      "p6": "Opowiedz nam o swoich talentach, doświadczeniu zawodowym i celach życiowych. A my opowiemy o Tobie całemu światu!",
+      "p7": "Udział w projekcie KINCSEM.CLUB to Twoja szansa na skorzystanie z unikalnych ofert znanych międzynarodowych firm i marek.",
+      "p8": "Zapraszamy Cię do świata sukcesu! Zapraszamy Cię do wzięcia udziału w projekcie!"
     }},
   "vacancies": {
     "dictum": "Pełna swoboda wyboru.",
@@ -177,6 +175,31 @@
       "p40": "Pomożemy Ci zbudować udaną międzynarodową karierę muzyczną i zostać gwiazdą show-biznesu!",
       "p41": "Nie jesteśmy agencją!",
       "p42": "Nie pobieramy prowizji!"
+    },
+    "participate-button": "BIORĘ UDZIAŁ"
+  },
+  ,
+  "activityModel": {
+    "title": "MODELING",
+    "title1": "MODELING",
+    "title2": "FITNESS",
+    "title3": "TANIEC",
+    "title4": "SPORT",
+    "title5": "MUZYKA",
+    "text": {
+      "p1": "Modeling to ogromny świat, który rządzi się swoimi prawami. Droga, którą przemierzysz ten świat, określi twoje miejsce w jego hierarchii.",
+      "p2": "Są dwie główne drogi do świata modelingu: High-Fashion Modeling i Commercial Modeling. Każda droga wymaga innych umiejętności i oferuje różne możliwości rozwoju kariery.",
+      "p3": "Droga High-Fashion Modeling jest kręta, trudna i nieprzewidywalna. Panują tam ambicje i glamour. Tam wszystko podlega prawom Fashion Show, na czele którego stoją znane domy mody i luksusowe marki.",
+      "p4": "Musisz spełniać rygorystyczne wymagania Haute Couture. Wzrost modelki od 175 do 182 cm. Proporcje biodra-talia-biust 86-60-86 cm – to maksimum. Wzrost męskiego modela od 180 do 192 cm, talia 76-81 cm (może być jeszcze mniej). Rozmiar 40, ale lepiej – 36-38.",
+      "p5": "Dopracowałeś do perfekcji umiejętność poruszania się po wybiegu, czujesz się komfortowo w każdej stylizacji, potrafisz prawidłowo pozować, wczuć się w rolę i przekazać niezbędne emocje podczas sesji zdjęciowych? Jesteś gotowy na częste podróże, niedobory snu, rygorystyczną dietę i żelazną dyscyplinę?",
+      "p6": "W takim razie czeka na Ciebie blask światowych wybiegów i sesje zdjęciowe dla znanych magazynow modowych. I być może najwyższy stopień w hierarchii świata modelingu – tytuł Supermodelki/Supermodela, któremu towarzyszą ogromne honoraria i światowa sława. Modelki i modele, którzy osiągnęli ten status, stanowią bardzo elitarna i bardzo nieliczną grupę.",
+      "p7": "W przeciwieństwie do High-Fashion Modeling, droga Commercial Modeling jest szersza, łagodniejsza i spokojniejsza. Otwiera wiele możliwości. Każda możliwość jest unikalna i może zaprowadzić Cię na dowolny poziom hierarchii świata modelingu.",
+      "p8": "Możesz od samego początku wybrać właściwy kierunek i rozwijać swoją karierę zgodnie z nim:",
+      "p9": "I chociaż droga High-Fashion Modeling może wydawać się o wiele bardziej błyskotliwa i efektowna, Commercial Modeling często przynosi więcej pieniędzy: możesz brać udział w sesjach zdjęciowych dla magazynów, katalogów, billboardów i stron internetowych, występować w reklamach telewizyjnych, reprezentować różne marki i firmy na wystawach, koncertach i wydarzeniach sportowych. Ale to jeszcze nie wszystko. Kiedy ludzie myślą o pokazach na wybiegu, zwykle myślą o nich jako o wydarzeniach związanych z Haute Couture, ale pokazy na wybiegu mogą być również komercyjne z udziałem różnych modelek i modeli zamiast typowych High-Fashion Models.",
+      "p10": "Udział w projekcie KINCSEM.CLUB to Twoja szansa na skorzystanie z unikalnych ofert znanych międzynarodowych firm i marek.",
+      "p11": "Pomożemy Ci zbudować udaną międzynarodową karierę w modelingu!",
+      "p12": "Nie jesteśmy agencją!",
+      "p13": "Nie pobieramy prowizji!"
     },
     "participate-button": "BIORĘ UDZIAŁ"
   },

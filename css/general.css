@@ -263,6 +263,10 @@ body.scrolled .small-menu-nav:hover .small-menu-item{
   font-style: bold;
 }
 
+.main-contacts-h2.activity-title {
+  margin-top: 0;
+}
+
 .main-contacts  p,
 .main-contacts ul{
   line-height: 1.5em;
@@ -723,7 +727,7 @@ ul.float-ul {
     text-align: center;
   }
 
-  .main-contacts-h2.activity-title {
+  .main-contacts-h2 .activity-title {
     text-align: left;
   }
 
