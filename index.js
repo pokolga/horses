@@ -237,7 +237,9 @@ function changeLanguageCurrentPage(responseText,currentLanguage) {
 
   const page = location.pathname.match(/\/(\w+)\.html/)[1];
   const currentPage = renderObj[page];//объект контента страницы
-  if (currentPage.dictum) document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
+  if (currentPage.dictum) {
+    document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
+  }
   if (currentPage.title) document.querySelector(".title").textContent = currentPage.title;
   if (currentPage["participate-button"]) document.querySelector(".participate-button").textContent = currentPage["participate-button"];
 /*for activity page*/

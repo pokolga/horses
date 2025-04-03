@@ -23,6 +23,7 @@ html {
   scroll-behavior: smooth; 
   color: var(--color-grey);
   background: var(--color-green) ;
+  overflow-y: auto;
 }
 
 body {
@@ -41,7 +42,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.8;;
+  opacity: 0.7;
 }
 
 ul{
@@ -104,6 +105,7 @@ figure,
   color: var(--color-yellow);
  /*margin-right: 3px;*/
 }
+
 .header-location::before{
   content: url('./../assets/location_small.png');
   position: absolute;
@@ -147,17 +149,18 @@ h1,h2 {
 
 /*доп.меню для activity*/
 body.scrolled .small-menu-item {
-  opacity:  0.2;
+  opacity:  0;
 }
 body.scrolled .small-menu-nav:hover .small-menu-item{
-  opacity:  1;
+/*  opacity:  1;*/
 } 
 
 .small-menu-nav {
   position: sticky;
   top: 0;
-  margin-top: -30px;
-  margin-left: 250px;
+ /* margin-top: -30px;
+  margin-left: 250px;*/
+  margin-bottom: 15px;
 }
 
 .small-menu-nav:hover {
@@ -167,34 +170,37 @@ body.scrolled .small-menu-nav:hover .small-menu-item{
 .small-menu {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  align-items: flex-end;
+  /*gap: 10px;*/
   padding-left: 0;
 }
 
 .small-menu-item {
   padding: 5px 0;
-  border: solid 2px var(--color-blue);
+ /* border: solid 2px var(--color-blue);*/
   cursor: pointer;
 }  
 
 .small-menu .small-menu-item a {
-  font-weight: 400;
-  padding: 5px 10px;
+  font-weight: 500;
+  /*font-size: 14px;*/
+  padding: 0 10px;
   line-height: 1.7;
 }
 
-.small-menu-item:hover {
-  background-color: var(--color-blue);
-} 
-
-.main-contacts .small-menu-item a:hover{
-  color: var(--color-white);
-  text-decoration: none;
+.small-menu-item.small-menu-item-active a {
+  font-weight: 700;
 }
 
+.small-menu > li:nth-child(n+1):nth-child(-n+4)::after {
+  content: "•"; 
+  /*content: "·"; */
+  color: var(--color-blue);
+  font-size: 20px;
+}
 .participate-button {
   padding: 10px 20px;
-
+  margin: 0 0 7px 15px;
   color: var(--color-green);
   font-size: 16px;
   font-weight: 500;
@@ -227,6 +233,11 @@ body.scrolled .small-menu-nav:hover .small-menu-item{
   opacity: 0.8;
   cursor: pointer;
 }
+
+.add-menu-participation{
+  display: flex;
+  justify-content: space-between;
+}
 /*
 .small-menu>.burger {
   display: none;
@@ -251,6 +262,10 @@ body.scrolled .small-menu-nav:hover .small-menu-item{
   color: var(--color-grey);
 
   background: var(--color-white);
+}
+
+.main-contacts.active-page{
+  padding-top: 10px;
 }
 
 .main-contacts-h2 {
@@ -294,7 +309,7 @@ p.before-ul {
 }
 
 .main-contacts a:hover{
-  text-decoration: underline;
+ /* text-decoration: underline;*/
 }
 
 .text {
@@ -310,7 +325,7 @@ p.before-ul {
   padding-left: 2px; 
 }
 
-.text ul>li::before {
+.text>ul>li::before {
   content: "•";
   font-weight: 700;
   color: var(--color-grey);
@@ -326,10 +341,10 @@ ul.float-ul {
 .text ul.child-ul>li {
   padding-left: 20px; 
 }
-
+/*
 .text ul.child-ul>li::before {
   content: "-";
-}
+}*/
 
 .text ol {
   padding-inline-start: 0px;
@@ -426,7 +441,7 @@ ul.float-ul {
 .accordeon-outline {
   margin-bottom: 50px;
   border: var(--color-yellow) 1px solid;
-  background-color: #fff;
+  background-color: var(--color-white);
   display:flex;
 }
 
@@ -795,20 +810,13 @@ ul.float-ul {
   .small-menu {
     flex-wrap: wrap;
     align-items: center;
-    gap: 0;
-    font-size: 12px;
+/*    font-size: 12px;*/
   }
   .small-menu > li{
     justify-content: center;
     align-items: center;
   }
  
-  .small-menu > li:nth-child(n+2):nth-child(-n+5)::after {
-    content: "·"; 
-    color: var(--color-blue);
-    font-size: 20px;
-  }
-
   .small-menu .burger {
     display: block;
     margin-left: 10px;
@@ -819,8 +827,7 @@ ul.float-ul {
   }
 
   .small-menu-item {
-    border:none;
-    display: none;
+/*    display: none;*/
   }
   
  .open-small-menu .small-menu-item {
@@ -864,7 +871,10 @@ ul.float-ul {
 
   .main-contacts {
     padding: 5px 10px;
+    font-size: 14px;
+  }
 
+  .small-menu > li:nth-child(n+1):nth-child(-n+4)::after {
     font-size: 14px;
   }
 
