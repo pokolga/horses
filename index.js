@@ -241,7 +241,7 @@ function changeLanguageCurrentPage(responseText,currentLanguage) {
     document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
   }
   if (currentPage.title) document.querySelector(".title").textContent = currentPage.title;
-  if (currentPage["participate-button"]) document.querySelector(".participate-button").textContent = currentPage["participate-button"];
+  if (currentPage["link-to-contacts"]) document.querySelector(".link-to-contacts").textContent = currentPage["link-to-contacts"];
 /*for activity page*/
   if (document.querySelector(".title1")) {
     for (let i = 1; i <= 5; i++){
@@ -306,9 +306,8 @@ function changeLinkForPdf(currentLanguage){
   }
 }
 
-//console.log(window.location)
+//TODO переделать!
 if (/activ/.test(window.location.href)){
-   ///activ/.test(window.location.href)
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
         document.body.classList.add('scrolled'); // Добавляем класс при скролле вниз

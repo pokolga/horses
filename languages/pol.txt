@@ -65,7 +65,7 @@
       "p5": "Zakłady na wyścigi konne, obok zakładów sportowych, stanowią ważną część światowego rynku zakładów bukmacherskich i są głównym źródłem dochodów organizatorów zawodów.",
       "p6": "Najbardziej prestiżowe na świecie wyścigi konne z pulą nagród przekraczającą 10 milionów dolarów odbywają się z udziałem elity świata koni – rasy koni pełnej krwi angielskiej. Konie mogą być dochodowym aktywem, cenionym nie tylko ze względu na swoją konkurencyjność, ale także ze względu na wartość hodowlaną i odsprzedażową",
       "p7": "Dlatego właśnie koń pełnej krwi angielskiej to zyskowna inwestycja, której opłacalność rośnie. Wartość światowych liderów wyścigów konnych o wybitnym rodowodzie z każdym rokiem wzrasta. Obecnie najdroższym na świecie koniem pełnej krwi angielskiej jest Frankel, którego wartość szacuje się na 200 milionów dolarów.",
-      "p8": "Projekt KINCSEM.CLUB oferuje uczestnikom możliwość zarabiania na wyścigach konnych i daje szansę na budowanie udanej międzynarodowej kariery.",
+      "p8": "Udział w projekcie KINCSEM.CLUB daje szansę na budowanie udanej międzynarodowej kariery zawodowej. Dodatkowo projekt daje uczestnikom możliwość czerpania zysków z przemysłu konnego.",
       "p9": "Celem projektu KINCSEM.CLUB jest tworzenie silnej i zaangażowanej społeczności utalentowanych osób o podobnych poglądach, których łączą wspólne zainteresowania, a także zapewnienie dostępu do nowych pomysłów i aktualnych informacji.",
       "p10": "Twoje pomysły i doświadczenie zawodowe mogą wnieść istotny wkład w realizację celów projektu KINCSEM.CLUB. Czekamy na tych, którzy są gotowi poświęcić czas, połączyć siły i odegrać kluczową rolę w tworzeniu możliwości rozwoju kontaktów biznesowych pomiędzy uczestnikami projektu na całym świecie.",
       "p11": "Dzięki udziałowi w projekcie KINCSEM.CLUB uzyskasz maksimum korzyści!"
@@ -111,8 +111,11 @@
     "dictum": "Szczęście każdego jest w jego własnych rękach.",
     "title": "INFORMACJE KONTAKTOWE",
     "text": {
-      "p1": "Kandydaci do udziału w projekcie KINCSEM.CLUB powinni przesyłać prośby o dołączenie do grupy <a href=\"https://t.me/+tGbaVE1QQ3k2ZTg0\" target=\"_blank\" rel=\"noopener noreferrer\">kincsem.club</a> w komunikatorze Telegram, po wcześniejszym zapoznaniu się z informacjami zamieszczonymi pod adresem  <a href=\"./../html/participation.html\">UCZESTNICY</a>.",
-      "p2": "Wszelkie sugestie i pytania należy przesyłać na następujący adres e-mail: <a href=\"mailto:kincsem.club@gmail.com\" target=\"_blank\">kincsem.club@gmail.com</a>."
+      "p1": "Celem projektu KINCSEM.CLUB jest stworzenie społeczności utalentowanych profesjonalistów, których łączą wspólne zainteresowania.",
+      "p2": "Udział w projekcie KINCSEM.CLUB daje szansę na budowanie udanej międzynarodowej kariery zawodowej. Dodatkowo projekt daje uczestnikom możliwość czerpania zysków z przemysłu konnego.",
+      "p3": "Zapraszamy wszystkich, którzy cenią dostęp do nowych pomysłów i aktualnych informacji oraz są gotowi wnieść wkład w rozwój kontaktów biznesowych między uczestnikami projektu na całym świecie.",
+      "p4": "Projekt KINCSEM.CLUB stwarza nieograniczone możliwości i zapewnia maksymalne korzyści!",
+      "p5": "Napisz do nas w Telegramie (grupa <a href=\"https://t.me/+tGbaVE1QQ3k2ZTg0\" target=\"_blank\" rel=\"noopener noreferrer\">kincsem.club</a>) lub na adres e-mail <a href=\"mailto:kincsem.club@gmail.com\" target=\"_blank\">kincsem.club@gmail.com</a> i zostań uczestnikiem projektu KINCSEM.CLUB już dziś!"
     }},
   "confidentially": "",
   "conditions": "",
@@ -132,6 +135,7 @@
     "title3": "TANIEC",
     "title4": "SPORT",
     "title5": "MUZYKA",
+    "link-to-contacts": "BIORĘ UDZIAŁ",
     "text": {
       "p1": "Modeling to ogromny świat, który rządzi się swoimi prawami. Droga, którą przemierzysz ten świat, określi twoje miejsce w jego hierarchii.",
       "p2": "Są dwie główne drogi do świata modelingu: High-Fashion Modeling i Commercial Modeling. Każda droga wymaga innych umiejętności i oferuje różne możliwości rozwoju kariery.",
@@ -175,8 +179,7 @@
       "p40": "Pomożemy Ci zbudować udaną międzynarodową karierę muzyczną i zostać gwiazdą show-biznesu!",
       "p41": "Nie jesteśmy agencją!",
       "p42": "Nie pobieramy prowizji!"
-    },
-    "participate-button": "BIORĘ UDZIAŁ"
+    }
   },
   "activeModel": {
     "title": "MODELING",
@@ -185,17 +188,17 @@
     "title3": "TANIEC",
     "title4": "SPORT",
     "title5": "MUZYKA",
+    "link-to-contacts": "BIORĘ UDZIAŁ",
     "text": {
-      "p1": "Modeling to ogromny świat, który rządzi się swoimi prawami. Droga, którą przemierzysz ten świat, określi twoje miejsce w jego hierarchii. Są dwie główne drogi do świata modelingu: High-Fashion Modeling i Commercial Modeling. Każda droga wymaga innych umiejętności i oferuje różne możliwości rozwoju kariery.",
-      "p2": "Droga High-Fashion Modeling jest kręta, trudna i nieprzewidywalna. Panują tam ambicje i glamour. Tam wszystko podlega prawom Fashion Show, na czele którego stoją znane domy mody i luksusowe marki. Musisz spełniać rygorystyczne wymagania Haute Couture. Wzrost modelki od 175 do 182 cm. Proporcje biodra-talia-biust 86-60-86 cm – to maksimum. Wzrost męskiego modela od 180 do 192 cm, talia 76-81 cm (może być jeszcze mniej). Rozmiar 40, ale lepiej – 36-38.",
-      "p3": "Dopracowałeś do perfekcji umiejętność poruszania się po wybiegu, czujesz się komfortowo w każdej stylizacji, potrafisz prawidłowo pozować, wczuć się w rolę i przekazać niezbędne emocje podczas sesji zdjęciowych? Jesteś gotowy na częste podróże, niedobory snu, rygorystyczną dietę i żelazną dyscyplinę? W takim razie czeka na Ciebie blask światowych wybiegów i sesje zdjęciowe dla znanych magazynow modowych. I być może najwyższy stopień w hierarchii świata modelingu – tytuł Supermodelki/Supermodela, któremu towarzyszą ogromne honoraria i światowa sława. Modelki i modele, którzy osiągnęli ten status, stanowią bardzo elitarna i bardzo nieliczną grupę. ",
-      "p4": "W przeciwieństwie do High-Fashion Modeling, droga Commercial Modeling jest szersza, łagodniejsza i spokojniejsza. Otwiera wiele możliwości. Każda możliwość jest unikalna i może zaprowadzić Cię na dowolny poziom hierarchii świata modelingu. Możesz od samego początku wybrać właściwy kierunek i rozwijać swoją karierę zgodnie z nim: Fitness models, Petite models, Plus-size models, Body part models, Alternative models, Promo models.",
-      "p5": "I chociaż droga High-Fashion Modeling może wydawać się o wiele bardziej błyskotliwa i efektowna, Commercial Modeling często przynosi więcej pieniędzy: możesz brać udział w sesjach zdjęciowych dla magazynów, katalogów, billboardów i stron internetowych, występować w reklamach telewizyjnych, reprezentować różne marki i firmy na wystawach, koncertach i wydarzeniach sportowych. Ale to jeszcze nie wszystko. Kiedy ludzie myślą o pokazach na wybiegu, zwykle myślą o nich jako o wydarzeniach związanych z Haute Couture, ale pokazy na wybiegu mogą być również komercyjne z udziałem różnych modelek i modeli zamiast typowych High-Fashion Models.",
-      "p6": "Udział w projekcie KINCSEM.CLUB to Twoja szansa na skorzystanie z unikalnych ofert znanych międzynarodowych firm i marek.",
+      "p1": "Modeling to start kariery w branży fashion, reklamie, kinie i telewizji.",
+      "p2": "Masz perfekcyjną prezencję, spełniającą wymagania Haute Couture? Czujesz się pewnie na wybiegu i przed obiektywem kamery? Marzysz o udziale w Fashion Show znanych domów mody?",
+      "p3": "Śmiało wybieraj High-Fashion Modeling! Czekają na Ciebie światowe wybiegi, sesje zdjęciowe dla największych magazynów mody, ogromne honoraria i światowa sława!",
+      "p4": "Masz ciekawą i imponującą prezencję? Lubisz być w centrum uwagi? Marzysz o karierze aktorskiej? A może o pracy prezentera telewizyjnego?",
+      "p5": "Twój wybór to Commercial Modeling, obejmujący Fitness Modeling, Mature Modeling, Family Modeling, Petite Modeling, Plus Size Modeling, Body Parts Modeling, Alternative Modeling, Promotional Modeling.",
+      "p6": "Czekają na Ciebie zdjęcia do reklamy telewizyjnej i internetowej, a także sesje zdjęciowe do mediów drukowanych i cyfrowych. Jako Brand Ambassador będziesz reprezentować różne marki, biorąc udział w kampaniach marketingowych (w Internecie, telewizji, radiu, na billboardach), akcjach charytatywnych i społecznych, a także wydarzeniach branżowych, dzieląc się treściami w mediach społecznościowych.",
       "p7": "Pomożemy Ci zbudować udaną międzynarodową karierę w modelingu!",
       "p8": "Nie jesteśmy agencją! Nie pobieramy prowizji!"
-    },
-    "participate-button": "BIORĘ UDZIAŁ"
+    }
   },
   "activeFitness": {
     "title": "FITNESS",
@@ -204,6 +207,7 @@
     "title3": "TANIEC",
     "title4": "SPORT",
     "title5": "MUZYKA",
+    "link-to-contacts": "BIORĘ UDZIAŁ",
     "text": {
       "p1": "Fitness to piękno i siła. Smukłość i atletyczna sylwetka to cechy osób zdeterminowanych. Tych, którzy są gotowi krok po kroku każdego dnia wytrwale dążyć do celu.",
       "p2": "Branża fitness to świetne miejsce dla osób pewnych siebie. Perspektywy zawodowe są tu nieograniczone!",
@@ -211,8 +215,7 @@
       "p4": "Zapraszamy osoby, które mają doświadczenie w treningu amatorskim i chcą budować międzynarodową karierę w branży fitness, a także trenerów i instruktorów fitness niezależnie od specjalizacji.",
       "p5": "Dołącz do nas i zostań gwiazdą branży fitness!",
       "p6": "Nie jesteśmy agencją! Nie pobieramy prowizji!"
-    },
-    "participate-button": "BIORĘ UDZIAŁ"
+    }
   },
   "activeDance": {
     "title": "TANIEC",
@@ -221,6 +224,7 @@
     "title3": "TANIEC",
     "title4": "SPORT",
     "title5": "MUZYKA",
+    "link-to-contacts": "BIORĘ UDZIAŁ",
     "text": {
       "p1": "Taniec to harmonia ruchów i uczuć. Uroda i wirtuozeria wykonawcy to gwarancja sukcesu nie tylko w branży tanecznej. To szczęśliwy bilet, który daje przepustkę do świata wielkich możliwości.",
       "p2": "Jeśli marzysz o karierze w show-biznesie, z naszą pomocą otworzy się przed Tobą cały świat!",
@@ -228,8 +232,7 @@
       "p4": "Zapraszamy utalentowanych wykonawców, pedagogów i choreografów do pracy nad projektami z różnych dziedzin: moda, fitness i sport, reklama, branża muzyczna, show-biznes.",
       "p5": "Pomożemy Ci zdobyc swiatowe uznanie i zostać gwiazdą show-biznesu!",
       "p6": "Nie jesteśmy agencją! Nie pobieramy prowizji!"
-    },
-    "participate-button": "BIORĘ UDZIAŁ"
+    }
   },
   "activeSport": {
     "title": "SPORT",
@@ -238,6 +241,7 @@
     "title3": "TANIEC",
     "title4": "SPORT",
     "title5": "MUZYKA",
+    "link-to-contacts": "BIORĘ UDZIAŁ",
     "text": {
       "p1": "Sport to nie tylko zawody i medale. To przede wszystkim show. Fani wypełniają trybuny stadionów, czekając na piękną grę i niezapomniane emocje. Znani sportowcy są podziwiani i stają się wzorem do naśladowania. Gwiazdy sportu pojawiają się na łamach kolorowych magazynów wraz z celebrytami ze świata kina, muzyki, mody i sztuki.",
       "p2": "Jeśli znasz już smak zwycięstwa i nie wyobrażasz sobie życia bez sportu, pomożemy w rozwoju Twojej kariery sportowej! Najlepsi trenerzy i menedżerowie otworzą przed Tobą drzwi do świata wielkiego sportu i głośnych zwycięstw.",
@@ -245,8 +249,7 @@
       "p4": "Zapraszamy sportowców, którzy wykazali się osiągnięciami na poziomie krajowym lub międzynarodowym, niezależnie od uprawianej dyscypliny sportowej.",
       "p5": "Pomożemy Ci zostać legendą sportu, gwiazdą show-biznesu i menedżerem sportu światowej klasy!",
       "p6": "Nie jesteśmy agencją! Nie pobieramy prowizji!"
-    },
-    "participate-button": "BIORĘ UDZIAŁ"
+    }
   },
   "activeMusic": {
     "title": "MUZYKA",
@@ -255,6 +258,7 @@
     "title3": "TANIEC",
     "title4": "SPORT",
     "title5": "MUZYKA",
+    "link-to-contacts": "BIORĘ UDZIAŁ",
     "text": {
       "p1": "Muzyka otacza Cię wszędzie: wita z ekranu telewizora podczas śniadania, pozwala oderwać się od zgiełku metra w drodze do pracy, dodaje energii podczas treningu w centrum fitness, bawi w klubie, towarzyszy w ulubionej grze komputerowej i oferuje nowe możliwości z elektronicznych billboardów.",
       "p2": "Muzyka może być wszystkim: mocą, gniewem, radością, szczęściem, zwycięstwem. Muzyka daje poczucie pełni życia.",
@@ -263,8 +267,7 @@
       "p5": "Zapraszamy utalentowanych instrumentalistów, pedagogów i akompaniatorów, którzy biegle grają na instrumentach smyczkowych, dętych, klawiszowych lub perkusyjnych, a także wokalistów i pedagogów, którzy dysponują mocnym głosem w skali sopranu, mezzosopranu, altu (dla głosów żeńskich) oraz tenoru, barytonu, basu (dla głosów męskich).",
       "p6": "Pomożemy Ci zbudować udaną międzynarodową karierę muzyczną i zostać gwiazdą show-biznesu!",
       "p7": "Nie jesteśmy agencją! Nie pobieramy prowizji!"
-    },
-    "participate-button": "BIORĘ UDZIAŁ"
+    }
   },
   "other": {"p10":"<div><ul><li>międzynarodowy klub współwłaścicieli koni pełnej krwi angielskiej;</li><li>agencja informacyjno - reklamowa;</li><li>stadnina koni pełnej krwi angielskiej;</li><li>specjalizowane hipodromy;</li><li>centra treningowe koni pełnej krwi angielskiej;</li><li>centra szkoleniowe dla specjalistów z branży jeździeckiej;</li><li>centra jazdy konnej;</li><li>przedsiębiorstwa produkujące i sprzedające towary dla branży jeździeckiej;</li><li>apteki i kliniki weterynaryjne;</li><li>domy aukcyjne i aukcje internetowe;</li><li>giełdy zakładów, totalizatory i biura bukmacherskie;</li><li>organizacje działające w sferze:    <ul class=\"child-ul\"> <li>finansów;</li> <li>konsultingu;</li> <li>IT;</li> <li>handlu;</li> <li>przemysłu;</li> <li>rolnictwa;</li> <li>gospodarki leśnej;</li> <li>transportu i logistyki;</li> <li>turystyki;</li> <li>gastronomii;</li> <li>hotelarstwa;</li> <li>edukacji;</li> <li>ochrony zdrowia;</li> <li>pomocy społecznej;</li> <li>sportu i rozwoju fizycznego;</li> <li>kultury;</li> <li>sztuki.</li></ul></li></ul></div>"}
 }
