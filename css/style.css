@@ -129,7 +129,10 @@ body {
     display: none;
   }
 
-  
+  .politics {
+    max-width: 1000px;
+  }
+
   .politics_item {
     margin-bottom: 20px;
   }

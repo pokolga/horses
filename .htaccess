@@ -12,5 +12,10 @@ Header set Content-Security-Policy "default-src 'self'; script-src 'self'; style
   Header set X-Frame-Options "SAMEORIGIN"
 </IfModule>
 
-#RewriteEngine On
+RewriteEngine On
 #    RewriteRule ^https://kincsem.club/([^.]*)$ https://kincsem.club/html/$1.html [L,QSA]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^контакты$ /html/contacts.html [NC,L]
+#RewriteRule ^contacts$ /html/contacts.html [NC,L]
