@@ -235,7 +235,8 @@ function changeLanguageCurrentPage(responseText,currentLanguage) {
   
   const renderObj = JSON.parse(responseText);
 
-  const page = location.pathname.match(/\/(\w+)\.html/)[1];
+  //const page = location.pathname.match(/\/(\w+)\.html/)[1];
+  const page = document.querySelector("html").className;
   const currentPage = renderObj[page];//объект контента страницы
   if (currentPage.dictum) {
     document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
