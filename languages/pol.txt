@@ -7,12 +7,18 @@
     "development": "rozwój",
     "participation": "uczestnicy",
     "vacancies": "kariera",
-    "contacts": "informacje kontaktowe",
+    "contacts": "kontakty",
     "rights": "Wszelkie prawa zastrzeżone.",
     "confidentially": "Polityka prywatności",
     "conditions": "Regulamin",
     "cookies": "Polityka dotycząca cookies",
-    "location": "REGIONY I JĘZYKI",
+    "location": "kraje",
+    "languages": "kraje",
+    "activeModel": "modeling",
+    "activeFitness": "fitness",
+    "activeDance": "taniec",
+    "activeSport": "sport",
+    "activeMusic": "muzyka",
     "cookie-text": "Korzystając z serwisu internetowego kincsem.club, użytkownik akceptuje  <a href=\"./html/confidentially.html\"  target=\"_blank\">Politykę prywatności</a>, <a href=\"./html/conditions.html\"  target=\"_blank\">Regulamin</a> i <a href=\"./html/cookie.html\"  target=\"_blank\">Politykę dotycząca cookies</a>, zamieszczone wniniejszym Serwisie.",
     "cookie-agreement": "AKCEPTUJĘ" 
   },
@@ -21,9 +27,9 @@
     "title": "TEJ STRONY NIE MA W SERWISIE: BŁĄD 404",
     "text": {
       "p1": "Niestety, postawiłeś na niewłaściwego konia...",
-      "p2": "Prawdopodobnie błąd w adresie lub ta strona nigdy nie istniała. Ale zawsze możesz przejść do strony <a href=\"./../index.html\">HOME</a>."
+      "p2": "Prawdopodobnie błąd w adresie lub ta strona nigdy nie istniała. Ale zawsze możesz przejść do strony <a class=\"cpu-a\" href=\"./../index.html\">HOME</a>."
     }},   
-  "index": "",
+  "index": {},
   "name": {
     "dictum": "Mylić się jest rzeczą ludzką.",
     "title": "NAZWA PROJEKTU",

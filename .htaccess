@@ -1,8 +1,8 @@
 Options -Indexes
 
-ErrorDocument 404 https://kincsem.club/html/404.html
+ErrorDocument 404 https://kincsem.club/404
 
-Header set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self';"
+Header set Content-Security-Policy "style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
 
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
@@ -13,9 +13,27 @@ Header set Content-Security-Policy "default-src 'self'; script-src 'self'; style
 </IfModule>
 
 RewriteEngine On
-#    RewriteRule ^https://kincsem.club/([^.]*)$ https://kincsem.club/html/$1.html [L,QSA]
 
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteRule ^контакты$ /html/contacts.html [NC,L]
-#RewriteRule ^contacts$ /html/contacts.html [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(главная|home)$ /index.html [NC,L]
+RewriteRule ^(контакты|kontakty)$ /html/contacts.html [NC,L]
+RewriteRule ^(название|nazwa)$ /html/name.html [NC,L]
+RewriteRule ^(порода|rasa)$ /html/breed.html [NC,L]
+RewriteRule ^(отношение|relacje)$ /html/relationship.html [NC,L]
+RewriteRule ^(развитие|rozwój)$ /html/development.html [NC,L]
+RewriteRule ^(участники|uczestnicy)$ /html/participation.html [NC,L]
+RewriteRule ^(моделинг|modeling)$ /html/activeModel.html [NC,L]
+RewriteRule ^(фитнес|fitness)$ /html/activeFitness.html [NC,L]
+RewriteRule ^(танец|taniec)$ /html/activeDance.html [NC,L]
+RewriteRule ^(спорт|sport)$ /html/activeSport.html [NC,L]
+RewriteRule ^(музыка|muzyka)$ /html/activeMusic.html [NC,L]
+RewriteRule ^(страны|kraje)$ /html/languages.html [NC,L]
+RewriteRule ^(404)$ /html/404.html [NC,L]
+
+FileETag MTime Size
+
+# Настройка кэширования
+<IfModule mod_headers.c>
+  Header set Cache-Control "public, max-age=3600, must-revalidate"
+</IfModule>

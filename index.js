@@ -35,20 +35,31 @@ function closeMobileMenu(){
 }
 
 /* куки: запоминаем на локальном, что мы уже предупреждали и повторно не выдаем сообщение */
+      
+      document.addEventListener("DOMContentLoaded", init);
 
-if (document.querySelector(".cookie")) {
 
-      /* показывать куки-окно только если в локал сторидж нет переменной*/
-    document.addEventListener("DOMContentLoaded",function(){
-      if (!localStorage.getItem('cookie'))  document.querySelector(".cookie").style.display = "flex";
-    })
+function init(){
+  /* показывать куки-окно только если в локал сторидж нет переменной*/
+  if (document.querySelector(".cookie")) {
+    if (!localStorage.getItem('cookie')) {
+      document.querySelector(".cookie").style.display = "flex";
+    } 
     /*клик по крестику или Согласен закрывает окно куки и вносит переменную в локал сторидж*/
-
     document.querySelector(".cookie-button>button").addEventListener("click",closeCookieBlock);
     document.querySelector(".cross").addEventListener("click",closeCookieBlockWithoutSave);
     document.querySelector(".cookie-button>button").addEventListener("touch",closeCookieBlock);
     document.querySelector(".cross").addEventListener("touch",closeCookieBlockWithoutSave);
+  } 
+  if (localStorage.getItem('language')){
+    console.log(localStorage.getItem('language'));
+    ajaxLanguage(localStorage.getItem('language'));
+  }
+  else {
+    ajaxLanguage("rus");
+  }
 }
+
 
 function closeCookieBlock(){
   document.querySelector(".cookie").style.display = "none";
@@ -138,7 +149,7 @@ function openPhotoInModalWindow() {
       };
 }
 
-/*аккордеон*/
+/**************** аккордеон **************/
 (function initAccordeon(){
   if (document.querySelector(".accordeon")){
     document.querySelectorAll(".accordeon-title").forEach((item) => {item.addEventListener("click", clickForAccordeonTitles)})
@@ -156,7 +167,6 @@ function openPhotoInModalWindow() {
   }
 })();
 
-
 function clickForAccordeonTitles(){
   document.querySelectorAll(".accordeon-title").forEach((item) => {item.classList.remove("accordeon-active")});
   this.classList.add("accordeon-active");
@@ -170,9 +180,9 @@ function clickForAccordeonLink(ev){
   в папке  languages должен быть файл %аббревиатура%.txt по шаблону
   Если атрибут не указан, то переходим на русский*/
   ev.preventDefault();
-  if (/languages/.test(location.href)){
-    document.querySelectorAll(".accordeon-a").forEach((elem) => elem.classList.remove("accordeon-a-active"));
 
+  if (document.querySelector("html").classList.contains("languages")){
+    document.querySelectorAll(".accordeon-a").forEach((elem) => elem.classList.remove("accordeon-a-active"));
     this.classList.add("accordeon-a-active");
 
     if (!this.dataset.lang || this.dataset.lang === '') {
@@ -180,7 +190,7 @@ function clickForAccordeonLink(ev){
     } else {
       ajaxLanguage(this.dataset.lang);
     }
-
+    location.reload(true);
   }
 }
 
@@ -231,21 +241,22 @@ function changeLanguageGlobal(responseText, abbr) {
 
 function changeLanguageCurrentPage(responseText,currentLanguage) {
 /***********   абзацы с "на стадии разработки" помечаем классом tmp-stage! */
-  if (!document.querySelector(".main-contacts")) return; //для некоторых страниц не надо рендерить
-  
+console.log("смена языка при перезагрузке")
   const renderObj = JSON.parse(responseText);
 
-  //const page = location.pathname.match(/\/(\w+)\.html/)[1];
   const page = document.querySelector("html").className;
   const currentPage = renderObj[page];//объект контента страницы
   if (currentPage.dictum) {
     document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
   }
   if (currentPage.title) document.querySelector(".title").textContent = currentPage.title;
-  if (currentPage["link-to-contacts"]) document.querySelector(".link-to-contacts").textContent = currentPage["link-to-contacts"];
+  if (currentPage["link-to-contacts"] && document.querySelector(".link-to-contacts")) document.querySelector(".link-to-contacts").textContent = currentPage["link-to-contacts"];
 /*for activity page*/
+  const numberOfActivePages = 5;
   if (document.querySelector(".title1")) {
-    for (let i = 1; i <= 5; i++){
+
+    for (let i = 1; i <= numberOfActivePages; i++){
+    console.log(".title1", currentPage[`title${i}`]); 
       if (document.querySelector(`.title${i}`)){
         document.querySelectorAll(`.title${i}`).forEach((elem) => elem.textContent = currentPage[`title${i}`]);
       }
@@ -273,7 +284,8 @@ function changeLanguageCurrentPage(responseText,currentLanguage) {
       }
     }
   }
-
+  
+  changeCPUItems(renderObj.global);
   changeLinkForPdf(currentLanguage);
 } 
 
@@ -307,8 +319,32 @@ function changeLinkForPdf(currentLanguage){
   }
 }
 
+function changeCPUItems(global) {
+
+  const links = document.querySelectorAll(".cpu-a");
+
+  links.forEach((link) => {
+    if (link.href.match(/\w+(?=\.html)/)) {
+      if (link.href.match(/\w+(?=\.html)/)[0] === "index") {
+        const newName = global.index;
+        link.href = link.href.replace("index.html", newName);
+      } else if (link.href.match(/(?<=html\/)\w+(?=\.html)/)) {
+        const nameOfPage = link.href.match(/(?<=html\/)\w+(?=\.html)/)[0];
+        const newName = global[nameOfPage];
+     //   console.log(nameOfPage, newName)
+        if (newName) {
+          link.href = link.href.replace(`html/${nameOfPage}.html`, newName);
+        }
+      } else {
+        console.log("возможно, уже линк переписали ранее");
+      }
+    }
+  });
+}
+
 //TODO переделать!
-if (/activ/.test(window.location.href)){
+//if (/activ/.test(window.location.href)){
+  if (/activ/.test(document.querySelector("html").className)){    
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
         document.body.classList.add('scrolled'); // Добавляем класс при скролле вниз
@@ -317,15 +353,4 @@ if (/activ/.test(window.location.href)){
         document.body.classList.remove('scrolled'); // Убираем класс, если скролл вверх
       }
     });
-
- /*   document.querySelector(".small-menu .burger").addEventListener("touchstart", function() {
-      document.querySelector(".small-menu").classList.toggle("open-small-menu");
-    });
-    /*document.querySelector(".small-menu .burger").addEventListener("click", function() {
-      document.querySelector(".small-menu").classList.toggle("open-small-menu");
-    });*/
-/*    document.querySelectorAll(".small-menu-item").forEach((elem) => elem.addEventListener("click", function() {
-      document.querySelector(".small-menu").classList.remove("open-small-menu");
-      })
-    )*/
 }
