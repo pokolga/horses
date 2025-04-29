@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="vacancies" lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()">
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+
     <title>Kincsem.club</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,18 +21,18 @@
 
 <body>
     <header class="header">
-        <a class="logo" href="./../index.html">
+        <a class="cpu-a logo" href="./../index.html">
            <h1>KINCSEM.CLUB</h1>
         </a>
         <nav>
           <ul class="menu">
-              <li class="menu_item"><a class="menu-a" href="./../index.html">Главная</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/name.html">Название</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/breed.html">Порода</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/relationship.html">Отношения</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/development.html">Развитие</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/participation.html">Участие</a></li>
-              <li class="menu_item menu-a-active"><a class="menu-a" href="#">Вакансии</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a index" href="./../index.html">Главная</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a name" href="./../html/name.html">Название</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a breed" href="./../html/breed.html">Порода</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a relationship" href="./../html/relationship.html">Отношение</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a development" href="./../html/development.html">Развитие</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a participation" href="./../html/participation.html">Участники</a></li>
+              <li class="menu_item menu-a-active"><a class="menu-a vacancies" href="#">Карьера</a></li>
           </ul>
        </nav>
        <div class="burger">
@@ -37,25 +40,26 @@
             <span></span>
             <span></span>
        </div> 
-       <a class="location" href="./../html/languages.html" title="Страны"  target="_blank">
+       <a class="cpu-a location" href="./../html/languages.html" title="Страны">
         <div class="header-location">
-         <img src="./../assets/public.svg" alt="glob">    
-        </div>
+          <span class="active-language">rus</span> 
+          <img src="./../assets/public.svg" alt="glob">    
+         </div>
        </a>
        
        <div class="burger-menu">
       
         <ul class="mobile-menu">
-          <li class="mobile-menu_item"><a class="menu-a" href="./../index.html">Главная</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/name.html">Название</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/breed.html">Порода</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/relationship.html">Отношения</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/development.html">Развитие</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/participation.html">Участие</a></li>
-          <li class="mobile-menu_item menu-a-active"><a class="menu-a" href="#">Вакансии</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a index" href="./../index.html">Главная</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a name" href="./../html/name.html">Название</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a breed" href="./../html/breed.html">Порода</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a relationship" href="./../html/relationship.html">Отношение</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a development" href="./../html/development.html">Развитие</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a participation" href="./../html/participation.html">Участники</a></li>
+          <li class="mobile-menu_item menu-a-active"><a class="menu-a vacancies" href="#">Карьера</a></li>
           <li class="mobile-menu_item">
             <div class="handshake">
-              <a href="./../html/contacts.html"  title="Контакты">
+              <a class="cpu-a contacts" href="./../html/contacts.html"  title="Контакты">
                 <img src="./../assets/handshake.svg" alt="handshake">
               </a>
           </div>
@@ -66,66 +70,67 @@
 
     <main class="main-contacts">
       <div class="dictum">
-        <div>Incipit vita nova.</div>
-        <div>Начинается новая жизнь.</div>
+        <div>Liberum arbitrium indifferentiae.</div>
+        <div>Полная свобода выбора.</div>
       </div>
       
       <div class="future-choice">
-       <h2 class="main-contacts-h2">ВАКАНСИИ ПРОЕКТА</h2>
+       <h2 class="main-contacts-h2 title">КАРЬЕРА БЕЗ ГРАНИЦ</h2>
        <figure>
-        <img class="full-screen" src="./../assets/The House of Commons George Hayte.jpg"
-        alt="'The House of Commons' George Hayte" />
-       <figcaption>&#171;The House of Commons&#187;<br> George Hayte (1833)</figcaption>
-      </figure> 
+          <img class="full-screen" src="./../assets/Up the Hill John Sturgess 1839.jpg" alt="'Up the Hill' John Sturgess" />
+          <figcaption>&#171;Up the Hill&#187;<br>John Sturgess (b.1839)</figcaption>
+        </figure> 
           <div class="text">
-            <p class="importance">Сейчас – единственное время для реализации проекта KINCSEM.CLUB и единственная возможность принять в нём участие, которая будет предоставлена немногим.</p> 
-            <p>Когда всё в мире меняется, рушится многое из того, что было Вам так дорого, и нет уверенности в завтрашнем дне – сейчас самое подходящее время принять участие в проекте KINCSEM.CLUB. </p>
-            <p>Именно сейчас для Вас самое подходящее время принять участие в проекте KINCSEM.CLUB, изменив своё настоящее и будущее в лучшую сторону, тем самым дав шанс на лучшее настоящее и будущее для своей семьи и близких родственников. </p>
-            <p>Помните, что самая большая помеха в Вашей жизни – это Ваше бездействие, праздное ожидание чуда от завтрашнего дня и потеря предоставленного Вам шанса в сегодняшнем дне.</p>
-            <p>Вакансии доступны только для участников проекта KINCSEM.CLUB. Предусмотрена возможность доступности вакансий для членов семей и близких родственников участников проекта KINCSEM.CLUB.</p>
-            <p class="importance">ДОСТУПНЫЕ ВАКАНСИИ:</p>
-
-              <ol>
-                <li>Управляющие региональными представительствами клуба</li>
-                <li>Руководители отделений и сотрудники региональных представительств клуба по следующим направлениям:
+            <p class="p1">Твои карьерные возможности безграничны!</p> 
+            <p class="p2">Мы приглашаем тебя в увлекательное путешествие, которое дарит незабываемые впечатления и даёт то, о чём ты давно мечтаешь.</p>
+            <p class="p3">Для нас КАРЬЕРА – это больше, чем просто высокий уровень доходов. </p>
+            <p class="p4">Всё, о чём ты мечтаешь! Всё, чего ты хочешь от жизни! Мы предлагаем безграничные возможности!</p>
+            <p class="p5">Ключ к международной профессиональной карьере – это участие в проекте KINCSEM.CLUB. </p>
+            <p class="p6">Расскажи нам о своих талантах, профессиональном опыте и жизненных целях. А мы расскажем о тебе всему миру. Мы подчеркнём твою индивидуальность и таланты! И сделаем твои мечты реальностью!</p>
+            <p class="p7">Участие в проекте KINCSEM.CLUB – это твой шанс воспользоваться уникальными предложениями известных международных компаний и брендов.</p>
+            <p class="p8">Мы – не агентство! </p>
+            <p class="p9">Комиссионное вознаграждение не взимается!</p>
+            <p class="p10">Информация в разделе КАРЬЕРА будет доступна в соответствии с выбранным регионом и страной этого региона.</p>
+            <p class="clear"></p>
+            <div class="accordeon-outline accordeon-vacancies">
+              <div class="accordeon">
+                <h3 class="accordeon-title">АЗИЯ</h3>
+                <div class="accordeon-text">
+                  <h4 class="accordeon-output-title">АЗИЯ</h4>
+                  <p class="tmp-stage">На стадии разработки</p>
+                </div>
+      
+                <h3 class="accordeon-title">АМЕРИКА</h3>
+                <div class="accordeon-text">
+                  <h4  class="accordeon-output-title">АМЕРИКА</h4>
+                  <p class="tmp-stage">На стадии разработки</p>
+                </div>
+      
+                <h3 class="accordeon-title">АФРИКА</h3>
+                <div class="accordeon-text">
+                  <h4  class="accordeon-output-title">АФРИКА</h4>
+                  <p class="tmp-stage">На стадии разработки</p>
+                </div>
+      
+                <h3 class="accordeon-title accordeon-active">ЕВРОПА</h3>
+                <div class="accordeon-text">
+                  <h4  class="accordeon-output-title">ЕВРОПА</h4>
                   <ul>
-                    <li>СМИ;</li>
-                    <li>реклама;</li>
-                    <li>некоммерческая деятельность;</li>
-                    <li>разведение лошадей;</li>
-                    <li>специализированные ипподромы;</li>
-                    <li>центры тренировок верховых лошадей;</li>
-                    <li>центры подготовки специалистов для конной индустрии;</li>
-                    <li>центры обучения верховой езде;</li>
-                    <li>предприятия по производству и продаже товаров для конной индустрии;</li>
-                    <li>ветеринарные аптеки и клиники;</li>
-                    <li>аукционы;</li>
-                    <li>биржи ставок, тотализаторы и букмекерские конторы;</li>
-                    <li>организации в сфере:
-                        <ul class="child-ul">
-                          <li>финансовых услуг;</li>
-                          <li>консалтинговых услуг;</li>
-                          <li>информационных технологий;</li>
-                          <li>торговли;</li>
-                          <li>промышленности;</li>
-                          <li>сельского хозяйства;</li>
-                          <li>лесного хозяйства;</li>
-                          <li>транспорта и логистики;</li>
-                          <li>туризма;</li>
-                          <li>ресторанного бизнеса;</li>
-                          <li>гостиничного бизнеса;</li>
-                          <li>образования;</li>
-                          <li>здравоохранения;</li>
-                          <li>социальных услуг;</li>
-                          <li>спорта и физического развития;</li>
-                          <li>культуры;</li>
-                          <li>искусства.</li>
-                        </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-
+                    <li><a class="accordeon-participation" href="./activity.html" data-l="bel">Беларусь</a></li>
+                    <li><a class="accordeon-participation" href="./activity.html" data-l="pol">Polska</a></li>
+                    <li><a class="accordeon-participation" href="./activity.html" data-l="rus">Россия</a></li>
+                  </ul>                
+                </div>
+      
+                <h3 class="accordeon-title accordeon-pacific-ocean">ТИХООКЕАНСКИЙ РЕГИОН</h3>
+                <div class="accordeon-text">
+                  <h4  class="accordeon-output-title">ТИХООКЕАНСКИЙ РЕГИОН</h4>
+                  <p class="tmp-stage">На стадии разработки</p>
+                </div>
+      
+              </div>
+              <div class="accordeon-output"></div>
+            </div>
           </div>
         <div class="clear"></div>
       </div>
@@ -135,27 +140,27 @@
     <footer class="footer">
     
       <div class="footer_copyright">
-         <div class="copyright"> <span class="footer-colored">©</span> <span>2024</span>  <span  class="footer-colored">kincsem.club</span><span>Все права защищены.</span></div>
+         <div class="copyright"> <span class="footer-colored">©</span> <span>2024</span>  <span  class="footer-colored">kincsem.club</span><span  class="rights">Все права защищены.</span></div>
          <div class="handshake">
-           <a href="./../html/contacts.html"  title="Контакты">
+           <a class="cpu-a contacts" href="./../html/contacts.html"  title="Контакты">
              <img src="./../assets/handshake.svg" alt="handshake">
            </a>
          </div>
       </div> 
       <div>
-       <ul class="politics">
-         <li class="politics_item"><a href="./confidentially.html">Политика конфиденциальности</a></li>
-         <li class="politics_item  separation">|</li>
-         <li class="politics_item"><a href="./conditions.html">Условия использования</a></li>
-         <li class="politics_item  separation" >|</li>
-         <li class="politics_item"><a href="./cookie.html">Политика в отношении обработки cookies</a></li>
-       </ul>
+        <ul class="politics">
+          <li class="politics_item"><a class="confidentially" href="./../html/confidentially.html">Политика конфиденциальности</a></li>
+          <li class="politics_item  separation">|</li>
+          <li class="politics_item"><a class="conditions" href="./../html/conditions.html">Условия использования</a></li>
+          <li class="politics_item  separation" >|</li>
+          <li class="politics_item"><a class="cookies" href="./../html/cookie.html">Политика в отношении обработки cookies</a></li>
+        </ul>
        <ul class="politics-mobile">
-         <li class="politics_item"><a href="./../pdf/confidentially.pdf">Политика конфиденциальности</a></li>
+         <li class="politics_item"><a class="confidentially" href="./../pdf/rus/confidentially.pdf">Политика конфиденциальности</a></li>
          <li class="politics_item  separation">|</li>
-         <li class="politics_item "><a href="./../pdf/conditions.pdf" >Условия использования</a></li>
+         <li class="politics_item "><a class="conditions" href="./../pdf/rus/conditions.pdf" >Условия использования</a></li>
          <li class="politics_item  separation" >|</li>
-         <li class="politics_item"><a href="./../pdf/cookie.pdf">Политика в отношении обработки cookies</a></li>
+         <li class="politics_item"><a class="cookies" href="./../pdf/rus/cookie.pdf">Политика в отношении обработки cookies</a></li>
        </ul>
       </div> 
      </footer>

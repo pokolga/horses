@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="index" lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()">
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+
     <title>Kincsem.club</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,18 +22,18 @@
 
 <body>
     <header class="header">
-        <a class="logo" href="#">
+        <a class="cpu-a logo" href="#">
            <h1>KINCSEM.CLUB</h1>
         </a>
         <nav>
           <ul class="menu">
-              <li class="menu_item menu-a-active"><a class="menu-a" href="#">Главная</a></li>
-              <li class="menu_item"><a class="menu-a" href="./html/name.html">Название</a></li>
-              <li class="menu_item"><a class="menu-a" href="./html/breed.html">Порода</a></li>
-              <li class="menu_item"><a class="menu-a" href="./html/relationship.html">Отношения</a></li>
-              <li class="menu_item"><a class="menu-a" href="./html/development.html">Развитие</a></li>
-              <li class="menu_item"><a class="menu-a" href="./html/participation.html">Участие</a></li>
-              <li class="menu_item"><a class="menu-a" href="./html/vacancies.html">Вакансии</a></li>
+              <li class="menu_item menu-a-active"><a class="menu-a index" href="#">Главная</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a name" href="./html/name.html">Название</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a breed" href="./html/breed.html">Порода</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a relationship" href="./html/relationship.html">Отношение</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a development" href="./html/development.html">Развитие</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a participation" href="./html/participation.html">Участники</a></li>
+            <!--  <li class="menu_item"><a class="cpu-a menu-a vacancies" href="./html/vacancies.html">Карьера</a></li>-->
           </ul>
        </nav>
        <div class="burger">
@@ -38,22 +41,23 @@
             <span></span>
             <span></span>
        </div> 
-       <a class="location" href="./html/languages.html" title="Страны"  target="_blank">
-         <div class="header-location">
-          <img src="./assets/public.svg" alt="glob">    
+       <a class="cpu-a location" href="./html/languages.html" title="Страны">
+        <div class="header-location">
+          <span class="active-language">rus</span> 
+          <img src="./../assets/public.svg" alt="glob">    
          </div>
-        </a>
+       </a>
        
        <div class="burger-menu">
       
         <ul class="mobile-menu">
-          <li class="mobile-menu_item menu-a-active"><a class="menu-a" href="#">Главная</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./html/name.html">Название</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./html/breed.html">Порода</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./html/relationship.html">Отношения</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./html/development.html">Развитие</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./html/participation.html">Участие</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./html/vacancies.html">Вакансии</a></li>
+          <li class="mobile-menu_item menu-a-active"><a class="menu-a index" href="#">Главная</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a name" href="./html/name.html">Название</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a breed" href="./html/breed.html">Порода</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a relationship" href="./html/relationship.html">Отношение</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a development" href="./html/development.html">Развитие</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a participation" href="./html/participation.html">Участники</a></li>
+        <!--  <li class="mobile-menu_item"><a class="cpu-a menu-a vacancies" href="./html/vacancies.html">Карьера</a></li>-->
         </ul>
        </div>
     </header>
@@ -65,42 +69,38 @@
     
    <footer class="footer">
     <div class="picture-description">
-      <p class="name">"The Start of the Cambridgeshire Stakes"</p>
+      <p class="picture-name">"The Start of the Cambridgeshire Stakes"</p>
       <p class="author">Benjamin Herring II (1867)</p>
     </div>
      <div class="footer_copyright">
-        <div class="copyright"> <span class="footer-colored">©</span> <span>2024</span>  <span  class="footer-colored">kincsem.club</span><span>Все права защищены.</span></div>
+        <div class="copyright"> <span class="footer-colored">©</span> <span>2024</span>  <span  class="footer-colored">kincsem.club</span><span class="rights">Все права защищены.</span></div>
         <div class="handshake">
-          <a href="./html/contacts.html" title="Контакты">
+          <a class="cpu-a" href="./html/contacts.html" title="Контакты">
             <img src="./assets/handshake.svg" alt="handshake">
           </a>
         </div>
      </div> 
      <div>
       <ul class="politics">
-        <!--<li class="politics_item"><a href="./pdf/owner.pdf"  target="_blank">Права собственника</a></li>
-        <li class="politics_item separation">|</li>-->
-        <li class="politics_item"><a href="./html/confidentially.html"  target="_blank">Политика конфиденциальности</a></li>
+        <li class="politics_item"><a class="confidentially" href="./html/confidentially.html">Политика конфиденциальности</a></li>
         <li class="politics_item  separation">|</li>
-        <li class="politics_item"><a href="./html/conditions.html"  target="_blank">Условия использования</a></li>
+        <li class="politics_item"><a class="conditions" href="./html/conditions.html">Условия использования</a></li>
         <li class="politics_item  separation" >|</li>
-        <li class="politics_item"><a href="./html/cookie.html"  target="_blank">Политика в отношении обработки cookies</a></li>
+        <li class="politics_item"><a class="cookies" href="./html/cookie.html">Политика в отношении обработки cookies</a></li>
       </ul>
 
       <ul class="politics-mobile">
-        <li class="politics_item"><a href="./pdf/confidentially.pdf"  target="_blank">Политика конфиденциальности</a></li>
-        <li class="politics_item"><a href="./pdf/conditions.pdf"  target="_blank">Условия использования</a></li>
-        <li class="politics_item"><a href="./pdf/cookie.pdf"  target="_blank">Политика в отношении обработки cookies</a></li>
+        <li class="politics_item"><a class="confidentially" href="./pdf/rus/confidentially.pdf"  target="_blank">Политика конфиденциальности</a></li>
+        <li class="politics_item"><a class="conditions" href="./pdf/rus/conditions.pdf"  target="_blank">Условия использования</a></li>
+        <li class="politics_item"><a class="cookies" href="./pdf/rus/cookie.pdf"  target="_blank">Политика в отношении обработки cookies</a></li>
       </ul>
      </div> 
     </footer>
    <div class="cookie">
-     <p> 
-       <!--Мы используем файлы cookie, чтобы обеспечить вам максимальное удобство.--> 
-       <!--Для реализации основных функций интернет-сайта используются строго необходимые файлы-cookie. Настройки интернет-браузера могут быть изменены с целью блокирования файлов-cookie. В данном случае интернет-сайт может функционировать некорректно. Нажимая кнопку «Согласен», вы соглашаетесь с <a href="./html/cookie.html"  target="_blank"">политикой использования файлов cookie</a> на интернет-сайте.-->
-       Используя сайт kincsem.club, Вы соглашаетесь с <a href="./html/confidentially.html"  target="_blank">Политикой конфиденциальности</a>, <a href="./html/conditions.html"  target="_blank">Условиями использования</a> и <a href="./html/cookie.html"  target="_blank">Политикой в отношении обработки cookies</a>, размещенными на настоящем сайте.
+     <p  class="cookie-text"> 
+       Используя сайт kincsem.club, Вы соглашаетесь с <a class="cpu-a" href="./html/confidentially.html"  target="_blank">Политикой конфиденциальности</a>, <a class="cpu-a" href="./html/conditions.html"  target="_blank">Условиями использования</a> и <a class="cpu-a" href="./html/cookie.html"  target="_blank">Политикой в отношении обработки cookies</a>, размещенными на настоящем сайте.
       </p>
-    <div class="cookie-button"><button type="button">СОГЛАСЕН</button></div>
+    <div class="cookie-button"><button class="cookie-agreement" type="button">СОГЛАСЕН</button></div>
      
     <div class="cross cookie-cross"></div>
    </div>
@@ -108,5 +108,5 @@
 
   <script src="index.js"></script>
 </body>
-
+<!--иконки флагов по свободной лицензии https://www.gosquared.com/resources/2400-flags    -->
 </html>

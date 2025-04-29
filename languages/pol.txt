@@ -1,0 +1,227 @@
+{
+  "global" : {
+    "index": "home",
+    "name": "nazwa",
+    "breed": "rasa",
+    "relationship": "relacje",
+    "development": "rozwój",
+    "participation": "uczestnicy",
+    "vacancies": "kariera",
+    "contacts": "kontakty",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "confidentially": "Polityka prywatności",
+    "conditions": "Regulamin",
+    "cookies": "Polityka dotycząca cookies",
+    "location": "kraje",
+    "languages": "kraje",
+    "activeModel": "modeling",
+    "activeFitness": "fitness",
+    "activeDance": "taniec",
+    "activeSport": "sport",
+    "activeMusic": "muzyka",
+    "cookie-text": "Korzystając z serwisu internetowego kincsem.club, użytkownik akceptuje  <a href=\"./html/confidentially.html\"  target=\"_blank\">Politykę prywatności</a>, <a href=\"./html/conditions.html\"  target=\"_blank\">Regulamin</a> i <a href=\"./html/cookie.html\"  target=\"_blank\">Politykę dotycząca cookies</a>, zamieszczone wniniejszym Serwisie.",
+    "cookie-agreement": "AKCEPTUJĘ" 
+  },
+  "404": {
+    "dictum": "Jeśli poszukasz, to znajdziesz.",
+    "title": "TEJ STRONY NIE MA W SERWISIE: BŁĄD 404",
+    "text": {
+      "p1": "Niestety, postawiłeś na niewłaściwego konia...",
+      "p2": "Prawdopodobnie błąd w adresie lub ta strona nigdy nie istniała. Ale zawsze możesz przejść do strony <a class=\"cpu-a\" href=\"./../index.html\">HOME</a>."
+    }},   
+  "index": {},
+  "name": {
+    "dictum": "Mylić się jest rzeczą ludzką.",
+    "title": "NAZWA PROJEKTU",
+    "text": {
+      "p1": "Dlaczego KINCSEM.CLUB? Na cześć konia o imieniu Kincsem. W tłumaczeniu z języka węgierskiego Kincsem oznacza «mój skarb».",
+      "p2": "Kincsem to koń pełnej krwi angielskiej. Kincsem urodziła się 17 marca 1874 roku w węgierskiej stadninie narodowej została najwybitniejszym koniem pełnej krwi angielskiej w historii wyścigów konnych pod względem liczby dotychczasowych zwycięstw.",
+      "p3": "Charakterystyczne cechy eksterieru Kincsem – jest kwestią dyskusyjną, podobnie jak wiele innych szczegółów z jej życia. Pomimo wyjątkowych umiejętności Kincsem przez całą karierę wyścigową wielu krytykowało wygląd zewnętrzny konia, który nie wyróżniał się niczym szczególnym.",
+      "p4": "Istnieje historia o tym, jak pierwszy właściciel Kincsem wystawił na sprzedaż dużą liczbę koni. Nabywca kupił je wszystkie, z wyjątkiem Kincsem i jeszcze jednego konia. Kincsem i drugi koń zostały odrzucone przez kupującego jako „zbyt przeciętne”. Inna historia opowiada o kradzieży Kincsem ze stajni. Wszyscy byli zszokowani odkryciem, że Kincsem została skradziona, ponieważ był to jedyny skradziony koń spośród wszystkich koni w stajni. Policja złapała złodziei i znalazła Kincsem. Kiedy złodzieje zostali zapytani, dlaczego ukradli tak niczym nie wyróżniającego się konia, odpowiedzieli: «Ten koń może nie być tak piękny jak inne, ale będzie najwspanialszym koniem ze wszystkich koni».",
+      "p5": "Jako dwulatka Kincsem wzięła udział w 10 wyścigach w Niemczech i Austro-Węgrzech. W dzisiejszych czasach trudno sobie wyobrazić, by dwuletni koń tak często brał udział w wyścigach wysokiej rangi. W następnych latach obciążenie pozostało stosunkowo wysokie, z 17 wyścigami dla konit rzyletnich, 15 wyścigami dla koni czteroletnich i 12 wyścigami dla koni pięcioletnich. Należy wziąć pod uwagę, że warunki transport koni w tamtych czasach były znacznie gorsze niż obecnie. Należy również wziąć pod uwagę obciążenia, które musiała wytrzymywać Kincsem podczas długich i uciążliwych transportów. Czynniki te stanowią podstawę do oceny wyników, osiągniętych przez Kincsem w wyścigach jeszcze wyżej, co tylko dodatkowo podkreśla jej wyjątkowość.",
+      "p6": "Kincsem zakończyła karierę z nieosiągalną dla innych koni liczbą zwycięstw bez żadnego przegranego wyścigu. Wynik: 54 zwycięstwa w 54 wyścigach. Rekord ten nie został pobity do dziś i jest wpisany do Księgi Rekordów Guinnessa."
+    }},
+  "breed": {
+    "dictum": "To co oczywiste nie wymaga dowodu.",
+    "title": "RASA KONIA",
+    "text": {
+      "p1": "Koń pełnej krwi angielskiej został wyhodowany w Anglii na przełomie XVII i XVIII wieku do użytku w kawalerii. Ogromne znaczenie dla kształtowania tej rasy miało wykorzystanie następujących reproduktorów: Darley Arabian, Godolphin Arabian, Byerley Turk. Kluczową rolę w kształtowaniu rasy odegrało również pojawienie się następujących koni: Matchem (1748), Herod (1758), Eclipse (1764).",
+      "p2": "Konie, które wykazały się wybitnymi wynikami w najbardziej prestiżowych corocznych wyścigach, są wybierane do pracy hodowlanej. W Wielkiej Brytanii od 1780 roku do dziś są organizowane wyścigi konne z tradycyjnymi nagrodami dla przedstawicieli tej rasy.W 1793 roku I tom Księgi Stadnej Koni Pełnej Krwi („The General Stud Book”) został wydany drukiem w WielkiejBrytanii. Sformułowano podstawową zasadę rasowości: konie, które niepochodzą od przodków zapisanych w Księdze Stadnej Koni Pełnej Krwi, nie są zaliczane do rasy. W związku z tym wszystkie konie pełnej krwi angielskiej nigdy nie doświadczyły dolewu obcej krwi podczas swojej 300-letniej historii hodowlanej. Zgodnie z obowiązującymi przepisami, tylko te konie, których rodowód można prześledzić wstecz do ogierów i klaczy hodowlanych zarejestrowanych w I tomie Księgi Stadnej Koni Pełnej Krwi, mają prawo być uważane za konie pełnej krwi.",
+      "p3": "Konie pełnej krwi angielskiej to cenna rasa koni wierzchowych, wykazująca doskonałe właściwości zewnętrzne i harmonijną budowę ciała, niezwykłą sprawność fizyczną i wysoką wydajność, energiczność i wyjątkową zwinność. Należy zwrócić również uwagę na wczesną przydatność tej rasy do wyścigów, czyli możliwość udziału koni w wyścigach już od drugiego roku życia. Konie pełnej krwi angielskiej biorą udział nie tylko w wyścigach płaskich, ale także w wyścigach z przeszkodami – steeplechase. Rasa ta stała się szczytem działalności hodowlanej koni. W Wielkiej Brytanii nazywa się go koniem „wyhodowany do perfekcji” («thoroughbred»).",
+      "p4": "Udział koni innych ras w wyścigach z końmi tej rasy nie jest dozwolony, ponieważ koń pełnej krwi angielskiej jest znacznie silniejszy i szybszy niż jakikolwiek inny koń. Galop z prędkością 1 km/min (60 km/h) jest uważany za normę dla koni pełnej krwi angielskiej. Kluczową zaletą tej rasy jest wysoka prędkość podczas wyścigów. Rekordy świata ustanowione przez konie tej rasy: 1000 m w 53 s, 2400 m w 2 min 22 s. W 2008 roku dwuletni koń Winning Brew w Stanach Zjednoczonych osiągnęła prędkość 70,76 km/h na 1/4 mili.",
+      "p5": "Wszystkie te czynniki łącznie spowodowały zaporowo wysoki koszt przedstawicieli cennych linii hodowlanych tej rasy."
+    }},
+  "relationship": {
+    "dictum": "Najpierw się uczyć, potem nauczać.",
+    "title": "CZŁOWIEK I KOŃ",
+    "text": {
+      "p1": "Związek człowieka i konia to szacunek i zaufanie, energia i pewność siebie. Równowaga czasu i doświadczenia oparta na wzajemnym zrozumieniu. Koń jest osobowością, a nie tylko twoją własnością, i każdy koń jest wyjątkowy na swój sposób. Sposób myślenia konia jest twoim sposobem myślenia, a dla ciebie sposób myślenia konia powinien być zawsze na pierwszym miejscu. Pamiętaj, że najważniejszą rzeczą dla konia jest postawa człowieka. Naucz się być dla konia nie tylko jeźdźcem, ale także partnerem.",
+      "p2": "Szacunek i zaufanie konia jest trudne do zdobycia i łatwe do stracenia. Staraj się zdobyć szacunek i zaufanie konia poprzez swoje działania, będąc blisko niego na ziemi, a nie poprzez słowa, siedząc na nim w siodle. Koń nie powinien się ciebie bać, powinien cię szanować i ci ufać, powinien widzieć w tobie przywódcę. Nie okazuj złości i okrucieństwa. Podstawą waszej relacji jest to, aby wasze wspólne działania były odpowiednie do miejsca i czasu. Szacunek i zaufanie konia, oparte na chęci współpracy, bez leżącego u podstaw strachu, jest jedną z jego najcenniejszych cech.",
+      "p3": "Bądź pewny siebie i precyzyjny w swoich działaniach, uprzejmy i delikatny dla konia tak bardzo, jak to możliwe i wytrwały tak bardzo, jak to konieczne. Motywuj jego bez rozpieszczania, pozwalaj jemu, ale nie pobłażaj i prowadź jego. Spójrz w głębię jego oczu i dotknij jego serca całym swoim sercem. Pozwól jemu wyczuć twoje dobre intencje, i koń odpowie tym samym.",
+      "p4": "Koń uczy człowieka, a człowiek uczy konia. Koń może nauczyć cię niezależności od zewnętrznych wpływów i osądów, samodzielnie regulować swoje zachowanie i brać za nie odpowiedzialność, i wtedy możesz być nauczycielem dla konia. Pracuj nad sobą, doskonal się, nie trać panowania nad sobą, a koń na pewno spełni twoje oczekiwania. Koń  czuje wszystko. Najpierw się ucz, potem nauczaj."
+    }},
+  "development": {
+    "dictum": "Wszyscy ludzie są świadomi swoich korzyści.",
+    "title": "ROZWÓJ PROJEKTU",
+    "text": {
+      "p1": "Wyścigi konne to nie tylko rozrywka hazardowa, ale także ważna część globalnej gospodarki, generująca miliardy dolarów.",
+      "p2": "Wyścigi konne cieszą się ogromną popularnością na całym świecie i zajmują czołowe miejsca w rankingach w większości krajów anglojęzycznych, obok piłki nożnej, tenisa i innych topowych dyscyplin.",
+      "p3": "Są tam specjalistyczne stacje radiowe i kanały telewizyjne, ukazują się książki, czasopisma i gazety poświęcone zawodom konnym.",
+      "p4": "Portale tematyczne dostarczają szczegółowe statystyki, analizy i prognozy, dotyczące wyścigów konnych.",
+      "p5": "Zakłady na wyścigi konne, obok zakładów sportowych, stanowią ważną część światowego rynku zakładów bukmacherskich i są głównym źródłem dochodów organizatorów zawodów.",
+      "p6": "Najbardziej prestiżowe na świecie wyścigi konne z pulą nagród przekraczającą 10 milionów dolarów odbywają się z udziałem elity świata koni – rasy koni pełnej krwi angielskiej. Konie mogą być dochodowym aktywem, cenionym nie tylko ze względu na swoją konkurencyjność, ale także ze względu na wartość hodowlaną i odsprzedażową",
+      "p7": "Dlatego właśnie koń pełnej krwi angielskiej to zyskowna inwestycja, której opłacalność rośnie. Wartość światowych liderów wyścigów konnych o wybitnym rodowodzie z każdym rokiem wzrasta. Obecnie najdroższym na świecie koniem pełnej krwi angielskiej jest Frankel, którego wartość szacuje się na 200 milionów dolarów.",
+      "p8": "Udział w projekcie KINCSEM.CLUB daje szansę na budowanie udanej międzynarodowej kariery zawodowej. Dodatkowo projekt daje uczestnikom możliwość czerpania zysków z przemysłu konnego.",
+      "p9": "Celem projektu KINCSEM.CLUB jest tworzenie silnej i zaangażowanej społeczności utalentowanych osób o podobnych poglądach, których łączą wspólne zainteresowania, a także zapewnienie dostępu do nowych pomysłów i aktualnych informacji.",
+      "p10": "Twoje pomysły i doświadczenie zawodowe mogą wnieść istotny wkład w realizację celów projektu KINCSEM.CLUB. Czekamy na tych, którzy są gotowi poświęcić czas, połączyć siły i odegrać kluczową rolę w tworzeniu możliwości rozwoju kontaktów biznesowych pomiędzy uczestnikami projektu na całym świecie.",
+      "p11": "Dzięki udziałowi w projekcie KINCSEM.CLUB uzyskasz maksimum korzyści!"
+      }},
+  "participation": {
+    "dictum": "Pełna swoboda wyboru.",
+    "title": "SUKCES I KARIERA",
+    "title1": "MODELING",
+    "title2": "FITNESS",
+    "title3": "TANIEC",
+    "title4": "SPORT",
+    "title5": "MUZYKA",
+    "text": {
+      "p1": "Sukces życiowy i kariera bez granic! Twoje możliwości kariery są nieograniczone! Marzenia stają się rzeczywistością dla tych, którzy wierzą w siebie.",
+      "p2": "Chcesz zostać gwiazdą? Światowa sława, ogromne honoraria i miłość milionów fanów ‒ wszystko to stanie się Twoje bardzo szybko. Najważniejsze to wykorzystać swoją szansę na sukces życiowy. Haute couture, wielki sport, kariera trenerska, międzynarodowe trasy koncertowe, programy telewizyjne, arcydzieła przemysłu filmowego, słynne teatry świata, kontrakty reklamowe, wywiady dla kolorowych magazynów, sesje zdjęciowe i bogate życie towarzyskie celebryty – to jest Twoja przyszłość!",
+      "p3": "Dla nas KARIERA to coś więcej niż tylko wysoki poziom dochodów.",
+      "p4": "Wszystko o czym marzysz! Wszystko czego chcesz od życia! Oferujemy nieograniczone możliwości!",
+      "p5": "Kluczem do międzynarodowej kariery zawodowej jest udział w projekcie KINCSEM.CLUB.",
+      "p6": "Opowiedz nam o swoich talentach, doświadczeniu zawodowym i celach życiowych. A my opowiemy o Tobie całemu światu!",
+      "p7": "Udział w projekcie KINCSEM.CLUB to Twoja szansa na skorzystanie z unikalnych ofert znanych międzynarodowych firm i marek.",
+      "p8": "Zapraszamy Cię do świata sukcesu! Zapraszamy Cię do wzięcia udziału w projekcie!"
+    }},
+  "vacancies": {
+    "dictum": "Pełna swoboda wyboru.",
+    "title": "KARIERA BEZ GRANIC",
+    "text": {
+      "p1": "Twoje możliwości kariery są nieograniczone!",
+      "p2": "Zapraszamy Cię w fascynującą podróż, która dostarczy Ci niezapomnianych wrażeń i da to, o czym od dawna marzysz.",
+      "p3": "Dla nas KARIERA to coś więcej niż tylko wysoki poziom dochodów.",
+      "p4": "Wszystko o czym marzysz! Wszystko czego chcesz od życia! Oferujemy nieograniczone możliwości!",
+      "p5": "Kluczem do międzynarodowej kariery zawodowej jest udział w projekcie KINCSEM.CLUB.",
+      "p6": "Opowiedz nam o swoich talentach, doświadczeniu zawodowym i celach życiowych. A my opowiemy o Tobie całemu światu. Podkreślimy Twoją indywidualność i talenty! I spełnimy Twoje marzenia!",
+      "p7": "Udział w projekcie KINCSEM.CLUB to Twoja szansa na skorzystanie z unikalnych ofert znanych międzynarodowych firm i marek.",
+      "p8": "Nie jesteśmy agencją!",
+      "p9": "Nie pobieramy prowizji!",
+      "p10": "Informacje na stronie KARIERA będą dostępne zgodnie z wybranym regionem i krajem tego regionu.",
+      "accordeon": {
+        "title": ["AZJA","AMERYKA","AFRYKA","EUROPA","REGION PACYFIKU"],
+        "tmp-stage": "Strona internetowa jest w fazie rozwoju"
+      }
+    }},
+  "contacts": {
+    "dictum": "Szczęście każdego jest w jego własnych rękach.",
+    "title": "INFORMACJE KONTAKTOWE",
+    "text": {
+      "p1": "Celem projektu KINCSEM.CLUB jest stworzenie społeczności utalentowanych profesjonalistów, których łączą wspólne zainteresowania.",
+      "p2": "Udział w projekcie KINCSEM.CLUB daje szansę na budowanie udanej międzynarodowej kariery zawodowej. Dodatkowo projekt daje uczestnikom możliwość czerpania zysków z przemysłu konnego.",
+      "p3": "Zapraszamy wszystkich, którzy cenią dostęp do nowych pomysłów i aktualnych informacji oraz są gotowi wnieść wkład w rozwój kontaktów biznesowych między uczestnikami projektu na całym świecie.",
+      "p4": "Projekt KINCSEM.CLUB stwarza nieograniczone możliwości i zapewnia maksymalne korzyści!",
+      "p5": "Napisz do nas w Telegramie (grupa <a href=\"https://t.me/+tGbaVE1QQ3k2ZTg0\" target=\"_blank\" rel=\"noopener noreferrer\">kincsem.club</a>) lub na adres e-mail <a href=\"mailto:kincsem.club@gmail.com\" target=\"_blank\">kincsem.club@gmail.com</a> i zostań uczestnikiem projektu KINCSEM.CLUB już dziś!"
+    }},
+  "confidentially": "",
+  "conditions": "",
+  "cookies": "",
+  "languages": {
+    "dictum": "Słońce świeci dla wszystkich.",
+    "title": "REGIONY I KRAJE",
+    "text": {
+      "p1": "Informacje będą dostępne zgodnie z wybranym regionem i krajem tego regionu.",
+      "accordeon": {
+        "title": ["AZJA","AMERYKA","AFRYKA","EUROPA","REGION PACYFIKU"],
+        "tmp-stage": "Strona internetowa jest w fazie rozwoju"
+  }}},
+  "activeModel": {
+    "title": "MODELING",
+    "title1": "MODELING",
+    "title2": "FITNESS",
+    "title3": "TANIEC",
+    "title4": "SPORT",
+    "title5": "MUZYKA",
+    "link-to-contacts": "BIORĘ UDZIAŁ",
+    "text": {
+      "p1": "Modeling to start kariery w branży fashion, reklamie, kinie i telewizji.",
+      "p2": "Masz perfekcyjną prezencję, spełniającą wymagania Haute Couture? Czujesz się pewnie na wybiegu i przed obiektywem kamery? Marzysz o udziale w Fashion Show znanych domów mody?",
+      "p3": "Śmiało wybieraj High-Fashion Modeling! Czekają na Ciebie światowe wybiegi, sesje zdjęciowe dla największych magazynów mody, ogromne honoraria i światowa sława!",
+      "p4": "Masz ciekawą i imponującą prezencję? Lubisz być w centrum uwagi? Marzysz o karierze aktorskiej? A może o pracy prezentera telewizyjnego?",
+      "p5": "Twój wybór to Commercial Modeling, obejmujący Fitness Modeling, Mature Modeling, Family Modeling, Petite Modeling, Plus Size Modeling, Body Parts Modeling, Alternative Modeling, Promotional Modeling.",
+      "p6": "Czekają na Ciebie zdjęcia do reklamy telewizyjnej i internetowej, a także sesje zdjęciowe do mediów drukowanych i cyfrowych. Jako Brand Ambassador będziesz reprezentować różne marki, biorąc udział w kampaniach marketingowych (w Internecie, telewizji, radiu, na billboardach), akcjach charytatywnych i społecznych, a także wydarzeniach branżowych, dzieląc się treściami w mediach społecznościowych.",
+      "p7": "Pomożemy Ci zbudować udaną międzynarodową karierę w modelingu!",
+      "p8": "Nie jesteśmy agencją! Nie pobieramy prowizji!"
+    }
+  },
+  "activeFitness": {
+    "title": "FITNESS",
+    "title1": "MODELING",
+    "title2": "FITNESS",
+    "title3": "TANIEC",
+    "title4": "SPORT",
+    "title5": "MUZYKA",
+    "link-to-contacts": "BIORĘ UDZIAŁ",
+    "text": {
+      "p1": "Fitness to piękno i siła. Smukłość i atletyczna sylwetka to cechy osób zdeterminowanych. Tych, którzy są gotowi krok po kroku każdego dnia wytrwale dążyć do celu.",
+      "p2": "Branża fitness to świetne miejsce dla osób pewnych siebie. Perspektywy zawodowe są tu nieograniczone!",
+      "p3": "Tworzenie i promowanie marki osobistej, kontrakty reklamowe, współpraca z celebrytami i dużymi korporacjami, tworzenie własnej linii odzieży sportowej, otwieranie własnych klubów fitness – to jest Twoja przyszłość!",
+      "p4": "Zapraszamy osoby, które mają doświadczenie w treningu amatorskim i chcą budować międzynarodową karierę w branży fitness, a także trenerów i instruktorów fitness niezależnie od specjalizacji.",
+      "p5": "Dołącz do nas i zostań gwiazdą branży fitness!",
+      "p6": "Nie jesteśmy agencją! Nie pobieramy prowizji!"
+    }
+  },
+  "activeDance": {
+    "title": "TANIEC",
+    "title1": "MODELING",
+    "title2": "FITNESS",
+    "title3": "TANIEC",
+    "title4": "SPORT",
+    "title5": "MUZYKA",
+    "link-to-contacts": "BIORĘ UDZIAŁ",
+    "text": {
+      "p1": "Taniec to harmonia ruchów i uczuć. Uroda i wirtuozeria wykonawcy to gwarancja sukcesu nie tylko w branży tanecznej. To szczęśliwy bilet, który daje przepustkę do świata wielkich możliwości.",
+      "p2": "Jeśli marzysz o karierze w show-biznesie, z naszą pomocą otworzy się przed Tobą cały świat!",
+      "p3": "Najlepsze zespoły taneczne, prestiżowe konkursy, międzynarodowe festiwale, programy telewizyjne, kontrakty w branży reklamowej i muzycznej – pomożemy zrealizować Twoje najśmielsze marzenia!",
+      "p4": "Zapraszamy utalentowanych wykonawców, pedagogów i choreografów do pracy nad projektami z różnych dziedzin: moda, fitness i sport, reklama, branża muzyczna, show-biznes.",
+      "p5": "Pomożemy Ci zdobyc swiatowe uznanie i zostać gwiazdą show-biznesu!",
+      "p6": "Nie jesteśmy agencją! Nie pobieramy prowizji!"
+    }
+  },
+  "activeSport": {
+    "title": "SPORT",
+    "title1": "MODELING",
+    "title2": "FITNESS",
+    "title3": "TANIEC",
+    "title4": "SPORT",
+    "title5": "MUZYKA",
+    "link-to-contacts": "BIORĘ UDZIAŁ",
+    "text": {
+      "p1": "Sport to nie tylko zawody i medale. To przede wszystkim show. Fani wypełniają trybuny stadionów, czekając na piękną grę i niezapomniane emocje. Znani sportowcy są podziwiani i stają się wzorem do naśladowania. Gwiazdy sportu pojawiają się na łamach kolorowych magazynów wraz z celebrytami ze świata kina, muzyki, mody i sztuki.",
+      "p2": "Jeśli znasz już smak zwycięstwa i nie wyobrażasz sobie życia bez sportu, pomożemy w rozwoju Twojej kariery sportowej! Najlepsi trenerzy i menedżerowie otworzą przed Tobą drzwi do świata wielkiego sportu i głośnych zwycięstw.",
+      "p3": "Jeśli masz na swoim koncie medale międzynarodowych zawodów, czekają na Ciebie kontrakty reklamowe, kariera trenerska i zarządzanie sportem. Twoja udana kariera sportowa stanie się kapitałem, który będzie przynosił zyski przez wiele lat.",
+      "p4": "Zapraszamy sportowców, którzy wykazali się osiągnięciami na poziomie krajowym lub międzynarodowym, niezależnie od uprawianej dyscypliny sportowej.",
+      "p5": "Pomożemy Ci zostać legendą sportu, gwiazdą show-biznesu i menedżerem sportu światowej klasy!",
+      "p6": "Nie jesteśmy agencją! Nie pobieramy prowizji!"
+    }
+  },
+  "activeMusic": {
+    "title": "MUZYKA",
+    "title1": "MODELING",
+    "title2": "FITNESS",
+    "title3": "TANIEC",
+    "title4": "SPORT",
+    "title5": "MUZYKA",
+    "link-to-contacts": "BIORĘ UDZIAŁ",
+    "text": {
+      "p1": "Muzyka otacza Cię wszędzie: wita z ekranu telewizora podczas śniadania, pozwala oderwać się od zgiełku metra w drodze do pracy, dodaje energii podczas treningu w centrum fitness, bawi w klubie, towarzyszy w ulubionej grze komputerowej i oferuje nowe możliwości z elektronicznych billboardów.",
+      "p2": "Muzyka może być wszystkim: mocą, gniewem, radością, szczęściem, zwycięstwem. Muzyka daje poczucie pełni życia.",
+      "p3": "Jeśli nie wyobrażasz sobie życia bez muzyki, biegle grasz na instrumencie muzycznym lub masz niezwykłe zdolności wokalne, dowie się o Tobie cały świat!",
+      "p4": "Występy solowe, konkursy, festiwale, międzynarodowe trasy koncertowe, miliony fanów – to wszystko czeka na utalentowanych i zdeterminowanych!",
+      "p5": "Zapraszamy utalentowanych instrumentalistów, pedagogów i akompaniatorów, którzy biegle grają na instrumentach smyczkowych, dętych, klawiszowych lub perkusyjnych, a także wokalistów i pedagogów, którzy dysponują mocnym głosem w skali sopranu, mezzosopranu, altu (dla głosów żeńskich) oraz tenoru, barytonu, basu (dla głosów męskich).",
+      "p6": "Pomożemy Ci zbudować udaną międzynarodową karierę muzyczną i zostać gwiazdą show-biznesu!",
+      "p7": "Nie jesteśmy agencją! Nie pobieramy prowizji!"
+    }
+  },
+  "other": {"p10":"<div><ul><li>międzynarodowy klub współwłaścicieli koni pełnej krwi angielskiej;</li><li>agencja informacyjno - reklamowa;</li><li>stadnina koni pełnej krwi angielskiej;</li><li>specjalizowane hipodromy;</li><li>centra treningowe koni pełnej krwi angielskiej;</li><li>centra szkoleniowe dla specjalistów z branży jeździeckiej;</li><li>centra jazdy konnej;</li><li>przedsiębiorstwa produkujące i sprzedające towary dla branży jeździeckiej;</li><li>apteki i kliniki weterynaryjne;</li><li>domy aukcyjne i aukcje internetowe;</li><li>giełdy zakładów, totalizatory i biura bukmacherskie;</li><li>organizacje działające w sferze:    <ul class=\"child-ul\"> <li>finansów;</li> <li>konsultingu;</li> <li>IT;</li> <li>handlu;</li> <li>przemysłu;</li> <li>rolnictwa;</li> <li>gospodarki leśnej;</li> <li>transportu i logistyki;</li> <li>turystyki;</li> <li>gastronomii;</li> <li>hotelarstwa;</li> <li>edukacji;</li> <li>ochrony zdrowia;</li> <li>pomocy społecznej;</li> <li>sportu i rozwoju fizycznego;</li> <li>kultury;</li> <li>sztuki.</li></ul></li></ul></div>"}
+}

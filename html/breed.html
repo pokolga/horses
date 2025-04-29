@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="breed" lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()">
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+
     <title>Kincsem.club</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,18 +21,18 @@
 
 <body>
     <header class="header">
-        <a class="logo" href="./../index.html">
+        <a class="cpu-a logo" href="./../index.html">
            <h1>KINCSEM.CLUB</h1>
         </a>
         <nav>
           <ul class="menu">
-              <li class="menu_item"><a class="menu-a" href="./../index.html">Главная</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/name.html">Название</a></li>
-              <li class="menu_item  menu-a-active"><a class="menu-a" href="#">Порода</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/relationship.html">Отношения</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/development.html">Развитие</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/participation.html">Участие</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/vacancies.html">Вакансии</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a index" href="./../index.html">Главная</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a name" href="./../html/name.html">Название</a></li>
+              <li class="menu_item  menu-a-active"><a class="menu-a breed" href="#">Порода</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a relationship" href="./../html/relationship.html">Отношение</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a development" href="./../html/development.html">Развитие</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a participation" href="./../html/participation.html">Участники</a></li>
+            <!--  <li class="menu_item"><a class="cpu-a menu-a vacancies" href="./../html/vacancies.html">Карьера</a></li>-->
           </ul>
        </nav>
        <div class="burger">
@@ -37,25 +40,26 @@
             <span></span>
             <span></span>
        </div> 
-       <a class="location" href="./../html/languages.html" title="Страны"  target="_blank">
+       <a class="cpu-a location" href="./../html/languages.html" title="Страны">
         <div class="header-location">
-         <img src="./../assets/public.svg" alt="glob">    
-        </div>
+          <span class="active-language">rus</span> 
+          <img src="./../assets/public.svg" alt="glob">    
+         </div>
        </a>
        
        <div class="burger-menu">
       
         <ul class="mobile-menu">
-          <li class="mobile-menu_item"><a class="menu-a" href="./../index.html">Главная</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/name.html">Название</a></li>
-          <li class="mobile-menu_item  menu-a-active"><a class="menu-a" href="#">Порода</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/relationship.html">Отношения</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/development.html">Развитие</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/participation.html">Участие</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/vacancies.html">Вакансии</a></li>
-          <li class="mobile-menu_item">
+          <li class="mobile-menu_item"><a class="cpu-a menu-a index" href="./../index.html">Главная</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a name" href="./../html/name.html">Название</a></li>
+          <li class="mobile-menu_item  menu-a-active"><a class="menu-a breed" href="#">Порода</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a relationship" href="./../html/relationship.html">Отношение</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a development" href="./../html/development.html">Развитие</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a participation" href="./../html/participation.html">Участники</a></li>
+        <!--    <li class="mobile-menu_item"><a class="cpu-a menu-a vacancies" href="./../html/vacancies.html">Карьера</a></li> -->
+        <li class="mobile-menu_item">
             <div class="handshake">
-              <a href="./../html/contacts.html"  title="Контакты">
+              <a class="cpu-a contacts" href="./../html/contacts.html"  title="Контакты">
                 <img src="./../assets/handshake.svg" alt="handshake">
               </a>
           </div>
@@ -71,26 +75,28 @@
       </div>
       
       <div class="future-choice">
-       <h2 class="main-contacts-h2">ПОРОДА ЛОШАДИ</h2>
+       <h2 class="main-contacts-h2 title">ПОРОДА ЛОШАДИ</h2>
        <figure>
         <img class="full-screen" src="./../assets/Solario Alfred James Munnings.jpg"
         alt="Solario' by Alfred James Munnings (1926)" />
        <figcaption>&#171;Solario&#187; <br>Alfred James Munnings (1926)</figcaption>
       </figure> 
         <div class="text">
-          <p>
+          <p class="p1">
             Английская чистокровная верховая лошадь была выведена в Англии на рубеже XVII и XVIII веков для использования в кавалерии. Огромное значение для формирования данной породы имело использование следующих производителей: Darley Arabian, Godolphin Arabian, Byerley Turk. Также ключевую роль в формировании породы сыграло появление следующих лошадей: Matchem (1748), Herod (1758), Eclipse (1764).
           </p>
-          <p>
-            Для племенной работы отбираются лошади, продемонстрировавшие выдающиеся результаты на самых престижных ежегодных скачках. В Великобритании с 1780 года по настоящее время разыгрываются традиционные призы для представителей данной породы. В 1873 году в Великобритании вышел первый том племенной книги. Был сформулирован основной принцип чистокровности: лошади, не происходящие от записанных в племенной книге предков, в породу не включаются. Таким образом, все английские чистокровные верховые лошади на протяжении своей 300-летней истории разведения ни разу не испытали прилития чужой крови. По действующим правилам только те лошади, родословную которых можно проследить до племенных жеребцов и кобыл, записанных в первом томе племенной книги, имеют право считаться чистокровными.
+          <p class="p2">
+            Для племенной работы отбираются лошади, продемонстрировавшие выдающиеся результаты на самых престижных ежегодных скачках. В Великобритании с 1780 года по настоящее время разыгрываются традиционные призы для представителей данной породы. В 1793 году в Великобритании вышел I том Племенной книги чистокровных лошадей («The General Stud Book»). Был сформулирован основной принцип чистокровности: лошади, не происходящие от предков, записанных в Племенной книге чистокровных лошадей, в породу не включаются. Таким образом, все английские чистокровные верховые лошади на протяжении своей 300-летней истории разведения ни разу не испытали прилития чужой крови. По действующим правилам только те лошади, родословную которых можно проследить до племенных жеребцов и кобыл, записанных в I томе Племенной книги чистокровных лошадей, имеют право считаться чистокровными.
           </p>
-          <p>
-            Английская чистокровная верховая лошадь – это ценная верховая порода лошадей, демонстрирующая отличные экстерьерные качества и гармоничное телосложение, замечательные физические данные и высокую работоспособность, энергичность и выдающуюся резвость. Важно также отметить скороспелость породы, то есть, возможность участия лошадей в скачках с двухлетнего возраста. Английские чистокровные верховые лошади участвуют не только в гладких, но и барьерных скачках – стипль-чезах. Данная порода стала вершиной коннозаводческой деятельности. В Великобритании её называют лошадью «выведенной в совершенстве» («thoroughbred»).
+          <p class="p3">
+            Английская чистокровная верховая лошадь – это ценная порода верховых лошадей, демонстрирующая отличные экстерьерные качества и гармоничное телосложение, замечательные физические данные и высокую работоспособность, энергичность и выдающуюся резвость. Важно также отметить скороспелость породы, то есть, возможность участия лошадей в скачках с двухлетнего возраста. Английские чистокровные верховые лошади участвуют не только в гладких, но и барьерных скачках – стипль-чезах. Данная порода стала вершиной коннозаводческой деятельности. В Великобритании её называют лошадью «выведенной в совершенстве» («thoroughbred»).
           </p>
-          <p>
-            К участию в скачках с лошадьми данной породы не допускаются лошади других пород, поскольку английская чистокровная верховая лошадь значительно сильнее и резвее любой другой лошади. Нормой для неё считается галоп со скоростью 1 км/мин (60 км/ч). Ключевое достоинство породы – это высокая скорость в скачках. Мировые рекорды, установленные лошадьми этой породы: 1000 м за 53 сек, 2400 м за 2 мин 22 сек. В 2008 году двухлетняя кобыла Winning Brew в США на дистанции 1/4 мили продемонстрировала скорость 70,76 км/ч.
+          <p class="p4">
+            К участию в скачках с лошадьми данной породы не допускаются лошади других пород, поскольку английская чистокровная верховая лошадь значительно сильнее и резвее любой другой лошади. Нормой для английской чистокровной верховой лошади считается галоп со скоростью 1 км/мин (60 км/ч). Ключевое достоинство данной породы – это высокая скорость в скачках. Мировые рекорды, установленные лошадьми этой породы: 1000 м за 53 сек, 2400 м за 2 мин 22 сек. В 2008 году двухлетняя кобыла Winning Brew в США на дистанции 1/4 мили продемонстрировала скорость 70,76 км/ч.
           </p>
-          <p>Все эти факторы в совокупности обусловили запредельно высокую стоимость представителей ценных линий.</p>
+          <p class="p5">
+            Все эти факторы в совокупности обусловили запредельно высокую стоимость представителей ценных племенных линий данной породы.
+          </p>
         </div>
         <div class="clear"></div>
       </div>
@@ -100,27 +106,27 @@
     <footer class="footer">
     
       <div class="footer_copyright">
-         <div class="copyright"> <span class="footer-colored">©</span> <span>2024</span>  <span  class="footer-colored">kincsem.club</span><span>Все права защищены.</span></div>
+         <div class="copyright"> <span class="footer-colored">©</span> <span>2024</span>  <span  class="footer-colored">kincsem.club</span><span class="rights">Все права защищены.</span></div>
          <div class="handshake">
-           <a href="./../html/contacts.html"  title="Контакты">
+           <a class="cpu-a contacts" href="./../html/contacts.html"  title="Контакты">
              <img src="./../assets/handshake.svg" alt="handshake">
            </a>
          </div>
       </div> 
       <div>
-       <ul class="politics">
-         <li class="politics_item"><a href="./confidentially.html">Политика конфиденциальности</a></li>
-         <li class="politics_item  separation">|</li>
-         <li class="politics_item"><a href="./conditions.html">Условия использования</a></li>
-         <li class="politics_item  separation" >|</li>
-         <li class="politics_item"><a href="./cookie.html">Политика в отношении обработки cookies</a></li>
-       </ul>
+        <ul class="politics">
+          <li class="politics_item"><a class="confidentially" href="./../html/confidentially.html">Политика конфиденциальности</a></li>
+          <li class="politics_item  separation">|</li>
+          <li class="politics_item"><a class="conditions" href="./../html/conditions.html">Условия использования</a></li>
+          <li class="politics_item  separation" >|</li>
+          <li class="politics_item"><a class="cookies" href="./../html/cookie.html">Политика в отношении обработки cookies</a></li>
+        </ul>
        <ul class="politics-mobile">
-         <li class="politics_item"><a href="./../pdf/confidentially.pdf">Политика конфиденциальности</a></li>
+         <li class="politics_item"><a class="confidentially" href="./../pdf/rus/confidentially.pdf">Политика конфиденциальности</a></li>
          <li class="politics_item  separation">|</li>
-         <li class="politics_item "><a href="./../pdf/conditions.pdf" >Условия использования</a></li>
+         <li class="politics_item "><a class="conditions" href="./../pdf/rus/conditions.pdf" >Условия использования</a></li>
          <li class="politics_item  separation" >|</li>
-         <li class="politics_item"><a href="./../pdf/cookie.pdf">Политика в отношении обработки cookies</a></li>
+         <li class="politics_item"><a class="cookies" href="./../pdf/rus/cookie.pdf">Политика в отношении обработки cookies</a></li>
        </ul>
       </div> 
      </footer>

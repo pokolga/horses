@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="contacts" lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()">
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+
     <title>Kincsem.club</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,42 +21,43 @@
 
 <body>
     <header class="header">
-        <a class="logo" href="./../index.html">
+        <a class="cpu-a logo" href="./../index.html">
            <h1>KINCSEM.CLUB</h1>
         </a>
         <nav>
           <ul class="menu">
-            <li class="menu_item active"><a class="menu-a" href="./../index.html">Главная</a></li>
-            <li class="menu_item"><a class="menu-a" href="./../html/name.html">Название</a></li>
-            <li class="menu_item"><a class="menu-a" href="./../html/breed.html">Порода</a></li>
-            <li class="menu_item"><a class="menu-a" href="./../html/relationship.html">Отношения</a></li>
-            <li class="menu_item"><a class="menu-a" href="./../html/development.html">Развитие</a></li>
-            <li class="menu_item"><a class="menu-a" href="./../html/participation.html">Участие</a></li>
-            <li class="menu_item"><a class="menu-a" href="./../html/vacancies.html">Вакансии</a></li>
-          </ul>
+            <li class="menu_item active"><a class="cpu-a menu-a index" href="./../index.html">Главная</a></li>
+            <li class="menu_item"><a class="cpu-a menu-a name" href="./../html/name.html">Название</a></li>
+            <li class="menu_item"><a class="cpu-a menu-a breed" href="./../html/breed.html">Порода</a></li>
+            <li class="menu_item"><a class="cpu-a menu-a relationship" href="./../html/relationship.html">Отношение</a></li>
+            <li class="menu_item"><a class="cpu-a menu-a development" href="./../html/development.html">Развитие</a></li>
+            <li class="menu_item"><a class="cpu-a menu-a participation" href="./../html/participation.html">Участники</a></li>
+             <!--  <li class="menu_item"><a class="cpu-a menu-a vacancies" href="./../html/vacancies.html">Карьера</a></li>-->
+            </ul>
        </nav>
        <div class="burger">
             <span></span>
             <span></span>
             <span></span>
        </div> 
-       <a class="location" href="./../html/languages.html" title="Страны"  target="_blank">
+       <a class="cpu-a location" href="./../html/languages.html" title="Страны">
         <div class="header-location">
-         <img src="./../assets/public.svg" alt="glob">    
-        </div>
+          <span class="active-language">rus</span> 
+          <img src="./../assets/public.svg" alt="glob">    
+         </div>
        </a>
        
        <div class="burger-menu">
       
         <ul class="mobile-menu">
-          <li class="mobile-menu_item"><a class="menu-a" href="./../index.html">Главная</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/name.html">Название</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/breed.html">Порода</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/relationship.html">Отношения</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/development.html">Развитие</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/participation.html">Участие</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/vacancies.html">Вакансии</a></li>
-        </ul>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a index" href="./../index.html">Главная</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a name" href="./../html/name.html">Название</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a breed" href="./../html/breed.html">Порода</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a relationship" href="./../html/relationship.html">Отношение</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a development" href="./../html/development.html">Развитие</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a participation" href="./../html/participation.html">Участники</a></li>
+        <!--    <li class="mobile-menu_item"><a class="cpu-a menu-a vacancies" href="./../html/vacancies.html">Карьера</a></li> -->
+      </ul>
        </div>
     </header>
 
@@ -64,62 +68,56 @@
       </div>
       
       <div class="future-choice-contacts">
-        <h2 class="main-contacts-h2">КОНТАКТНАЯ ИНФОРМАЦИЯ </h2> 
+        <h2 class="main-contacts-h2 title">КОНТАКТНАЯ ИНФОРМАЦИЯ </h2> 
         <figure>
           <img class="full-screen" src="./../assets/Night Hawk James Lynwood Palmer.jpg"
           alt="The picture 'Night Hawk James Lynwood Palmer (1916)'" />
          <figcaption>&#171;Night Hawk&#187;<br> James Lynwood Palmer (1916)</figcaption>
         </figure>
          <div class="text"> 
-          <p>
-            Желающие принять участие в проекте KINCSEM.CLUB могут направлять заявки на вступление в группу участников проекта в мессенджер Telegram  <a href="https://t.me/+tGbaVE1QQ3k2ZTg0" target="_blank" rel="noopener noreferrer">kincsem.club</a>. 
-            До направления сообщения ознакомьтесь с информацией, размещенной в разделе <a href="./../html/participation.html">УЧАСТИЕ</a>.
+          <p class="p1">
+            Цель проекта KINCSEM.CLUB – создание сообщества талантливых профессионалов, объединённых общими интересами.
           </p>
-          <p>Все предложения и вопросы желающие принять участие в проекте KINCSEM.CLUB могут направлять на адрес электронной почты <a href="mailto:kincsem.club@gmail.com" target="_blank">kincsem.club@gmail.com</a></p>
-          <p class="before-ul">
-            Не являются частью данного проекта доменные имена, использующие название, схожее до степени смешения с доменным именем <strong>kincsem.club</strong>, словосочетанием <strong>kincsemclub</strong>, и (или) словом <strong>kincsem</strong> и т.п., либо посвященные аналогичной тематике, вне зависимости от названия и тематики, а также:
+          <p class="p2">
+            Участие в проекте KINCSEM.CLUB даёт шанс на построение успешной международной профессиональной карьеры. Дополнительно проект предоставляет участникам возможность получения дохода от конной индустрии.
           </p>
-          <div class="text-ul">
-            <ul class="float-ul">
-              <li>номера телефонов;</li>
-              <li>адреса электронной почты, за исключением: kincsem.club@gmail.com;</li>
-              <li>каналы, группы и т.п. в мессенджерах и социальных сетях;</li>
-              <li>веб-форумы, интернет-страницы,</li>
-            </ul>
-          </div>
-            
-            
-          <p>но не ограничиваясь вышеперечисленным.</p>
-        </div>
+          <p class="p3">
+            Мы приглашаем всех, кто ценит доступ к новым идеям и актуальной информации и готов внести вклад в развитие деловых контактов между участниками проекта по всему миру.
+          </p>
+          <p class="p4">
+            Проект KINCSEM.CLUB создаёт безграничные возможности и даёт максимальные преимущества!
+          </p>
+          <p class="p5">
+            Напиши нам в Telegram (группа <a href="https://t.me/+tGbaVE1QQ3k2ZTg0" target=\"_blank\" rel=\"noopener noreferrer\">kincsem.club</a>) или на адрес электронной почты <a href="mailto:kincsem.club@gmail.com" target="_blank">kincsem.club@gmail.com</a> и стань участником проекта KINCSEM.CLUB уже сегодня!
+          </p>
+         </div>
           <div class="clear"></div>
       </div>
     </main>
-      
     
     <footer class="footer">
-    
       <div class="footer_copyright">
-         <div class="copyright"> <span class="footer-colored">©</span> <span>2024</span>  <span  class="footer-colored">kincsem.club</span><span>Все права защищены.</span></div>
+         <div class="copyright"> <span class="footer-colored">©</span> <span>2024</span>  <span  class="footer-colored">kincsem.club</span><span class="rights">Все права защищены.</span></div>
          <div class="handshake">
-           <a href="#"  title="Контакты">
+           <a class="cpu-a contacts" href="#"  title="Контакты">
              <img src="./../assets/handshake.svg" alt="handshake">
            </a>
          </div>
       </div> 
       <div>
-       <ul class="politics">
-         <li class="politics_item"><a href="./confidentially.html">Политика конфиденциальности</a></li>
-         <li class="politics_item  separation">|</li>
-         <li class="politics_item"><a href="./conditions.html">Условия использования</a></li>
-         <li class="politics_item  separation" >|</li>
-         <li class="politics_item"><a href="./cookie.html">Политика в отношении обработки cookies</a></li>
-       </ul>
+        <ul class="politics">
+          <li class="politics_item"><a class="confidentially" href="./../html/confidentially.html">Политика конфиденциальности</a></li>
+          <li class="politics_item  separation">|</li>
+          <li class="politics_item"><a class="conditions" href="./../html/conditions.html">Условия использования</a></li>
+          <li class="politics_item  separation" >|</li>
+          <li class="politics_item"><a class="cookies" href="./../html/cookie.html">Политика в отношении обработки cookies</a></li>
+        </ul>
        <ul class="politics-mobile">
-         <li class="politics_item"><a href="./../pdf/confidentially.pdf">Политика конфиденциальности</a></li>
+         <li class="politics_item"><a class="confidentially" href="./../pdf/rus/confidentially.pdf">Политика конфиденциальности</a></li>
          <li class="politics_item  separation">|</li>
-         <li class="politics_item "><a href="./../pdf/conditions.pdf" >Условия использования</a></li>
+         <li class="politics_item "><a class="conditions" href="./../pdf/rus/conditions.pdf" >Условия использования</a></li>
          <li class="politics_item  separation" >|</li>
-         <li class="politics_item"><a href="./../pdf/cookie.pdf">Политика в отношении обработки cookies</a></li>
+         <li class="politics_item"><a class="cookies" href="./../pdf/rus/ookie.pdf">Политика в отношении обработки cookies</a></li>
        </ul>
       </div> 
      </footer>

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="name" lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()">
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+
     <title>Kincsem.club</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,18 +21,18 @@
 
 <body>
     <header class="header">
-        <a class="logo" href="./../index.html">
+        <a class="cpu-a logo" href="./../index.html">
            <h1>KINCSEM.CLUB</h1>
         </a>
         <nav>
           <ul class="menu">
-              <li class="menu_item"><a class="menu-a" href="./../index.html">Главная</a></li>
-              <li class="menu_item menu-a-active"><a class="menu-a" href="#">Название</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/breed.html">Порода</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/relationship.html">Отношения</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/development.html">Развитие</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/participation.html">Участие</a></li>
-              <li class="menu_item"><a class="menu-a" href="./../html/vacancies.html">Вакансии</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a index" href="./../index.html">Главная</a></li>
+              <li class="menu_item menu-a-active"><a class="menu-a name" href="#">Название</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a breed" href="./../html/breed.html">Порода</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a relationship" href="./../html/relationship.html">Отношение</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a development" href="./../html/development.html">Развитие</a></li>
+              <li class="menu_item"><a class="cpu-a menu-a participation" href="./../html/participation.html">Участники</a></li>
+            <!--  <li class="menu_item"><a class="cpu-a menu-a vacancies" href="./../html/vacancies.html">Карьера</a></li>-->
           </ul>
        </nav>
        <div class="burger">
@@ -37,25 +40,26 @@
             <span></span>
             <span></span>
        </div> 
-       <a class="location" href="./../html/languages.html" title="Страны"  target="_blank">
+       <a class="cpu-a location" href="./../html/languages.html" title="Страны">
         <div class="header-location">
-         <img src="./../assets/public.svg" alt="glob">    
-        </div>
+          <span class="active-language">rus</span> 
+          <img src="./../assets/public.svg" alt="glob">    
+         </div>
        </a>
        
        <div class="burger-menu">
       
         <ul class="mobile-menu">
-          <li class="mobile-menu_item"><a class="menu-a" href="./../index.html">Главная</a></li>
-          <li class="mobile-menu_item menu-a-active"><a class="menu-a" href="#">Название</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/breed.html">Порода</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/relationship.html">Отношения</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/development.html">Развитие</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/participation.html">Участие</a></li>
-          <li class="mobile-menu_item"><a class="menu-a" href="./../html/vacancies.html">Вакансии</a></li>
-          <li class="mobile-menu_item">
+          <li class="mobile-menu_item"><a class="cpu-a menu-a index" href="./../index.html">Главная</a></li>
+          <li class="mobile-menu_item menu-a-active"><a class="menu-a name" href="#">Название</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a breed" href="./../html/breed.html">Порода</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a relationship" href="./../html/relationship.html">Отношение</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a development" href="./../html/development.html">Развитие</a></li>
+          <li class="mobile-menu_item"><a class="cpu-a menu-a participation" href="./../html/participation.html">Участники</a></li>
+        <!--    <li class="mobile-menu_item"><a class="cpu-a menu-a vacancies" href="./../html/vacancies.html">Карьера</a></li> -->
+        <li class="mobile-menu_item">
             <div class="handshake">
-              <a href="./../html/contacts.html"  title="Контакты">
+              <a class="cpu-a contacts" href="./../html/contacts.html"  title="Контакты">
                 <img src="./../assets/handshake.svg" alt="handshake">
               </a>
           </div>
@@ -73,7 +77,7 @@
       </div>
       
       <div class="future-choice">
-       <h2 class="main-contacts-h2">НАЗВАНИЕ ПРОЕКТА</h2>
+       <h2 class="main-contacts-h2 title">НАЗВАНИЕ ПРОЕКТА</h2>
        <figure>
         <img class="full-screen" src="./../assets/Rennpferd Kincsem.jpg"
         alt="The picture 'Rennpferd Kincsem mit Jockey_G. Siegert (1879)'" />
@@ -81,22 +85,22 @@
       </figure> 
           <div class="text">
            
-            <p>
+            <p class="p1">
               Почему KINCSEM.CLUB? В честь лошади, носившей имя Kincsem. В переводе с венгерского языка Kincsem означает «моё сокровище».
             </p>
-            <p>
+            <p class="p2">
               Kincsem – это английская чистокровная верховая лошадь. Kincsem появилась на свет 17 марта 1874 года в Венгерском национальном конном заводе и по количеству одержанных побед на сегодняшний день стала самой выдающейся английской чистокровной верховой лошадью в истории скачек.
             </p>
-            <p>
+            <p class="p3">
               Особенности экстерьера Kincsem – это предмет споров, как и многие другие подробности её жизни. Несмотря на исключительные способности Kincsem на протяжении всей её скаковой карьеры многие критиковали экстерьер лошади, который с виду был ничем не примечателен.
             </p>
-            <p>
+            <p class="p4">
               Есть история о том, как первый владелец Kincsem выставил на продажу большое количество лошадей. Покупатель приобрел всех, за исключением Kincsem и ещё одной лошади. Kincsem и вторую лошадь покупатель отверг как «слишком заурядных» лошадей. Ещё одна история повествует о краже Kincsem из конюшни. Все были потрясены, обнаружив, что Kincsem украли, поскольку она была единственной украденной лошадью, из всех, находившихся в конюшне. Полиция поймала воров и нашла Kincsem. Когда у воров спросили, почему они украли именно такую ничем не примечательную лошадь, те ответили: «Эта лошадь, возможно, не такая красивая, как другие, но она будет величайшей лошадью из всех лошадей».
             </p>
-            <p>
+            <p class="p5">
               В двухлетнем возрасте Kincsem приняла участие в 10 скачках в Германии и Австро-Венгрии. В наши дни трудно представить, чтобы так часто в скачках, имеющих высокий рейтинг, участвовала двухлетняя лошадь. В последующие несколько лет нагрузка оставалась относительно высокой: 17 скачек для трехлетних лошадей, 15 скачек для четырехлетних лошадей и 12 скачек для пятилетних лошадей. Следует принять во внимание, что условия транспортировки лошадей в то время были значительно хуже современных. Также необходимо учитывать нагрузки, которые Kincsem приходилось переносить в процессе длительных и напряжённых перевозок. Эти факторы дают основание оценивать результаты, достигнутые Kincsem в скачках, ещё выше, что только ещё больше подчеркивает её уникальность.
             </p>
-            <p>
+            <p class="p6">
               Kincsem завершила свою карьеру с недосягаемым для других лошадей количеством побед, не проиграв ни одной скачки. Результат: 54 победы в 54 скачках. Этот рекорд не превзойдён по сей день и занесён в Книгу рекордов Гиннесса.
             </p>
         </div>
@@ -108,27 +112,27 @@
     <footer class="footer">
     
       <div class="footer_copyright">
-         <div class="copyright"> <span class="footer-colored">©</span> <span>2024</span>  <span  class="footer-colored">kincsem.club</span><span>Все права защищены.</span></div>
+         <div class="copyright"> <span class="footer-colored">©</span> <span>2024</span>  <span  class="footer-colored">kincsem.club</span><span class="rights">Все права защищены.</span></div>
          <div class="handshake">
-           <a href="./../html/contacts.html"  title="Контакты">
+           <a class="cpu-a contacts" href="./../html/contacts.html"  title="Контакты">
              <img src="./../assets/handshake.svg" alt="handshake">
            </a>
          </div>
       </div> 
       <div>
        <ul class="politics">
-         <li class="politics_item"><a href="./confidentially.html">Политика конфиденциальности</a></li>
+         <li class="politics_item"><a class="confidentially" href="./../html/confidentially.html">Политика конфиденциальности</a></li>
          <li class="politics_item  separation">|</li>
-         <li class="politics_item"><a href="./conditions.html">Условия использования</a></li>
+         <li class="politics_item"><a class="conditions" href="./../html/conditions.html">Условия использования</a></li>
          <li class="politics_item  separation" >|</li>
-         <li class="politics_item"><a href="./cookie.html">Политика в отношении обработки cookies</a></li>
+         <li class="politics_item"><a class="cookies" href="./../html/cookie.html">Политика в отношении обработки cookies</a></li>
        </ul>
        <ul class="politics-mobile">
-         <li class="politics_item"><a href="./../pdf/confidentially.pdf">Политика конфиденциальности</a></li>
+         <li class="politics_item"><a class="confidentially" href="./../pdf/rus/confidentially.pdf">Политика конфиденциальности</a></li>
          <li class="politics_item  separation">|</li>
-         <li class="politics_item "><a href="./../pdf/conditions.pdf" >Условия использования</a></li>
+         <li class="politics_item "><a class="conditions" href="./../pdf/rus/conditions.pdf" >Условия использования</a></li>
          <li class="politics_item  separation" >|</li>
-         <li class="politics_item"><a href="./../pdf/cookie.pdf">Политика в отношении обработки cookies</a></li>
+         <li class="politics_item"><a class="cookies" href="./../pdf/rus/cookie.pdf">Политика в отношении обработки cookies</a></li>
        </ul>
       </div> 
      </footer>

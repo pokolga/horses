@@ -35,28 +35,41 @@ function closeMobileMenu(){
 }
 
 /* куки: запоминаем на локальном, что мы уже предупреждали и повторно не выдаем сообщение */
+      
+      document.addEventListener("DOMContentLoaded", init);
 
-if (document.querySelector(".cookie")) {
 
-      /* показывать куки-окно только если в локал сторидж нет переменной*/
-    document.addEventListener("DOMContentLoaded",function(){
-      if (!localStorage.getItem('cookie'))  document.querySelector(".cookie").style.display = "flex";
-    })
+function init(){
+  /* показывать куки-окно только если в локал сторидж нет переменной*/
+  if (document.querySelector(".cookie")) {
+    if (!localStorage.getItem('cookie')) {
+      document.querySelector(".cookie").style.display = "flex";
+    } 
     /*клик по крестику или Согласен закрывает окно куки и вносит переменную в локал сторидж*/
-
     document.querySelector(".cookie-button>button").addEventListener("click",closeCookieBlock);
     document.querySelector(".cross").addEventListener("click",closeCookieBlockWithoutSave);
     document.querySelector(".cookie-button>button").addEventListener("touch",closeCookieBlock);
     document.querySelector(".cross").addEventListener("touch",closeCookieBlockWithoutSave);
-
-    function closeCookieBlock(){
-      document.querySelector(".cookie").style.display = "none";
-      localStorage.setItem('cookie', "true");//однократное открытие куки-сообщения, открыть после проверки
-    }
-    function closeCookieBlockWithoutSave(){
-      document.querySelector(".cookie").style.display = "none";
-    }
+  } 
+  if (localStorage.getItem('language')){
+    console.log(localStorage.getItem('language'));
+    ajaxLanguage(localStorage.getItem('language'));
+  }
+  else {
+    ajaxLanguage("rus");
+  }
 }
+
+
+function closeCookieBlock(){
+  document.querySelector(".cookie").style.display = "none";
+  localStorage.setItem('cookie', "true");//однократное открытие куки-сообщения, открыть после проверки
+}
+
+function closeCookieBlockWithoutSave(){
+  document.querySelector(".cookie").style.display = "none";
+}
+
 /*открываем в модальном окне картинку*/
 if (document.querySelector(".full-screen")){
   document.querySelectorAll(".full-screen").forEach((item) => {item.addEventListener("click", openPhotoInModalWindow)});
@@ -83,7 +96,7 @@ function openPhotoInModalWindow() {
   } else {
     div.style.backgroundImage = getComputedStyle(this).backgroundImage;
   } 
-  //подпись
+  //подпись под картинками
   let modalName = null;
   if(this.parentNode.nodeName.toUpperCase() === "FIGURE"){
       if (this.parentNode.querySelector("figcaption")){
@@ -116,7 +129,7 @@ function openPhotoInModalWindow() {
   setTimeout(function () {
      
       document.querySelector(".fullPhoto").style.opacity = "1";
-  }, 0);//*/
+  }, 0);
 
   document.querySelector('.closePhoto').addEventListener("click", function (ev) {
       this.parentElement.remove();
@@ -136,15 +149,23 @@ function openPhotoInModalWindow() {
       };
 }
 
-/*аккордеон*/
-
-if (document.querySelector(".accordeon")){
-  document.querySelectorAll(".accordeon-title").forEach((item) => {item.addEventListener("click", clickForAccordeonTitles)})
- /*начальное заполнение*/
-  document.querySelector(".accordeon-output").innerHTML = document.querySelector(".accordeon-active").nextElementSibling.innerHTML;
-  document.querySelectorAll(".accordeon-output a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
-  document.querySelectorAll(".accordeon-text a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
-}
+/**************** аккордеон **************/
+(function initAccordeon(){
+  if (document.querySelector(".accordeon")){
+    document.querySelectorAll(".accordeon-title").forEach((item) => {item.addEventListener("click", clickForAccordeonTitles)})
+   /*начальное заполнение*/
+    document.querySelector(".accordeon-output").innerHTML = document.querySelector(".accordeon-active").nextElementSibling.innerHTML;
+    document.querySelectorAll(".accordeon-output a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
+    document.querySelectorAll(".accordeon-text a").forEach((item) => {item.addEventListener("click", clickForAccordeonLink)});
+    if (localStorage.getItem("language")) {
+      if (document.querySelector(`.accordeon-output [data-lang='${localStorage.getItem("language")}']`)){
+        document.querySelector(`.accordeon-output [data-lang='${localStorage.getItem("language")}']`).classList.add("accordeon-a-active");
+      } 
+    } else {
+      document.querySelector(".accordeon-output [data-lang='rus']").classList.add("accordeon-a-active");
+    }
+  }
+})();
 
 function clickForAccordeonTitles(){
   document.querySelectorAll(".accordeon-title").forEach((item) => {item.classList.remove("accordeon-active")});
@@ -155,26 +176,181 @@ function clickForAccordeonTitles(){
 }
 
 function clickForAccordeonLink(ev){
+  /*в гиперссылке должна стоять аббревиатура языка в атрибуте data-lang, 
+  в папке  languages должен быть файл %аббревиатура%.txt по шаблону
+  Если атрибут не указан, то переходим на русский*/
   ev.preventDefault();
-  alert(`Переходим на ${this.textContent}`);
-  //closeLanguageMenu();
+
+  if (document.querySelector("html").classList.contains("languages")){
+    document.querySelectorAll(".accordeon-a").forEach((elem) => elem.classList.remove("accordeon-a-active"));
+    this.classList.add("accordeon-a-active");
+
+    if (!this.dataset.lang || this.dataset.lang === '') {
+      ajaxLanguage("rus");
+    } else {
+      ajaxLanguage(this.dataset.lang);
+    }
+    location.reload(true);
+  }
 }
 
-/* меню языков*/
-/* для выплывающего модального окна*/
-/*document.querySelector(".header-location").addEventListener("click",openLanguageMenu);
-document.querySelector(".languages .cross").addEventListener("click",closeLanguageMenu);
-document.querySelector(".accordeon-text a").addEventListener("click",closeLanguageMenu);*/
-
-function openLanguageMenu(ev){
-  const langBlock = document.querySelector(".languages");
-  let topPosition = document.querySelector(".header-location").getBoundingClientRect();
-  document.querySelector(".languages").style.top = "0px";
-  document.querySelector(".languages").style.right = "0px";
-  document.querySelector(".languages").style.opacity = "1";
+function ajaxLanguage(currentLanguage){
+  const xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
+        changeLanguageGlobal(xhr.responseText, currentLanguage);
+        changeLanguageCurrentPage(xhr.responseText, currentLanguage);
+      } else {
+        console.log("Oops, sorry");
+        ajaxLanguage("rus");
+      }
+    }
+  }
+ 
+  if (/index/.test(location.pathname)) {
+    xhr.open("get", `./languages/${currentLanguage}.txt`);
+  } else {
+    xhr.open("get", `./../languages/${currentLanguage}.txt`);
+  }
+  
+  xhr.send(null);
 }
 
-function closeLanguageMenu(){
-  document.querySelector(".languages").style.top = "-1000px";
-  document.querySelector(".languages").style.opacity = "0";
+function changeLanguageGlobal(responseText, abbr) {
+  localStorage.setItem("language", abbr);
+  document.querySelector(".active-language").textContent = abbr; //активный язык вверху
+  const renderObj = JSON.parse(responseText);
+  
+  const global = renderObj.global;
+  if (global) {
+    for (const property in global) {
+      Array.from(document.querySelectorAll(`.${property}`)).forEach((elem) => {
+          if (elem.querySelector("img")) {
+            elem.title = global[property];
+          } else {
+            elem.innerHTML = global[property];
+          }
+        })
+    }
+  } else {
+    console.log("Wrong data for this language");
+    ajaxLanguage("rus");
+  }
+}
+
+function changeLanguageCurrentPage(responseText,currentLanguage) {
+/***********   абзацы с "на стадии разработки" помечаем классом tmp-stage! */
+console.log("смена языка при перезагрузке")
+  const renderObj = JSON.parse(responseText);
+
+  const page = document.querySelector("html").className;
+  const currentPage = renderObj[page];//объект контента страницы
+  if (currentPage.dictum) {
+    document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
+  }
+  if (currentPage.title) document.querySelector(".title").textContent = currentPage.title;
+  if (currentPage["link-to-contacts"] && document.querySelector(".link-to-contacts")) document.querySelector(".link-to-contacts").textContent = currentPage["link-to-contacts"];
+/*for activity page*/
+  const numberOfActivePages = 5;
+  if (document.querySelector(".title1")) {
+
+    for (let i = 1; i <= numberOfActivePages; i++){
+    console.log(".title1", currentPage[`title${i}`]); 
+      if (document.querySelector(`.title${i}`)){
+        document.querySelectorAll(`.title${i}`).forEach((elem) => elem.textContent = currentPage[`title${i}`]);
+      }
+    }
+  }
+  
+  for (let elem in currentPage.text){
+    if (elem === "accordeon") {
+      const self = currentPage.text.accordeon;
+      
+      const titleList = document.querySelectorAll(".accordeon .accordeon-title");
+      const outputTitleList = document.querySelectorAll(".accordeon-output-title");
+    
+      const tmpStageList = document.querySelectorAll(".accordeon .tmp-stage");
+
+      for (let i = 0; i < self.title.length; i++) {
+        titleList[i].textContent = self.title[i];
+        outputTitleList[i].textContent = self.title[i];
+      }
+      document.querySelector(".accordeon-output .accordeon-output-title").textContent = document.querySelector(".accordeon-active").textContent;
+      tmpStageList.forEach((lnk) => lnk.textContent = self["tmp-stage"]);
+    } else {
+      if (document.querySelector(`.text>.${elem}`)){
+        document.querySelector(`.text>.${elem}`).innerHTML = currentPage.text[elem];
+      }
+    }
+  }
+  
+  changeCPUItems(renderObj.global);
+  changeLinkForPdf(currentLanguage);
+} 
+
+document.addEventListener("DOMContentLoaded", selectLanguage);
+window.addEventListener('focus', selectLanguage);
+
+function selectLanguage(){
+  /*Переключение языков: в папке languages лежат файлы с контентом для страниц сайта. Название файла - двухбуквенная аббревиатура языка.txt
+  Активный язык записывается в локалСторидж. В меню отмечен активный язык. 
+  При загрузке страницы и при фокусе определяется активный язык и через ajax подгружается контент страницы.
+  ВАЖНО! на странице languages элементы выбора языка помечены tmp-stage для пунктов в разработке. Как только добавляем в регион язык, этот класс надо убрать.
+  Кроме того, на странице автоматически меняются линки для пдф.
+  */
+  const currentLanguage = localStorage.getItem('language');
+  if (!currentLanguage) return;
+  document.querySelector(".active-language").textContent = currentLanguage; 
+  changeLinkForPdf(currentLanguage);
+  ajaxLanguage(currentLanguage);
+}
+
+function changeLinkForPdf(currentLanguage){
+//названия пдф по схеме: pdf/rus/название.pdf
+  const array = Array.from(document.querySelectorAll("a")).filter((elem) => (/pdf$/).test(elem.href) );
+  for (let i = 0; i < array.length; i++) {
+        let elem = array[i];
+        elem.href = elem.href.replace(/pdf\/.../,"pdf/" + currentLanguage + "/");
+        
+  }
+  if (document.querySelector("iframe")) {
+    document.querySelector("iframe").src = document.querySelector("iframe").src.replace(/pdf\/.../,"pdf/" + currentLanguage + "/");
+  }
+}
+
+function changeCPUItems(global) {
+
+  const links = document.querySelectorAll(".cpu-a");
+
+  links.forEach((link) => {
+    if (link.href.match(/\w+(?=\.html)/)) {
+      if (link.href.match(/\w+(?=\.html)/)[0] === "index") {
+        const newName = global.index;
+        link.href = link.href.replace("index.html", newName);
+      } else if (link.href.match(/(?<=html\/)\w+(?=\.html)/)) {
+        const nameOfPage = link.href.match(/(?<=html\/)\w+(?=\.html)/)[0];
+        const newName = global[nameOfPage];
+     //   console.log(nameOfPage, newName)
+        if (newName) {
+          link.href = link.href.replace(`html/${nameOfPage}.html`, newName);
+        }
+      } else {
+        console.log("возможно, уже линк переписали ранее");
+      }
+    }
+  });
+}
+
+//TODO переделать!
+//if (/activ/.test(window.location.href)){
+  if (/activ/.test(document.querySelector("html").className)){    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        document.body.classList.add('scrolled'); // Добавляем класс при скролле вниз
+
+      } else {
+        document.body.classList.remove('scrolled'); // Убираем класс, если скролл вверх
+      }
+    });
 }

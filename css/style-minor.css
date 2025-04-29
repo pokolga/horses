@@ -1,5 +1,4 @@
 /*контент, картинка в большом окне*/
-
 figure {
   width: 30%;
   min-width: 300px;
@@ -167,8 +166,8 @@ figcaption {
     max-width: 530px;
   }
   .text {
-    column-width: 30vw;
-    column-gap: 2em;
+   /* column-width: 30vw;
+    column-gap: 2em;*/
   }
   
   ul.float-ul {
