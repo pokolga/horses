@@ -246,6 +246,7 @@ console.log("смена языка при перезагрузке")
 
   const page = document.querySelector("html").className;
   const currentPage = renderObj[page];//объект контента страницы
+  if (!currentPage) return;
   if (currentPage.dictum) {
     document.querySelectorAll(".dictum>div")[1].textContent = currentPage.dictum;
   }
